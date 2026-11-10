@@ -23,10 +23,7 @@ jobs:
           cat /tmp/pytest.log
           if [ $rc -ne 0 ]; then
             echo "::error::kblint tests failed (exit $rc); tail follows"
-            tail -n 30 /tmp/pytest.log | while IFS= read -r line; do
-              echo "::error::${line//%
-/%25}"
-            done
+            tail -n 30 /tmp/pytest.log | sed -e 's/%/%25/g' -e 's/^/::error::/'
             exit $rc
           fi
       - name: Audit the bundled sample repository (JSON/Markdown/SARIF)
