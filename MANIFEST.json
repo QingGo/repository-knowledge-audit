@@ -1,14 +1,14 @@
 {
  "schema": "repository-knowledge-audit/manifest-v1",
- "version": "2026.11.10-r11",
+ "version": "2026.11.10-r12",
  "date": "2026-11-10",
  "file_count": 617,
- "total_bytes": 10635932,
+ "total_bytes": 10636328,
  "files": [
   {
    "path": ".github/workflows/kblint.yml",
-   "sha256": "7e3d918f3e03cf148e419193462d61cf295dbdbfe74017e1da668297281903de",
-   "bytes": 916
+   "sha256": "6ab4d734c64891dc3e24def4ef5587a6dc8d63f0b16838efe28f9b4855e6cb97",
+   "bytes": 1312
   },
   {
    "path": "ANONYMIZATION.md",
@@ -42,7 +42,7 @@
   },
   {
    "path": "VERSION",
-   "sha256": "bb6c56061dfff1c01e1817f819c44bdeecebf39a5b5646e2a181887fc5457ded",
+   "sha256": "ae8ba70191b1c17d08c71df80873f8ad6ae81279bb2a794cef588f65e6fd1613",
    "bytes": 324
   },
   {
