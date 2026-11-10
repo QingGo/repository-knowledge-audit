@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this artifact (benchmark, analyses, or kblint), please cite the paper and the archived release."
+type: software
+title: "repository-knowledge-audit: kblint + 54-task convention-conflict benchmark + analyses"
+abstract: "Deterministic claim-level audit of repository knowledge for coding agents: kblint rules R1-R9, a 54-task constructed convention-conflict benchmark with hidden pytest grading, and frozen analyses (entry/two-sided effects, evidence competition, mixed packs, real-repository audit, PR replay, and the maintainer workflow)."
+authors:
+  - name: "The repository-knowledge-audit authors"
+version: "0.3.0"
+date-released: "2026-11-10"
+doi: "10.5281/zenodo.24110340"
+url: "https://github.com/QingGo/repository-knowledge-audit"
+license: "Apache-2.0"
