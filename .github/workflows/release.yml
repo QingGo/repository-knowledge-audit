@@ -1,0 +1,32 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create release (idempotent)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "release $tag already exists; nothing to do"
+            exit 0
+          fi
+          asset=""
+          if [ -f "release/repository-knowledge-audit_20261110_r15.zip" ]; then
+            asset="release/repository-knowledge-audit_20261110_r15.zip"
+          fi
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" \
+            --title "repository-knowledge-audit artifact r15" \
+            --notes $'Claim-level repository-knowledge audit: deterministic linter kblint (Apache-2.0) + 54-task convention-conflict benchmark, frozen analyses, and the maintainer workflow.\n\nArtifact r15 (privacy-scrubbed; raw private-KB prompts and per-repository scans withheld).\nsha256: 514412ba083dc05a97c418a531e1af7ba210d634ba8e6e5c917651f90acf3de3\nPaper: Auditing Repository Knowledge for Coding Agents: Claim-Level Effects, Compositional Interference, and Evidence-Grounded Maintenance (AGENTVERIFY 2027).\nLicense: code Apache-2.0; data and documentation CC BY 4.0 (see LICENSE and LICENSE-DATA).' \
+            $asset
