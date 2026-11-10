@@ -1,0 +1,5 @@
+kblint 0.3.0: 13 findings (confirmed 13, unresolved 0, provenance_gap 0, revalidation_due 0), 31 audit items; out=/REPOS_ROOT/kb-health/analysis/pr_replay/raw/mvanhorn__last30days-skill@restructure/current
+  wrote audit_queue: ../analysis/pr_replay/raw/mvanhorn__last30days-skill@restructure/current/audit_queue.jsonl
+  wrote findings: ../analysis/pr_replay/raw/mvanhorn__last30days-skill@restructure/current/findings.jsonl
+  wrote sarif: ../analysis/pr_replay/raw/mvanhorn__last30days-skill@restructure/current/report.sarif
+  wrote summary: ../analysis/pr_replay/raw/mvanhorn__last30days-skill@restructure/current/summary.md

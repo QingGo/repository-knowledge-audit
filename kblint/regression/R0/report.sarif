@@ -1,0 +1,4598 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.14.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_44b4f7b6ddafa484",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-c4405abaecdcade9",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.14.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_4560cba5ce42230f",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-2387202221b5457b",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.14.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_462f0d73ac9195bc",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-3fea3d254ec1e8d2",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 144
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.14.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_4773c2766e27fc90",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-0d1d14005625d95d",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.12.1': doc declares 2.12.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.12.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_59a2b5f0a1de26d9",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-91a5a24da81c4588",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 118
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.12.1': doc declares 2.12.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.12.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_5eec60d97c284c09",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-313f510fd8a107b3",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.12.1': doc declares 2.12.1+cu130; pool contains 2.12.1×253, 2.14.1×269. observed: doc declares 2.12.1+cu130; matching artifacts record 2.12.1×253, 2.14.1×269 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_96c2d502a2932ea7",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-cd92aaf5bc02e123",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 68
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1×. observed: claim number 1× (Run) has no matching artifact value (displaying '1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_076991b5361b7c38",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a4a1824c120d98ce",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 230
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4.93ms. observed: claim number 4.93ms (production moe dw segment) has no matching artifact value (displaying '4.93') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_1306b50677b5a704",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-810bdf7cdeaa5944",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.3×. observed: claim number 2.3× (GPT-2 124M (dense)) has no matching artifact value (displaying '2.3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_163865b8db3f62a6",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-1453a9bc458e9452",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 72
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1.7×. observed: claim number 1.7× (fwd) has no matching artifact value (displaying '1.70') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_171bc6f8e5b2d381",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-52c37fb092475ebb",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 113.2×. observed: claim number 113.2× (d12 vs V4.1-Flash) has no matching artifact value (displaying '113.2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_1bc123f57b7a856d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f47ded4268278383",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (d12 vs V4.1-Flash) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_1c6f3ba9fb6363e1",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-ee4ab850dba83703",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (assumptions nanochat uses h100-hr) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_1c8a0fd26971c1ce",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8d25778601662732",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4.33×. observed: claim number 4.33× (nanochat d24 (Run 1, 2026-01-29)) has no matching artifact value (displaying '4.33') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_1e036b6cbc92e656",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-e64a12ce52b521fd",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 117
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 0.54ms vs gain_native_vs_cat_ms = -0.0666667. observed: claim states 0.54ms (cat ms native i.e); runs/r57_native_param_fusion_5090.json :: gain_native_vs_cat_ms = -0.0666667 expected: the cited artifact field must agree within display precision (half last place 0.005) or relative tolerance 0.0005 (observed relative difference 1.12e+00)"
+          },
+          "properties": {
+            "claim_id": "c_1ee5572ee79668ef",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-8afa842634805b76",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 30
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 6.5×. observed: claim number 6.5× (Key numbers) has no matching artifact value (displaying '6.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_26dfc592d4f5e482",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-49fbd0fbede64554",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2854.1×. observed: claim number 2854.1× (d12 vs V4.1-Flash) has no matching artifact value (displaying '2854.1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_2773306ef0a8af2f",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-6b466911a29cfdc0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 315
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 0.1ms. observed: claim number 0.1ms (Verdict) has no matching artifact value (displaying '0.1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_2b6d549e887d0f91",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-51ea37b97818d4f3",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4.8s. observed: claim number 4.8s (Wall time) has no matching artifact value (displaying '4.8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_2bc380b7543ad40c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d48add177d73ab26",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 193
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4×. observed: claim number 4× (Config (b=16, seq=1024)) has no matching artifact value (displaying '4') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_2f163aafbe9f5d5a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-00ff5d0fa3b78d34",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 311
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 15variants. observed: claim number 15variants (Direction) has no matching artifact value (displaying '15') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_37df193d2388af29",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-58bdb4dec9edaf36",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3x. observed: claim number 3x (week cpu-side task report) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_399d1ac378d34ce3",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-78333fab8cf3c2cc",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 154
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 35.18% vs mfu_fields.results.bf16_head_b16.discounted_mfu_pct = 38.41. observed: claim states 35.18% (gives ms raw bf16-mfu); runs/r54_precision_mix_5090.json :: mfu_fields.results.bf16_head_b16.discounted_mfu_pct = 38.41 expected: the cited artifact field must agree within display precision (half last place 0.005) or relative tolerance 0.0005 (observed relative difference 8.41e-02)"
+          },
+          "properties": {
+            "claim_id": "c_45103de14306758a",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-4f4ea10bbfe76bb4",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 144
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16×. observed: claim number 16× (measured d12 bf16 b) has no matching artifact value (displaying '16') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4773c2766e27fc90",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d416e454024570d0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 168
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (d12 matches full model) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4a5e2788ac809ad3",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-fc2e8503042bbcf0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 209.5tflop/s. observed: claim number 209.5tflop/s (fixed rtx bf16 peak) has no matching artifact value (displaying '209.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4ae1e048abfa9fb4",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-bc19aa74b723deeb",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 113
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 95.6%. observed: claim number 95.6% (Result) has no matching artifact value (displaying '95.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4ae6bab3d2723906",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a259a14577a3f32e",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16704steps. observed: claim number 16704steps (nanochat d24 (Run 1)) has no matching artifact value (displaying '16704') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4bd34b194baead1a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a257addf0267b23b",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 7s. observed: claim number 7s (Wall time) has no matching artifact value (displaying '7') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4c83ac16c185f7d4",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f7b596b9b42121b9",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4×. observed: claim number 4× (b×s) has no matching artifact value (displaying '4') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_4f1f2c42e7f55d5c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-fbb34cae62e1691e",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3x. observed: claim number 3x (b-token plan feasibility report) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_53ec2ff804a78307",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-6bf9cf3860b202d8",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 95.6%. observed: claim number 95.6% (<private KB text removed>) has no matching artifact value (displaying '95.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_542ee1a86e4cb4d7",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-60c1d904a06f413a",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1×. observed: claim number 1× (Run) has no matching artifact value (displaying '1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_598b40a405a04c52",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-73bc0e4e066d6840",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 24gb. observed: claim number 24gb (host autodl b rtx) has no matching artifact value (displaying '24') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_59a2b5f0a1de26d9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-7e5d97a4f61b40a0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2×. observed: claim number 2× (profiler d12) has no matching artifact value (displaying '2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_5bac84942553f27f",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d5a61be9d944253a",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 47
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4.1s. observed: claim number 4.1s (<private KB text removed>) has no matching artifact value (displaying '4.1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_5e5058ab3e29f3a0",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a3a08972c6e45f07",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 321
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.43×. observed: claim number 2.43× (faster nano expert shapes) has no matching artifact value (displaying '2.43') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_5ec142fb34abc281",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-e99384c48335592e",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 316
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 0.5ms. observed: claim number 0.5ms (Verdict) has no matching artifact value (displaying '0.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_5f9d92b054d6ab03",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-ec7bf0a6a28a2ea0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 74
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3hours. observed: claim number 3hours (gpt-2-level capability core gpt-2) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_60b8e543a61d4867",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-ce1d116815b9a834",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 47
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4days. observed: claim number 4days (GPT-2 124M (dense)) has no matching artifact value (displaying '4') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_612dc2eb6a76cb6b",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-5f936898bdaa7a80",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 65
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (Run) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_64df413abb33f2d1",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-76b0cf9e4563a7b2",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 135
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2×. observed: claim number 2× (mflop token d8 ratio) has no matching artifact value (displaying '2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_675a943a6a6b574a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-1713856f8159d51c",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4.1s. observed: claim number 4.1s (cpu smoke tiny loss) has no matching artifact value (displaying '4.1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_6fd9d28e75ab9f23",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-870988dcb30760e1",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 74
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 397tflops. observed: claim number 397tflops (ce grouped gemm fp8) has no matching artifact value (displaying '397') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_704ca34c28b2e0af",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-836a3e13ff9346b4",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 131
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2×. observed: claim number 2× (sparse csa2 short context) has no matching artifact value (displaying '2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_706a50f496290beb",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8265a2139f7d0b66",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 64
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1×. observed: claim number 1× (Run) has no matching artifact value (displaying '1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_71b0bc454fa5599a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-21fb7e4674455afb",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 48
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 70%. observed: claim number 70% (head ce head flops) has no matching artifact value (displaying '70') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_757c7d8af8554b0d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f6961d3ec3784d6a",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 164
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (check d12 matches v4.1-flash) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_75adc46ebf5124d3",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-7596ce864e14b869",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 54
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.9×. observed: claim number 2.9× (gpu R0 produces) has no matching artifact value (displaying '2.9') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_763097971a10bf8a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-69c85ebd373d8288",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 245
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1ms. observed: claim number 1ms (micro-optimization until gate answered) has no matching artifact value (displaying '1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_77dcb3ca1f4b9c13",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-1ae0d1f6c229ff27",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 46
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (GPT-2 124M (dense)) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_77e916380e250d13",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d47f119f205bc31b",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 2.4% vs round4_stack_and_optimizer.moe_tile_delta_pct = -0.91. observed: claim states 2.4% (attn_dkv_bf16 moe_dws_inline moe_tile another); runs/r69_mfu_5090.json :: round4_stack_and_optimizer.moe_tile_delta_pct = -0.91 expected: the cited artifact field must agree within display precision (half last place 0.05) or relative tolerance 0.0005 (observed relative difference 1.38e+00)"
+          },
+          "properties": {
+            "claim_id": "c_782d4623b989f0e8",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-3654f7a929cd323b",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 67
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (Run) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_7bc5ad8fc387461e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-2bebab29b7f69c4d",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 99
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 227tflops vs full_v41_expert_shapes_graph_replay[0].fp8_tflops = 374. observed: claim states 227tflops (tokens expert fp8 faster); runs/r51_fp4_expert_microbench_5090.json :: full_v41_expert_shapes_graph_replay[0].fp8_tflops = 374 expected: the cited artifact field must agree within display precision (half last place 0.5) or relative tolerance 0.0005 (observed relative difference 3.93e-01)"
+          },
+          "properties": {
+            "claim_id": "c_7df575b3bde8e564",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-53510f288b62116c",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (matches) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_813afbad0620e19e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-b1833682de732de7",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (training stack downscales deepseek-v4.1-flash) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_82ce96d26371354f",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-4d6645f5778bc7c9",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 117s. observed: claim number 117s (Wall time) has no matching artifact value (displaying '117') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_87e94dbe2f37d2e8",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-98f7511ac4e27e1f",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 46
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 209.5tflops. observed: claim number 209.5tflops (denominator bf16 vendor peak) has no matching artifact value (displaying '209.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_88d5dcc798106a99",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-1450e311d81ea0cd",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16×. observed: claim number 16× (tokens step b) has no matching artifact value (displaying '16') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_8a28b89abab99cb7",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-563aa99abb5eddc5",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 6s. observed: claim number 6s (Wall time) has no matching artifact value (displaying '6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_8b28c45f8fca0c91",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d6dc478d6d2fed31",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 71
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8192×. observed: claim number 8192× (kernel head) has no matching artifact value (displaying '8192') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_8eefd7e3890e5f23",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-e06c644baef7fdfd",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16s. observed: claim number 16s (Wall time) has no matching artifact value (displaying '16') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_9215434c0970d264",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-c8aef820228aa62d",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (activated decode parameters d12) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_947f10304ebeaa15",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-34754f951151e300",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 5850.7×. observed: claim number 5850.7× (d12 vs V4.1-Flash) has no matching artifact value (displaying '5850.7') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_9a31e2ced01017c8",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-4c347717f54617d8",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 40gb. observed: claim number 40gb (rtx gpu-h rate a100-) has no matching artifact value (displaying '40') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a2e0566315b395b9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-9836cd73e6a80dfe",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 70
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 646.5tflops. observed: claim number 646.5tflops (sm120 nvfp4 block-scaled gemm) has no matching artifact value (displaying '646.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a37787573c3e74ed",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-9937d4bc41df186d",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 94
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8%. observed: claim number 8% (share of device) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a4290f627f8bcc15",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-c15162bfc6d31eb8",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (inference cli roughly one) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a47adcdaf8fcb2c9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-23446740d06336a2",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 95
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3x. observed: claim number 3x (mix stages feasibility report) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a726d0e3410305ce",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-88d48d5486dd6b41",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 226.5×. observed: claim number 226.5× (d12 vs V4.1-Flash) has no matching artifact value (displaying '226.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_a75957cbd3d5a765",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d06a006f5cb2fc97",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 208
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 4.53% vs torch214_upgrade.head_to_head_with_r69_flags.delta_pct = -1.7. observed: claim states 4.53% (r69 flag effect grows); runs/r69_mfu_5090.json :: torch214_upgrade.head_to_head_with_r69_flags.delta_pct = -1.7 expected: the cited artifact field must agree within display precision (half last place 0.005) or relative tolerance 0.0005 (observed relative difference 1.38e+00)"
+          },
+          "properties": {
+            "claim_id": "c_a95f4ba536e0682a",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-537dacb890d33190",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 70%. observed: claim number 70% (note vocab head) has no matching artifact value (displaying '70') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_aa95d376b0d95594",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a5d0b99f2bbb3973",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 230
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 358.8tflops vs results.dw13_tiles.128x128x64.triton_fp8_tflops = 358.093. observed: claim states 358.8tflops (variant best dw13 tile); runs/r59_grouped_fp8_proto_5090.json :: results.dw13_tiles.128x128x64.triton_fp8_tflops = 358.093 expected: the cited artifact field must agree within display precision (half last place 0.05) or relative tolerance 0.0005 (observed relative difference 1.97e-03)"
+          },
+          "properties": {
+            "claim_id": "c_ab09f1054c26583d",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-7913ebf9cab76bb8",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 95.6%. observed: claim number 95.6% (Result) has no matching artifact value (displaying '95.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_ac213e2f7164332d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-803157994592e2b9",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 137
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 28.5ms vs profile_bf16_head_ms.total = 38.999. observed: claim states 28.5ms (v3 bf16 profile gemms); runs/r60_head_isolation_5090.json :: profile_bf16_head_ms.total = 38.999 expected: the cited artifact field must agree within display precision (half last place 0.05) or relative tolerance 0.0005 (observed relative difference 2.69e-01)"
+          },
+          "properties": {
+            "claim_id": "c_add35cfab7d92f12",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-10bc256a42591e94",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16×. observed: claim number 16× (Value) has no matching artifact value (displaying '16') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_b0ce7d79ad6077ab",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-aec4e6414c2a58b0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1mb. observed: claim number 1mb (Shakespeare demo) has no matching artifact value (displaying '1') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_b5b32d432ed5a7ae",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8f12b94902da43ce",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1.8×. observed: claim number 1.8× (per-token compute) has no matching artifact value (displaying '1.8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_b8f6f75d4c81b8bd",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-dc9ef7af91d46726",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 48
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (nanochat d24 (Run 1)) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_b931c65c590990fb",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-61bcaefd73162099",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3×. observed: claim number 3× (R0 d12) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_baa9d5a15420cd4a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-85f6610e0299b2a6",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 50
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3.2s. observed: claim number 3.2s (<private KB text removed>) has no matching artifact value (displaying '3.2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_be4f0c588c3bb5a3",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-790b4d3a59c0e2b3",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 95.6%. observed: claim number 95.6% (t2 t3 backward loss) has no matching artifact value (displaying '95.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_be5c9595c4f971d9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-18376cf0f0d776c4",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/architecture.md"
+                },
+                "region": {
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 129280tokens. observed: claim number 129280tokens (vocabulary) has no matching artifact value (displaying '129280') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_bff4266460ba9e33",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-77afe4152852f187",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 262
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 1.7×. observed: claim number 1.7× (fp8 dw prototype r59) has no matching artifact value (displaying '1.70') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_c0e45fb548dc8c7a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-eb0f8692edf8f1e6",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 209.5tf. observed: claim number 209.5tf (raw bf16-mfu tflop s) has no matching artifact value (displaying '209.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_c221c2d732984cf3",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d5e356e7fa8d8638",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 53
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 0.25×. observed: claim number 0.25× (Per-token at decode) has no matching artifact value (displaying '0.25') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_c759f9ea56f56866",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d6c59d39d01160a1",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16×. observed: claim number 16× (efficiency rtx d12 b) has no matching artifact value (displaying '16') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_c76b21619b267195",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-41e706d5b81adaf8",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.9×. observed: claim number 2.9× (R0 s training tokens) has no matching artifact value (displaying '2.9') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_cd87c7635d2fb5b9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-21066e322b591074",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 115
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 100steps. observed: claim number 100steps (Check) has no matching artifact value (displaying '100') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_d239a3f0e8ec734a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-c8ee20048fcbd8a0",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 81
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.9×. observed: claim number 2.9× (m context cost token) has no matching artifact value (displaying '2.9') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_d5b133b9443288e1",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-68aeed9cb4488957",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 17
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 120.5×. observed: claim number 120.5× (d12 vs V4.1-Flash) has no matching artifact value (displaying '120.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_d63834d77cfb17d9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-51e65083ee7e800d",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 120.5×. observed: claim number 120.5× (ratio b m) has no matching artifact value (displaying '120.5') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_d91f81da65420eef",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-eae81f9338438bc7",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3×. observed: claim number 3× (flops token mflop) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_dfeb154596eb9e87",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-bcd7f86e3d5677ad",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 259
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.2×. observed: claim number 2.2× (Re-validated result (2026-10-28)) has no matching artifact value (displaying '2.2') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e0a26ea9983e9f28",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-5d54fc09da308562",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 64×. observed: claim number 64× (Shakespeare demo) has no matching artifact value (displaying '64') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e12c70b045dbe0f5",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-aaed2df7e7f9720a",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2854×. observed: claim number 2854× (backbone parameters b m) has no matching artifact value (displaying '2854') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e18c0e7b25e58580",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-5d1675015743b0df",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 35
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3×. observed: claim number 3× (R0 d12) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e49a04e23888189a",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-5f284519a025e940",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 431
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 24.6ms. observed: claim number 24.6ms (candidate cannot plausibly contribute) has no matching artifact value (displaying '24.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e5ad906cea5956c2",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-bae9c7592d48b8f9",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3x. observed: claim number 3x (benchmarks.md benchmarks.md r69 report) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_e88f1e41e6bcb05e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-0ab9e33c1ed0f102",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 3×. observed: claim number 3× (train flops token) has no matching artifact value (displaying '3') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_ebabfac4123d10c1",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-033dffdef8156293",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 95.6%. observed: claim number 95.6% (fp32 on CUDA) has no matching artifact value (displaying '95.6') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_ec9f8f10803da605",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-e41e1ad83ad8a90b",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 50
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 236.93ms vs device_busy_ms = 201.73. observed: claim states 236.93ms (step tok s device-busy); runs/p0_b8.json :: device_busy_ms = 201.73 expected: the cited artifact field must agree within display precision (half last place 0.005) or relative tolerance 0.0005 (observed relative difference 1.49e-01)"
+          },
+          "properties": {
+            "claim_id": "c_eeac0e317f82bc91",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-323932914cfe55a3",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 254
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8192×. observed: claim number 8192× (Item) has no matching artifact value (displaying '8192') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_ef8219172c61e120",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-abaed1753f12cb98",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4×. observed: claim number 4× (b×s) has no matching artifact value (displaying '4') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_f0fe10f219c8c0d4",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-2cc66fe219caa80a",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 2.7×. observed: claim number 2.7× (per-gpu token throughput) has no matching artifact value (displaying '2.7') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_f1179061971dab88",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-43fdd135944e6aa7",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 145
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 4.85ms vs device_breakdown_ms.elementwise_copy_sort_fill = 5.8. observed: claim states 4.85ms (copy sort rms rope); runs/r55_tail_census_5090.json :: device_breakdown_ms.elementwise_copy_sort_fill = 5.8 expected: the cited artifact field must agree within display precision (half last place 0.005) or relative tolerance 0.0005 (observed relative difference 1.64e-01)"
+          },
+          "properties": {
+            "claim_id": "c_fa5b07d5d43fe586",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-26fb229458107293",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 98
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 16704steps. observed: claim number 16704steps (dev leaderboard.md run d24) has no matching artifact value (displaying '16704') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_fb49163390700b6c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-938c57c3b3efe2e1",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 44
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 4days. observed: claim number 4days (GPT-2 124M (dense)) has no matching artifact value (displaying '4') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_fd2200d5cd20a18b",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f59c8786e502905b",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 66
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 8×. observed: claim number 8× (Run) has no matching artifact value (displaying '8') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_fe22aec1337b8e90",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-250a07df10d5b2a8",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] cross-doc conflict on 'R0 d12' (×): 1 vs 4.24. observed: docs/compare-nanochat.md states 4.24×; other doc(s) state different values: docs/compare-nanogpt.md:3, docs/compare-nanogpt.md:4.24, docs/compare-nanogpt.md:1, docs/compare-nanogpt.md:1 expected: the same subject must have one value across docs unless a claim/section is explicitly marked superseded/deprecated"
+          },
+          "properties": {
+            "claim_id": "c_1e036b6cbc92e656",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-0cd66121ba44d095",
+            "verification_method": "normalized (unit, key-context) anchor grouping + relative tolerance"
+          },
+          "ruleId": "R3"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] cross-doc conflict on 'R0 d12' (%): 3 vs 72. observed: docs/compare-nanochat.md states 10.2%; other doc(s) state different values: docs/compare-nanogpt.md:10.2, docs/compare-nanogpt.md:5, docs/compare-nanogpt.md:59.4 expected: the same subject must have one value across docs unless a claim/section is explicitly marked superseded/deprecated"
+          },
+          "properties": {
+            "claim_id": "c_a951915bca6a0da2",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-c43495986e89f653",
+            "verification_method": "normalized (unit, key-context) anchor grouping + relative tolerance"
+          },
+          "ruleId": "R3"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] missing supersedes: newer artifact runs/r48_best_b8.json contradicts runs/r48_best_b16.json (60.92ms vs 35.76ms). observed: claim cites runs/r48_best_b16.json (ms_candidates[1].v = 60.92) and states 60.92ms; newer artifact runs/r48_best_b8.json records 35.76 at step_ms (mtime 2026-10-22T20:49:54+08:00) expected: a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)"
+          },
+          "properties": {
+            "claim_id": "c_0ed57dc3755bb404",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-8f35930beaa6ce7d",
+            "verification_method": "artifact chronology (mtime) + value comparison + marker scan"
+          },
+          "ruleId": "R4"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] missing supersedes: newer artifact runs/r50_nopad.json contradicts runs/r50_base.json (60.94ms vs 60.44ms). observed: claim cites runs/r50_base.json (ms_candidates[1].v = 60.94) and states 60.94ms; newer artifact runs/r50_nopad.json records 60.44 at step_ms (mtime 2026-10-22T21:43:46+08:00) expected: a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)"
+          },
+          "properties": {
+            "claim_id": "c_b29406b3a10409c7",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-595cc635d2fbd0fb",
+            "verification_method": "artifact chronology (mtime) + value comparison + marker scan"
+          },
+          "ruleId": "R4"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] missing supersedes: newer artifact runs/r50_best_b8.json contradicts runs/r50_best_b16.json (60.43ms vs 34.87ms). observed: claim cites runs/r50_best_b16.json (ms_candidates[1].v = 60.43) and states 60.43ms; newer artifact runs/r50_best_b8.json records 34.87 at step_ms (mtime 2026-10-22T21:48:04+08:00) expected: a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)"
+          },
+          "properties": {
+            "claim_id": "c_dfa6cf2c1dd1c5c9",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-ba258f9759c5ebe3",
+            "verification_method": "artifact chronology (mtime) + value comparison + marker scan"
+          },
+          "ruleId": "R4"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 312
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_0253b5c6ee63ae95",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8fcb075495fe1d24",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 192
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_06c85a44fc2f4075",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-05fde17354c40245",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 187
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches flag_regex:NANOV41_[A-Z_]+ but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_0b36f2483d416468",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-3f15c11130a7a28c",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 168
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_163e96b51c303327",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-20e6a713b50128fb",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 319
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_1e07440e7d7d422e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-22328f4daf57a18a",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/README.md"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_27cfe17b2ea656b8",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-5e4d2e7633c9153b",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_29f1d30366a3ea7c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-89d424901ae4b370",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 315
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_2b6d549e887d0f91",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-17c9c04e48b6f0cc",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 364
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_2fcf8fbed6345abb",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-671c06996e16e7a4",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 55
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_33b9d3676019cd9f",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-cdbccbbd3a689e0f",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 287
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_34eb551c64ceada9",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-df0f9eb5f87e8f55",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 311
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_37df193d2388af29",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f23499db8b80fa2d",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 82
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_3e049cdbd4696535",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-d346bd99906948fb",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 218
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_4494b5ae729c7a8e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-99831771941e37d9",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 222
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_49eeaa481a83a68b",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-581d3c1ebd8694be",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_4bc07ec38974fdc0",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-12b3902fc28f7faa",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_4f1f2c42e7f55d5c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-331eb7ab268ccd45",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 38
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_4f637c28132d2d80",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-fe5c5c3bb78b73cb",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 284
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_5778f8501dd4d28e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-59daaa231c1f0055",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 439
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_5d35cf63ac46df3b",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-0574527c3893277d",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_64487afcc69593af",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-fc01f03e37ae0f66",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 22
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_64b532ac4a83784c",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-9c60a9e6daee76f5",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 74
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_704ca34c28b2e0af",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-6f1a032c170c4d47",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_7087cd7f727534bc",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8269338ffcb4d065",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 48
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_757c7d8af8554b0d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-520bbc5991535a02",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches flag_regex:MHC_V4 but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_782d4623b989f0e8",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-6fb863531f759009",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_7a6e24cbf073a17d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8e78a6e13e3aca6d",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 285
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_90fddea4ca1ea7d5",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-4ae3d1ead4ecf1d6",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 38
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_97f75bf49fcac25f",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-40a6d0c37cc46cd3",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 198
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_9d5f66962fffc0f1",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-216d6ec9a3b1efdd",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_a9b20d1ad33f4473",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8319c8642a30daf5",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 413
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_add640eca63ea3a2",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-84d1638dabcef950",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_bcf7c2514b199292",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-add8e0a2fcf6497b",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_bf52f8c4a27b79fa",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-31b1e15a5995f1dc",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 43
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_ca59440e2936bdab",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-f89d90badd80862f",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 215
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_d103d457d9e4ab07",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-8337de78cab6b206",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 220
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_d55138b28d8168ba",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-bf7305ba44ed5d4e",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 314
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_d65ece87f6a9adca",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-cb69b7971c6f8f1c",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 173
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_d6d73544c1793ab5",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-18d2e2fca07aefe6",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 307
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_d7c9d3f6f613d8b5",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-ddfbbfb0ea88dc97",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 172
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_da301d6075ec8997",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-bf6abe2074dbc83f",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_dcc2b3a586d798ce",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a015e9b8d1baa3e1",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 313
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_dccbc60c9c428a3e",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-49e257ef7a4d78d6",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 155
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_ea0f1b106151690d",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-295e7190327dd820",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] undated negative/flag claim (expiry unknown). observed: claim matches negative_marker but has no ISO date/expiry marker expected: negative results and flags should carry a date or explicit expiry"
+          },
+          "properties": {
+            "claim_id": "c_f0fe10f219c8c0d4",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-042add6b6b685567",
+            "verification_method": "date/expiry marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'discounted wall'. observed: runs/README.md discusses 'discounted wall' without referencing the canonical docs/benchmarks.md expected: claims about 'discounted wall' should declare the canonical source (docs/benchmarks.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_7a6e24cbf073a17d",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-fecd609ec749ed52",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'discounted wall'. observed: docs/optimization-playbook.md discusses 'discounted wall' without referencing the canonical docs/benchmarks.md expected: claims about 'discounted wall' should declare the canonical source (docs/benchmarks.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_acfed3309451aafd",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-090b067a82ac9cc4",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 331
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'acceptance target'. observed: docs/optimization-playbook.md discusses 'acceptance target' without referencing the canonical docs/benchmarks.md #L74 expected: claims about 'acceptance target' should declare the canonical source (docs/benchmarks.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_c31a8b304823d511",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-140fd5b2e52211da",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'discounted wall'. observed: README.md discusses 'discounted wall' without referencing the canonical docs/benchmarks.md expected: claims about 'discounted wall' should declare the canonical source (docs/benchmarks.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_d7433224df65848a",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-a590098adaa4473e",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/v41-scaling-check.md"
+                },
+                "region": {
+                  "startLine": 112
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'discounted wall'. observed: docs/v41-scaling-check.md discusses 'discounted wall' without referencing the canonical docs/benchmarks.md expected: claims about 'discounted wall' should declare the canonical source (docs/benchmarks.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_faf715ca1d6f85bf",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-bebfdd87407f5c0c",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/optimization-playbook.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[provenance_gap] knowledge doc not tracked in git: docs/optimization-playbook.md. observed: docs/optimization-playbook.md matches the configured docs globs but is absent from `git ls-files` expected: knowledge docs should be version-controlled so claims have provenance"
+          },
+          "properties": {
+            "claim_id": "c_19eb0526b9a52b0e",
+            "confidence": "high",
+            "disposition": "provenance_gap",
+            "finding_id": "F-a18ebf461284de0a",
+            "verification_method": "git ls-files / git status"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanogpt.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[provenance_gap] knowledge doc not tracked in git: docs/compare-nanogpt.md. observed: docs/compare-nanogpt.md matches the configured docs globs but is absent from `git ls-files` expected: knowledge docs should be version-controlled so claims have provenance"
+          },
+          "properties": {
+            "claim_id": "c_1f75739e7a780177",
+            "confidence": "high",
+            "disposition": "provenance_gap",
+            "finding_id": "F-1a41620a7946231a",
+            "verification_method": "git ls-files / git status"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W2-4090-baseline.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[provenance_gap] knowledge doc not tracked in git: docs/internal/W2-4090-baseline.md. observed: docs/internal/W2-4090-baseline.md matches the configured docs globs but is absent from `git ls-files` expected: knowledge docs should be version-controlled so claims have provenance"
+          },
+          "properties": {
+            "claim_id": "c_2fa4307166f56980",
+            "confidence": "high",
+            "disposition": "provenance_gap",
+            "finding_id": "F-7a31188fa8fb4f5e",
+            "verification_method": "git ls-files / git status"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/README.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] uncommitted change to tracked knowledge doc: docs/README.md. observed: git status --porcelain reports ' M' for docs/README.md; the working-tree version differs from HEAD expected: knowledge edits that change contracts should be committed (or explicitly scoped) so readers see a stable claim/provenance boundary"
+          },
+          "properties": {
+            "claim_id": "c_390a57ee81898f73",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-2a020710cc626056",
+            "verification_method": "git status working-tree vs HEAD comparison (doc level)"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] uncommitted change to tracked knowledge doc: README.md. observed: git status --porcelain reports ' M' for README.md; the working-tree version differs from HEAD expected: knowledge edits that change contracts should be committed (or explicitly scoped) so readers see a stable claim/provenance boundary"
+          },
+          "properties": {
+            "claim_id": "c_3d96e822228c25f0",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-d8b5c33aec90f320",
+            "verification_method": "git status working-tree vs HEAD comparison (doc level)"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "runs/README.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] uncommitted change to tracked knowledge doc: runs/README.md. observed: git status --porcelain reports ' M' for runs/README.md; the working-tree version differs from HEAD expected: knowledge edits that change contracts should be committed (or explicitly scoped) so readers see a stable claim/provenance boundary"
+          },
+          "properties": {
+            "claim_id": "c_5a2bd1a8a86e88b3",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-7bf0894948a316d2",
+            "verification_method": "git status working-tree vs HEAD comparison (doc level)"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/benchmarks.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] uncommitted change to tracked knowledge doc: docs/benchmarks.md. observed: git status --porcelain reports ' M' for docs/benchmarks.md; the working-tree version differs from HEAD expected: knowledge edits that change contracts should be committed (or explicitly scoped) so readers see a stable claim/provenance boundary"
+          },
+          "properties": {
+            "claim_id": "c_6fe165fd97b6c5c5",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-ff5d0b645df9dafd",
+            "verification_method": "git status working-tree vs HEAD comparison (doc level)"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/compare-nanochat.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[provenance_gap] knowledge doc not tracked in git: docs/compare-nanochat.md. observed: docs/compare-nanochat.md matches the configured docs globs but is absent from `git ls-files` expected: knowledge docs should be version-controlled so claims have provenance"
+          },
+          "properties": {
+            "claim_id": "c_a7450c3d05255dc6",
+            "confidence": "high",
+            "disposition": "provenance_gap",
+            "finding_id": "F-c33894d233963d82",
+            "verification_method": "git ls-files / git status"
+          },
+          "ruleId": "R7"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/internal/W1-REPORT.md"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[provenance_gap] knowledge doc not tracked in git: docs/internal/W1-REPORT.md. observed: docs/internal/W1-REPORT.md matches the configured docs globs but is absent from `git ls-files` expected: knowledge docs should be version-controlled so claims have provenance"
+          },
+          "properties": {
+            "claim_id": "c_bbc197d94e88340f",
+            "confidence": "high",
+            "disposition": "provenance_gap",
+            "finding_id": "F-b947c025d35c18c9",
+            "verification_method": "git ls-files / git status"
+          },
+          "ruleId": "R7"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "kblint",
+          "rules": [
+            {
+              "id": "R1",
+              "name": "pin/version consistency",
+              "shortDescription": {
+                "text": "doc-declared env pin vs configured artifact field"
+              }
+            },
+            {
+              "id": "R2",
+              "name": "number provenance",
+              "shortDescription": {
+                "text": "claim number resolved against the artifact index"
+              }
+            },
+            {
+              "id": "R3",
+              "name": "cross-doc conflict",
+              "shortDescription": {
+                "text": "same subject, conflicting values across docs"
+              }
+            },
+            {
+              "id": "R4",
+              "name": "missing supersedes/deprecation",
+              "shortDescription": {
+                "text": "newer artifact contradicts an unmarked claim"
+              }
+            },
+            {
+              "id": "R5",
+              "name": "negative-result/flag expiry",
+              "shortDescription": {
+                "text": "stale or undated negative results and flags"
+              }
+            },
+            {
+              "id": "R6",
+              "name": "source-of-truth declaration",
+              "shortDescription": {
+                "text": "topic claim without a canonical declaration"
+              }
+            },
+            {
+              "id": "R7",
+              "name": "untracked/no-owner knowledge file",
+              "shortDescription": {
+                "text": "git tracking and owner metadata"
+              }
+            },
+            {
+              "id": "R8",
+              "name": "audit queue",
+              "shortDescription": {
+                "text": "claims that are not deterministically checkable (not defects)"
+              }
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

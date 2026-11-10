@@ -1,0 +1,100 @@
+{
+ "event_id": "addyosmani__agent-skills@8bfcc1f991",
+ "repo": "addyosmani/agent-skills",
+ "base": "afcafdf58f48862b85021a5cd8cf3cd560dceb93",
+ "head": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+ "date": "",
+ "message": "",
+ "kind": "code_path_change",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".agents/plugins/marketplace.json",
+   "previous": ".agents/plugins/marketplace.json",
+   "status": "modified"
+  },
+  {
+   "filename": ".claude-plugin/marketplace.json",
+   "previous": ".claude-plugin/marketplace.json",
+   "status": "modified"
+  },
+  {
+   "filename": ".claude-plugin/plugin.json",
+   "previous": ".claude-plugin/plugin.json",
+   "status": "modified"
+  },
+  {
+   "filename": ".codex-plugin/plugin.json",
+   "previous": ".codex-plugin/plugin.json",
+   "status": "modified"
+  },
+  {
+   "filename": "plugin.json",
+   "previous": "plugin.json",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/addyosmani__agent-skills.kblint.json",
+ "docs": [
+  "AGENTS.md",
+  "CLAUDE.md",
+  "docs/AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 2,
+   "claims": 79,
+   "findings": 0,
+   "queue": 26
+  },
+  "runtime_s": 0.073,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 2,
+   "claims": 79,
+   "findings": 0,
+   "queue": 26
+  },
+  "runtime_s": 0.065,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 0,
+   "after": 0,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 0,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.052,
+  "new": [],
+  "persisting": [],
+  "fixed": []
+ },
+ "total_runtime_s": 0.19
+}

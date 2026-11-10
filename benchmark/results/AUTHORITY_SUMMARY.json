@@ -1,0 +1,460 @@
+{
+ "n_tasks": 54,
+ "valid_tasks": [
+  "A1_inf_zeros_f32",
+  "A2_1e4_zeros_f32",
+  "A3_inf_uniform_f32",
+  "A4_inf_zeros_f64",
+  "A5_1e4_uniform_f32",
+  "A6_1e4_zeros_f64",
+  "A7_inf_nan_f32",
+  "A8_1e4_nan_f32",
+  "G1_next_valid_zero",
+  "G2_prev_valid_zero",
+  "G3_next_BS_zero",
+  "G4_next_valid_keep",
+  "G5_prev_BS_zero",
+  "K1_high_desc_np",
+  "K2_low_desc_np",
+  "K4_high_desc_list",
+  "K5_low_asc_np",
+  "K6_low_desc_list",
+  "K7_high_asc_list",
+  "K8_low_asc_list",
+  "M1_valid_zeros_f32",
+  "M2_S_zeros_f32",
+  "M3_valid_nan_f32",
+  "M4_valid_zeros_f64",
+  "M5_S_nan_f32",
+  "M6_S_zeros_f64",
+  "M7_BS_zeros_f32",
+  "M8_valid_nan_f64",
+  "Q1_tensor_448_rne",
+  "Q2_channel_448_rne",
+  "Q3_tensor_127_rne",
+  "Q4_tensor_448_trunc",
+  "Q5_channel_127_rne",
+  "Q6_channel_448_trunc",
+  "Q7_tensor_127_trunc",
+  "Q8_channel_127_trunc",
+  "S1_next_valid_f32",
+  "S2_prev_valid_f32",
+  "S4_next_valid_f64",
+  "S6_prev_valid_f64",
+  "Z1_zeros_f32",
+  "Z2_nan_f32",
+  "Z3_uniform_f32",
+  "Z4_zeros_f64",
+  "Z5_uniform_f64",
+  "Z6_nan_f64"
+ ],
+ "conditions": {
+  "c0": {
+   "n": 54,
+   "all_rate": 0.157,
+   "valid_rate": 0.185
+  },
+  "c1": {
+   "n": 54,
+   "all_rate": 0.806,
+   "valid_rate": 0.946
+  },
+  "c1v": {
+   "n": 54,
+   "all_rate": 0.88,
+   "valid_rate": 0.967
+  },
+  "c1f": {
+   "n": 54,
+   "all_rate": 0.852,
+   "valid_rate": 0.935
+  },
+  "c2": {
+   "n": 54,
+   "all_rate": 0.046,
+   "valid_rate": 0.054
+  },
+  "c2v": {
+   "n": 54,
+   "all_rate": 0.315,
+   "valid_rate": 0.37
+  },
+  "c2f": {
+   "n": 54,
+   "all_rate": 0.454,
+   "valid_rate": 0.533
+  },
+  "c2a": {
+   "n": 54,
+   "all_rate": 0.87,
+   "valid_rate": 0.989
+  },
+  "c2ar": {
+   "n": 54,
+   "all_rate": 0.731,
+   "valid_rate": 0.837
+  },
+  "c2an": {
+   "n": 54,
+   "all_rate": 0.806,
+   "valid_rate": 0.924
+  }
+ },
+ "effects": {
+  "itt": {
+   "c1v - c1 (correct+1test vs correct)": {
+    "mean": 0.074,
+    "ci95": [
+     0.009,
+     0.148
+    ],
+    "improved": 7,
+    "worsened": 2,
+    "tied": 45,
+    "n": 54
+   },
+   "c1f - c1 (correct+full vs correct)": {
+    "mean": 0.046,
+    "ci95": [
+     -0.037,
+     0.13
+    ],
+    "improved": 6,
+    "worsened": 3,
+    "tied": 45,
+    "n": 54
+   },
+   "c1f - c2f (correct vs stale, both + full)": {
+    "mean": 0.398,
+    "ci95": [
+     0.269,
+     0.528
+    ],
+    "improved": 23,
+    "worsened": 0,
+    "tied": 31,
+    "n": 54
+   },
+   "c1v - c2v (correct vs stale, both + 1 test)": {
+    "mean": 0.565,
+    "ci95": [
+     0.435,
+     0.685
+    ],
+    "improved": 32,
+    "worsened": 0,
+    "tied": 22,
+    "n": 54
+   },
+   "c2f - c2 (full suite helps a stale note)": {
+    "mean": 0.407,
+    "ci95": [
+     0.287,
+     0.537
+    ],
+    "improved": 25,
+    "worsened": 0,
+    "tied": 29,
+    "n": 54
+   },
+   "c2a - c2 (appended correction vs stale)": {
+    "mean": 0.824,
+    "ci95": [
+     0.722,
+     0.917
+    ],
+    "improved": 46,
+    "worsened": 0,
+    "tied": 8,
+    "n": 54
+   },
+   "c2ar - c2 (prepended correction vs stale)": {
+    "mean": 0.685,
+    "ci95": [
+     0.574,
+     0.796
+    ],
+    "improved": 41,
+    "worsened": 0,
+    "tied": 13,
+    "n": 54
+   },
+   "c2ar - c2a (order: prepended - appended)": {
+    "mean": -0.139,
+    "ci95": [
+     -0.241,
+     -0.046
+    ],
+    "improved": 2,
+    "worsened": 10,
+    "tied": 42,
+    "n": 54
+   },
+   "c2a - c1 (appended correction vs correct-only)": {
+    "mean": 0.065,
+    "ci95": [
+     0.009,
+     0.121
+    ],
+    "improved": 7,
+    "worsened": 1,
+    "tied": 46,
+    "n": 54
+   },
+   "c2ar - c1 (prepended correction vs correct-only)": {
+    "mean": -0.074,
+    "ci95": [
+     -0.148,
+     0.0
+    ],
+    "improved": 3,
+    "worsened": 9,
+    "tied": 42,
+    "n": 54
+   },
+   "c2an - c2a (correction after neutral distractor vs adjacent)": {
+    "mean": -0.065,
+    "ci95": [
+     -0.12,
+     -0.019
+    ],
+    "improved": 1,
+    "worsened": 8,
+    "tied": 45,
+    "n": 54
+   },
+   "c2an - c2 (correction after distractor vs stale)": {
+    "mean": 0.759,
+    "ci95": [
+     0.657,
+     0.852
+    ],
+    "improved": 46,
+    "worsened": 0,
+    "tied": 8,
+    "n": 54
+   },
+   "c1f - c0f (correct+full vs noKB+full)": {
+    "mean": 0.259,
+    "ci95": [
+     0.148,
+     0.389
+    ],
+    "improved": 14,
+    "worsened": 0,
+    "tied": 40,
+    "n": 54
+   },
+   "c1v - c0v (correct+1test vs noKB+1test)": {
+    "mean": 0.306,
+    "ci95": [
+     0.185,
+     0.426
+    ],
+    "improved": 17,
+    "worsened": 0,
+    "tied": 37,
+    "n": 54
+   }
+  },
+  "valid": {
+   "c1v - c1 (correct+1test vs correct)": {
+    "mean": 0.022,
+    "ci95": [
+     -0.033,
+     0.076
+    ],
+    "improved": 4,
+    "worsened": 2,
+    "tied": 40,
+    "n": 46
+   },
+   "c1f - c1 (correct+full vs correct)": {
+    "mean": -0.011,
+    "ci95": [
+     -0.076,
+     0.054
+    ],
+    "improved": 3,
+    "worsened": 3,
+    "tied": 40,
+    "n": 46
+   },
+   "c1f - c2f (correct vs stale, both + full)": {
+    "mean": 0.402,
+    "ci95": [
+     0.272,
+     0.533
+    ],
+    "improved": 20,
+    "worsened": 0,
+    "tied": 26,
+    "n": 46
+   },
+   "c1v - c2v (correct vs stale, both + 1 test)": {
+    "mean": 0.598,
+    "ci95": [
+     0.457,
+     0.728
+    ],
+    "improved": 29,
+    "worsened": 0,
+    "tied": 17,
+    "n": 46
+   },
+   "c2f - c2 (full suite helps a stale note)": {
+    "mean": 0.478,
+    "ci95": [
+     0.348,
+     0.609
+    ],
+    "improved": 25,
+    "worsened": 0,
+    "tied": 21,
+    "n": 46
+   },
+   "c2a - c2 (appended correction vs stale)": {
+    "mean": 0.935,
+    "ci95": [
+     0.87,
+     0.989
+    ],
+    "improved": 44,
+    "worsened": 0,
+    "tied": 2,
+    "n": 46
+   },
+   "c2ar - c2 (prepended correction vs stale)": {
+    "mean": 0.783,
+    "ci95": [
+     0.674,
+     0.88
+    ],
+    "improved": 39,
+    "worsened": 0,
+    "tied": 7,
+    "n": 46
+   },
+   "c2ar - c2a (order: prepended - appended)": {
+    "mean": -0.152,
+    "ci95": [
+     -0.261,
+     -0.054
+    ],
+    "improved": 1,
+    "worsened": 9,
+    "tied": 36,
+    "n": 46
+   },
+   "c2a - c1 (appended correction vs correct-only)": {
+    "mean": 0.043,
+    "ci95": [
+     0.0,
+     0.098
+    ],
+    "improved": 5,
+    "worsened": 1,
+    "tied": 40,
+    "n": 46
+   },
+   "c2ar - c1 (prepended correction vs correct-only)": {
+    "mean": -0.109,
+    "ci95": [
+     -0.196,
+     -0.033
+    ],
+    "improved": 1,
+    "worsened": 9,
+    "tied": 36,
+    "n": 46
+   },
+   "c2an - c2a (correction after neutral distractor vs adjacent)": {
+    "mean": -0.065,
+    "ci95": [
+     -0.12,
+     -0.011
+    ],
+    "improved": 1,
+    "worsened": 7,
+    "tied": 38,
+    "n": 46
+   },
+   "c2an - c2 (correction after distractor vs stale)": {
+    "mean": 0.87,
+    "ci95": [
+     0.793,
+     0.935
+    ],
+    "improved": 45,
+    "worsened": 0,
+    "tied": 1,
+    "n": 46
+   },
+   "c1f - c0f (correct+full vs noKB+full)": {
+    "mean": 0.239,
+    "ci95": [
+     0.13,
+     0.37
+    ],
+    "improved": 11,
+    "worsened": 0,
+    "tied": 35,
+    "n": 46
+   },
+   "c1v - c0v (correct+1test vs noKB+1test)": {
+    "mean": 0.293,
+    "ci95": [
+     0.174,
+     0.424
+    ],
+    "improved": 14,
+    "worsened": 0,
+    "tied": 32,
+    "n": 46
+   }
+  }
+ },
+ "tokens": {
+  "c0": {
+   "mean_completion_tokens": 250.9,
+   "n": 108
+  },
+  "c1": {
+   "mean_completion_tokens": 222.3,
+   "n": 108
+  },
+  "c1v": {
+   "mean_completion_tokens": 161.8,
+   "n": 108
+  },
+  "c1f": {
+   "mean_completion_tokens": 156.0,
+   "n": 108
+  },
+  "c2": {
+   "mean_completion_tokens": 252.8,
+   "n": 108
+  },
+  "c2v": {
+   "mean_completion_tokens": 166.0,
+   "n": 108
+  },
+  "c2f": {
+   "mean_completion_tokens": 157.3,
+   "n": 108
+  },
+  "c2a": {
+   "mean_completion_tokens": 219.5,
+   "n": 108
+  },
+  "c2ar": {
+   "mean_completion_tokens": 228.9,
+   "n": 108
+  },
+  "c2an": {
+   "mean_completion_tokens": 223.2,
+   "n": 108
+  }
+ },
+ "spent_cny": 0.6461
+}

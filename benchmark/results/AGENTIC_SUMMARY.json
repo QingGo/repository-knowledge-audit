@@ -1,0 +1,77 @@
+{
+ "n_tasks": 25,
+ "agentic_rates": {
+  "exec-c0": 0.48,
+  "exec-c1": 0.94,
+  "exec-c2": 0.18,
+  "exec-c2full": 0.7
+ },
+ "single_turn_rates_same_tasks": {
+  "c0": 0.274,
+  "c1": 0.893,
+  "c2": 0.107,
+  "c2f": 0.548
+ },
+ "effects": {
+  "useful_gain (exec-c1 - exec-c0)": {
+   "mean": 0.46,
+   "ci95": [
+    0.28,
+    0.64
+   ],
+   "pos": 14,
+   "neg": 0
+  },
+  "stale_harm (exec-c2 - exec-c0)": {
+   "mean": -0.3,
+   "ci95": [
+    -0.5,
+    -0.1
+   ],
+   "pos": 3,
+   "neg": 11
+  },
+  "full_tests_recovery (exec-c2full - exec-c2)": {
+   "mean": 0.52,
+   "ci95": [
+    0.28,
+    0.741
+   ],
+   "pos": 16,
+   "neg": 3
+  },
+  "stale_with_full_tests_vs_none (exec-c2full - exec-c0)": {
+   "mean": 0.22,
+   "ci95": [
+    0.04,
+    0.4
+   ],
+   "pos": 9,
+   "neg": 2
+  },
+  "token_change_useful (exec-c1 - exec-c0)": {
+   "mean": -29.08,
+   "ci95": [
+    -83.543,
+    10.004
+   ],
+   "pos": 12,
+   "neg": 12
+  },
+  "token_change_stale (exec-c2 - exec-c0)": {
+   "mean": 87.08,
+   "ci95": [
+    -1.129,
+    201.981
+   ],
+   "pos": 15,
+   "neg": 10
+  }
+ },
+ "agentic_tokens": {
+  "exec-c0": 230.0,
+  "exec-c1": 201.0,
+  "exec-c2": 317.0,
+  "exec-c2full": 157.0
+ }
+}

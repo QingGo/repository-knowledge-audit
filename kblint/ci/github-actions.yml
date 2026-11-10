@@ -1,0 +1,50 @@
+# kblint CI — deterministic KB/reference audit on every push and pull request.
+# Copy this file to <repo>/.github/workflows/kblint.yml.
+name: kblint
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  kblint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # kblint is stdlib-only; no pip install needed. Set KBLINT_NOW to keep expiry checks
+      # reproducible (or pass --now explicitly, as below).
+      - name: kblint scan (R1-R9; R9 reference check enabled)
+        run: |
+          cd kb-health/kblint
+          python3 -m kblint scan \
+            --repo "$GITHUB_WORKSPACE" \
+            --config examples/references.kblint.json \
+            --out "$RUNNER_TEMP/kblint-out" \
+            --format json,md,sarif \
+            --now 2026-11-05 \
+            --fail-on medium
+        env:
+          KBLINT_NOW: "2026-11-05"
+
+      - name: upload findings + summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kblint-out
+          path: ${{ runner.temp }}/kblint-out
+
+      - name: upload SARIF to code scanning
+        if: always()
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: ${{ runner.temp }}/kblint-out/report.sarif
+          category: kblint

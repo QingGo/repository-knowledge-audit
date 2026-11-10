@@ -1,0 +1,5 @@
+kblint 0.3.0: 1 findings (confirmed 1, unresolved 0, provenance_gap 0, revalidation_due 0), 105 audit items; out=/REPOS_ROOT/kb-health/analysis/pr_replay/raw/modelcontextprotocol__servers@36380287ed/baseline
+  wrote audit_queue: ../analysis/pr_replay/raw/modelcontextprotocol__servers@36380287ed/baseline/audit_queue.jsonl
+  wrote findings: ../analysis/pr_replay/raw/modelcontextprotocol__servers@36380287ed/baseline/findings.jsonl
+  wrote sarif: ../analysis/pr_replay/raw/modelcontextprotocol__servers@36380287ed/baseline/report.sarif
+  wrote summary: ../analysis/pr_replay/raw/modelcontextprotocol__servers@36380287ed/baseline/summary.md

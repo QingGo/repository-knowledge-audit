@@ -1,0 +1,188 @@
+[
+ {
+  "claim_id": "c_f4618be5bf1520de",
+  "confidence": "medium",
+  "disposition": "unresolved",
+  "doc": "docs/pins.md",
+  "evidence": [
+   "docs/pins.md#L3",
+   "artifact pool values: 2.12.1×1, 2.14.1×1"
+  ],
+  "expected": "a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict",
+  "finding_id": "F-9dbd45ac30bccd59",
+  "locator": "docs/pins.md#L3",
+  "observed": "doc declares 2.14.1+cu130; matching artifacts record 2.12.1×1, 2.14.1×1",
+  "rule": "R1",
+  "severity": "low",
+  "subject": "mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×1, 2.14.1×1",
+  "suggested_action": "scope the pin to the round/device environment, or record both environments explicitly",
+  "tags": [
+   "pin",
+   "version",
+   "mixed-environment"
+  ],
+  "verification_method": "artifact pool pin-value distribution"
+ },
+ {
+  "claim_id": "c_02cf7e3019436ab2",
+  "confidence": "high",
+  "disposition": "revalidation_due",
+  "doc": "docs/target.md",
+  "evidence": [
+   "docs/target.md#L3"
+  ],
+  "expected": "a measured number should be reproducible from a configured artifact",
+  "finding_id": "F-1da34e9afb6a9eb2",
+  "locator": "docs/target.md#L3",
+  "observed": "claim number 35.83ms (acceptance target) has no matching artifact value (displaying '35.83')",
+  "rule": "R2",
+  "severity": "low",
+  "subject": "number not located in artifact index: 35.83ms",
+  "suggested_action": "attach an artifact pointer or revalidate the number",
+  "tags": [
+   "number",
+   "revalidation"
+  ],
+  "verification_method": "artifact index search (no display-precision match)"
+ },
+ {
+  "claim_id": "c_50f392ada7d8de9b",
+  "confidence": "high",
+  "disposition": "revalidation_due",
+  "doc": "docs/other_target.md",
+  "evidence": [
+   "docs/other_target.md#L3"
+  ],
+  "expected": "a measured number should be reproducible from a configured artifact",
+  "finding_id": "F-a16466aa2ac0eebe",
+  "locator": "docs/other_target.md#L3",
+  "observed": "claim number 35.83ms (acceptance target) has no matching artifact value (displaying '35.83')",
+  "rule": "R2",
+  "severity": "low",
+  "subject": "number not located in artifact index: 35.83ms",
+  "suggested_action": "attach an artifact pointer or revalidate the number",
+  "tags": [
+   "number",
+   "revalidation"
+  ],
+  "verification_method": "artifact index search (no display-precision match)"
+ },
+ {
+  "claim_id": "c_796d74a879a3f051",
+  "confidence": "high",
+  "disposition": "confirmed",
+  "doc": "docs/numbers.md",
+  "evidence": [
+   "docs/numbers.md#L3",
+   "artifacts/bench.json :: dw13_tile_tflops",
+   "relative difference = 10.4767%"
+  ],
+  "expected": "the cited artifact field must agree within display precision (half last place 0.5) or relative tolerance 0.0005 (observed relative difference 1.05e-01)",
+  "finding_id": "F-e8e916eb44b89df3",
+  "locator": "docs/numbers.md#L3",
+  "observed": "claim states 400tflops (best dw13 tile reaches); artifacts/bench.json :: dw13_tile_tflops = 358.093",
+  "rule": "R2",
+  "severity": "high",
+  "subject": "artifact_mismatch: 400tflops vs dw13_tile_tflops = 358.093",
+  "suggested_action": "fix the doc number or cite the artifact that actually produced it",
+  "tags": [
+   "number",
+   "provenance",
+   "artifact-mismatch"
+  ],
+  "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+ },
+ {
+  "claim_id": "c_f3c2fa6fe03550a7",
+  "confidence": "high",
+  "disposition": "revalidation_due",
+  "doc": "docs/conflict_b.md",
+  "evidence": [
+   "docs/conflict_b.md#L3"
+  ],
+  "expected": "a measured number should be reproducible from a configured artifact",
+  "finding_id": "F-dcc689eaff6deeb9",
+  "locator": "docs/conflict_b.md#L3",
+  "observed": "claim number 61.93ms (r49 configuration best step) has no matching artifact value (displaying '61.93')",
+  "rule": "R2",
+  "severity": "low",
+  "subject": "number not located in artifact index: 61.93ms",
+  "suggested_action": "attach an artifact pointer or revalidate the number",
+  "tags": [
+   "number",
+   "revalidation"
+  ],
+  "verification_method": "artifact index search (no display-precision match)"
+ },
+ {
+  "claim_id": "c_58c721a3ac3b59d7",
+  "confidence": "medium",
+  "disposition": "confirmed",
+  "doc": "docs/conflict_a.md",
+  "evidence": [
+   "docs/conflict_a.md#L3 = 60.94ms",
+   "docs/conflict_b.md#L3 = 61.93ms"
+  ],
+  "expected": "the same subject must have one value across docs unless a claim/section is explicitly marked superseded/deprecated",
+  "finding_id": "F-b5a59194cb387eee",
+  "locator": "docs/conflict_a.md#L3",
+  "observed": "docs/conflict_a.md states 60.94ms; other doc(s) state different values: docs/conflict_b.md:61.93",
+  "rule": "R3",
+  "severity": "medium",
+  "subject": "cross-doc conflict on 'r49 configuration best step' (ms): 60.94 vs 61.93",
+  "suggested_action": "mark the older claim superseded or align the values",
+  "tags": [
+   "conflict",
+   "cross-doc",
+   "ms"
+  ],
+  "verification_method": "normalized (unit, key-context) anchor grouping + relative tolerance"
+ },
+ {
+  "claim_id": "c_11b3f388323268b3",
+  "confidence": "high",
+  "disposition": "confirmed",
+  "doc": "docs/negative.md",
+  "evidence": [
+   "docs/negative.md#L3",
+   "claim date 2026-09-01",
+   "env_change_date 2026-10-01"
+  ],
+  "expected": "negative results and flags must be revalidated after an environment change or carry a date/expiry",
+  "finding_id": "F-b71b56bc6e66e8bc",
+  "locator": "docs/negative.md#L3",
+  "observed": "claim dated 2026-09-01 (negative_marker) is older than environment-change date 2026-10-01",
+  "rule": "R5",
+  "severity": "medium",
+  "subject": "negative/flag claim predates environment change 2026-10-01",
+  "suggested_action": "revalidate under the current environment or mark the claim expired",
+  "tags": [
+   "expiry",
+   "negative-result"
+  ],
+  "verification_method": "config expiry date comparison + negative/flag marker scan"
+ },
+ {
+  "claim_id": "c_50f392ada7d8de9b",
+  "confidence": "medium",
+  "disposition": "unresolved",
+  "doc": "docs/other_target.md",
+  "evidence": [
+   "docs/other_target.md#L3",
+   "configured canonical: docs/target.md #L3"
+  ],
+  "expected": "claims about 'acceptance target' should declare the canonical source (docs/target.md) or link its locator",
+  "finding_id": "F-e544d0822eb61b4c",
+  "locator": "docs/other_target.md#L3",
+  "observed": "docs/other_target.md discusses 'acceptance target' without referencing the canonical docs/target.md #L3",
+  "rule": "R6",
+  "severity": "low",
+  "subject": "missing canonical declaration for topic 'acceptance target'",
+  "suggested_action": "point the claim at the canonical source or declare the canonical doc",
+  "tags": [
+   "source-of-truth",
+   "declaration"
+  ],
+  "verification_method": "configured topic matching + canonical declaration absence"
+ }
+]

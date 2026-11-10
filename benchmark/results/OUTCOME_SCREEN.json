@@ -1,0 +1,108 @@
+{
+ "n_rows": 159,
+ "n_tasks": 28,
+ "rows_by_setting": {
+  "single": 84,
+  "agent": 75
+ },
+ "loo": {
+  "ridge_all_features": {
+   "mae": 0.275,
+   "r2": 0.604,
+   "spearman": 0.76
+  },
+  "naive_gap_sign": {
+   "mae": 0.65,
+   "r2": -1.618,
+   "spearman": 0.192
+  },
+  "naive_gap_x_stale": {
+   "mae": 0.785,
+   "r2": -2.037,
+   "spearman": -0.025
+  }
+ },
+ "harmful_stale_auc": {
+  "ridge": 0.932,
+  "gap_x_stale": 0.063,
+  "n": 53,
+  "positives": 18
+ },
+ "correlations": {
+  "gap_vs_abs_effect": 0.147
+ },
+ "examples": [
+  {
+   "tid": "M1_valid_zeros_f32",
+   "setting": "single",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.54
+  },
+  {
+   "tid": "K2_low_desc_np",
+   "setting": "single",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.61
+  },
+  {
+   "tid": "K2_low_desc_np",
+   "setting": "single",
+   "stale": 1,
+   "verif": 1,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.32
+  },
+  {
+   "tid": "Q1_tensor_448_rne",
+   "setting": "single",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.6
+  },
+  {
+   "tid": "Z3_uniform_f32",
+   "setting": "single",
+   "stale": 1,
+   "verif": 1,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.23
+  },
+  {
+   "tid": "K2_low_desc_np",
+   "setting": "agent",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.61
+  },
+  {
+   "tid": "Q1_tensor_448_rne",
+   "setting": "agent",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.6
+  },
+  {
+   "tid": "A4_inf_zeros_f64",
+   "setting": "agent",
+   "stale": 1,
+   "verif": 0,
+   "gap": 0.0,
+   "effect": -1,
+   "pred": -0.55
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "model": "deepseek-chat",
+ "cells_written": 432,
+ "expected_cells": 432,
+ "cost_cny_total": 0.499352,
+ "cost_cny_per_arm": {
+  "c1": 0.118634,
+  "c1ver": 0.117682,
+  "c2": 0.132034,
+  "c2ver": 0.131002
+ },
+ "cost_cap_cny": 1.5,
+ "cap_respected": true,
+ "prereg_sha256": "e59c6fba22f8cf34aed52dbe494c7a466641a55bd588ac4381d8656e408d57cc",
+ "prereg_mtime": "2026-11-09T01:23:05+0800",
+ "first_row_ts": "2026-11-09T01:25:16+0800",
+ "last_row_ts": "2026-11-09T01:29:12+0800"
+}

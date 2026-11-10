@@ -1,0 +1,450 @@
+[
+ {
+  "tid": "M1_valid_zeros_f32",
+  "family": "masked_mean",
+  "params": {
+   "denom": "valid",
+   "empty": "zeros",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "denom": "S",
+   "empty": "nan",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "M2_S_zeros_f32",
+  "family": "masked_mean",
+  "params": {
+   "denom": "S",
+   "empty": "zeros",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "denom": "valid",
+   "empty": "nan",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "M3_valid_nan_f32",
+  "family": "masked_mean",
+  "params": {
+   "denom": "valid",
+   "empty": "nan",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "denom": "S",
+   "empty": "zeros",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "M4_valid_zeros_f64",
+  "family": "masked_mean",
+  "params": {
+   "denom": "valid",
+   "empty": "zeros",
+   "dtype": "float64"
+  },
+  "stale_params": {
+   "denom": "S",
+   "empty": "nan",
+   "dtype": "float32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "S1_next_valid_f32",
+  "family": "shift_ce",
+  "params": {
+   "shift": "next",
+   "denom": "valid",
+   "accum": "f32"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "S",
+   "accum": "f32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "S2_prev_valid_f32",
+  "family": "shift_ce",
+  "params": {
+   "shift": "prev",
+   "denom": "valid",
+   "accum": "f32"
+  },
+  "stale_params": {
+   "shift": "next",
+   "denom": "S",
+   "accum": "f32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "S3_next_BS_f32",
+  "family": "shift_ce",
+  "params": {
+   "shift": "next",
+   "denom": "BS",
+   "accum": "f32"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "valid",
+   "accum": "f32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "S4_next_valid_f64",
+  "family": "shift_ce",
+  "params": {
+   "shift": "next",
+   "denom": "valid",
+   "accum": "f64"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "S",
+   "accum": "f64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "K1_high_desc_np",
+  "family": "topk",
+  "params": {
+   "tie": "high",
+   "order": "desc",
+   "ret": "np"
+  },
+  "stale_params": {
+   "tie": "low",
+   "order": "asc",
+   "ret": "list"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "K2_low_desc_np",
+  "family": "topk",
+  "params": {
+   "tie": "low",
+   "order": "desc",
+   "ret": "np"
+  },
+  "stale_params": {
+   "tie": "high",
+   "order": "asc",
+   "ret": "list"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "K3_high_asc_np",
+  "family": "topk",
+  "params": {
+   "tie": "high",
+   "order": "asc",
+   "ret": "np"
+  },
+  "stale_params": {
+   "tie": "low",
+   "order": "desc",
+   "ret": "list"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "K4_high_desc_list",
+  "family": "topk",
+  "params": {
+   "tie": "high",
+   "order": "desc",
+   "ret": "list"
+  },
+  "stale_params": {
+   "tie": "low",
+   "order": "asc",
+   "ret": "np"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Q1_tensor_448_rne",
+  "family": "quantize",
+  "params": {
+   "mode": "tensor",
+   "vmax": 448,
+   "rnd": "rne",
+   "zero": "scale1"
+  },
+  "stale_params": {
+   "mode": "channel",
+   "vmax": 127,
+   "rnd": "trunc",
+   "zero": "scale1"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Q2_channel_448_rne",
+  "family": "quantize",
+  "params": {
+   "mode": "channel",
+   "vmax": 448,
+   "rnd": "rne",
+   "zero": "scale1"
+  },
+  "stale_params": {
+   "mode": "tensor",
+   "vmax": 127,
+   "rnd": "trunc",
+   "zero": "nan"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Q3_tensor_127_rne",
+  "family": "quantize",
+  "params": {
+   "mode": "tensor",
+   "vmax": 127,
+   "rnd": "rne",
+   "zero": "scale1"
+  },
+  "stale_params": {
+   "mode": "channel",
+   "vmax": 448,
+   "rnd": "trunc",
+   "zero": "scale1"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Q4_tensor_448_trunc",
+  "family": "quantize",
+  "params": {
+   "mode": "tensor",
+   "vmax": 448,
+   "rnd": "trunc",
+   "zero": "scale1"
+  },
+  "stale_params": {
+   "mode": "channel",
+   "vmax": 127,
+   "rnd": "rne",
+   "zero": "scale1"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "A1_inf_zeros_f32",
+  "family": "masked_softmax",
+  "params": {
+   "fill": "inf",
+   "allmask": "zeros",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "fill": "1e4",
+   "allmask": "nan",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "A2_1e4_zeros_f32",
+  "family": "masked_softmax",
+  "params": {
+   "fill": "1e4",
+   "allmask": "zeros",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "fill": "inf",
+   "allmask": "nan",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "A3_inf_uniform_f32",
+  "family": "masked_softmax",
+  "params": {
+   "fill": "inf",
+   "allmask": "uniform",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "fill": "1e4",
+   "allmask": "zeros",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "A4_inf_zeros_f64",
+  "family": "masked_softmax",
+  "params": {
+   "fill": "inf",
+   "allmask": "zeros",
+   "dtype": "float64"
+  },
+  "stale_params": {
+   "fill": "1e4",
+   "allmask": "nan",
+   "dtype": "float32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "G1_next_valid_zero",
+  "family": "ce_grad",
+  "params": {
+   "shift": "next",
+   "denom": "valid",
+   "ignore": "zero"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "S",
+   "ignore": "keep"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "G2_prev_valid_zero",
+  "family": "ce_grad",
+  "params": {
+   "shift": "prev",
+   "denom": "valid",
+   "ignore": "zero"
+  },
+  "stale_params": {
+   "shift": "next",
+   "denom": "S",
+   "ignore": "keep"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "G3_next_BS_zero",
+  "family": "ce_grad",
+  "params": {
+   "shift": "next",
+   "denom": "BS",
+   "ignore": "zero"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "valid",
+   "ignore": "keep"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "G4_next_valid_keep",
+  "family": "ce_grad",
+  "params": {
+   "shift": "next",
+   "denom": "valid",
+   "ignore": "keep"
+  },
+  "stale_params": {
+   "shift": "prev",
+   "denom": "S",
+   "ignore": "zero"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Z1_zeros_f32",
+  "family": "stable_softmax",
+  "params": {
+   "empty": "zeros",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "empty": "nan",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Z2_nan_f32",
+  "family": "stable_softmax",
+  "params": {
+   "empty": "nan",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "empty": "zeros",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": false
+ },
+ {
+  "tid": "Z3_uniform_f32",
+  "family": "stable_softmax",
+  "params": {
+   "empty": "uniform",
+   "dtype": "float32"
+  },
+  "stale_params": {
+   "empty": "zeros",
+   "dtype": "float64"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ },
+ {
+  "tid": "Z4_zeros_f64",
+  "family": "stable_softmax",
+  "params": {
+   "empty": "zeros",
+   "dtype": "float64"
+  },
+  "stale_params": {
+   "empty": "nan",
+   "dtype": "float32"
+  },
+  "partial_covered": true,
+  "correct_passes_partial": true
+ }
+]

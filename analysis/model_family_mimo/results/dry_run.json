@@ -1,0 +1,32 @@
+{
+ "mode": "dry-run",
+ "frozen": {
+  "prereg_sha256": "2776385b2c86a458515cd855feafd5e267c7d084355a76b3bebd4aa313b0b498",
+  "prereg_mtime": "2026-11-09T20:47:31+0800",
+  "frozen_at": "2026-11-09T20:47:34+0800",
+  "state": "FROZEN_BEFORE_ANY_API_CALL",
+  "model": "mimo-v2.6-flash",
+  "base_url": "https://api.xiaomimimo.com/v1",
+  "design": "54 tasks x {c0,c1,c2} x seed0 = 162 core; optional c0f,c2f = +108 if spend<4",
+  "cost_model_cny_per_m": {
+   "input": 1.0,
+   "output": 2.0
+  },
+  "caps": {
+   "hard_cap_cny": 10.0,
+   "stop_cny": 8.0
+  }
+ },
+ "n_core_prompts": 162,
+ "n_optional_prompts": 108,
+ "n_total_prompts": 270,
+ "expected_core_cells": 162,
+ "expected_optional_cells": 108,
+ "model": "mimo-v2.6-flash",
+ "endpoint": "MIMO_BASE_URL from ~/.mimo.env",
+ "temperature": 0.3,
+ "max_completion_tokens": 2400,
+ "seed": 0,
+ "grading_empty_code_fails": 54,
+ "prompt_errors": []
+}

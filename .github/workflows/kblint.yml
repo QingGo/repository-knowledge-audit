@@ -1,0 +1,27 @@
+name: kblint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        run: python -m pip install pytest
+      - name: kblint unit tests (30)
+        run: PYTHONPATH=kblint python -m pytest -q kblint/tests
+      - name: Audit the bundled sample repository (JSON/Markdown/SARIF)
+        run: |
+          PYTHONPATH=kblint python -m kblint scan --repo examples/sample-repo \
+            --config examples/example-config.yaml --out examples/ci-out \
+            --format json,md,sarif --now 2026-11-05 --fail-on none
+      - name: Deterministic saved-completion grading (no API)
+        run: |
+          python benchmark/grader/grade_one.py --task M1_valid_zeros_f32 \
+            --code benchmark/grader/examples/saved_pass.py

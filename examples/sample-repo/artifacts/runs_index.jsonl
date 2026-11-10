@@ -1,0 +1,2 @@
+{"file": "artifacts/r50_v1.json", "mtime": "2026-09-21T00:00:00Z", "run_id": "r50_v1", "torch": "2.12.1+cu130"}
+{"file": "artifacts/r50_v2.json", "mtime": "2026-11-01T00:00:00Z", "run_id": "r50_v2", "torch": "2.14.1+cu130"}

@@ -1,0 +1,186 @@
+{
+ "note": "second fetch wave: tiny repos + retries with longer per-download timeout; tarball cap 15 MiB",
+ "targets": [
+  {
+   "repo": "mattpocock/skills",
+   "path": "CLAUDE.md",
+   "stars": 318166,
+   "claims": 36,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "abi/screenshot-to-code",
+   "path": "AGENTS.md",
+   "stars": 81097,
+   "claims": 27,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "github/spec-kit",
+   "path": "AGENTS.md",
+   "stars": 148582,
+   "claims": 23,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "manifest_class": "python"
+  },
+  {
+   "repo": "avelino/awesome-go",
+   "path": "AGENTS.md",
+   "stars": 192732,
+   "claims": 23,
+   "manifests": [
+    "go.mod"
+   ],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "ayghri/i-have-adhd",
+   "path": "AGENTS.md",
+   "stars": 60488,
+   "claims": 45,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "ultraworkers/claw-code",
+   "path": "AGENTS.md",
+   "stars": 194947,
+   "claims": 49,
+   "manifests": [],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "rtk-ai/rtk",
+   "path": "CLAUDE.md",
+   "stars": 85881,
+   "claims": 70,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "JuliusBrussee/caveman",
+   "path": "AGENTS.md",
+   "stars": 118265,
+   "claims": 5,
+   "manifests": [
+    "go.mod",
+    "package.json"
+   ],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "path": "AGENTS.md",
+   "stars": 91868,
+   "claims": 62,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "deepseek-ai/deepseek-harness",
+   "path": "AGENTS.md",
+   "stars": 276178,
+   "claims": 86,
+   "manifests": [
+    "Makefile",
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "MemPalace/mempalace",
+   "path": "CLAUDE.md",
+   "stars": 60469,
+   "claims": 43,
+   "manifests": [
+    "Cargo.toml",
+    "pyproject.toml"
+   ],
+   "manifest_class": "python"
+  },
+  {
+   "repo": "debpalash/VoiceStudio",
+   "path": "AGENTS.md",
+   "stars": 104407,
+   "claims": 61,
+   "manifests": [
+    "Makefile",
+    "package.json",
+    "pyproject.toml"
+   ],
+   "manifest_class": "python"
+  },
+  {
+   "repo": "tt-a1i/archify",
+   "path": "AGENTS.md",
+   "stars": 94616,
+   "claims": 14,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "headroomlabs-ai/headroom",
+   "path": "AGENTS.md",
+   "stars": 79128,
+   "claims": 18,
+   "manifests": [
+    "Cargo.toml",
+    "Makefile",
+    "pyproject.toml"
+   ],
+   "manifest_class": "python"
+  },
+  {
+   "repo": "DietrichGebert/ponytail",
+   "path": "AGENTS.md",
+   "stars": 186668,
+   "claims": 28,
+   "manifests": [
+    "package.json"
+   ],
+   "manifest_class": "node"
+  },
+  {
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "path": "CLAUDE.md",
+   "stars": 146745,
+   "claims": 43,
+   "manifests": [],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "shanraisshan/claude-code-best-practice",
+   "path": "CLAUDE.md",
+   "stars": 68806,
+   "claims": 84,
+   "manifests": [],
+   "manifest_class": "other"
+  },
+  {
+   "repo": "hugohe3/ppt-master",
+   "path": "AGENTS.md",
+   "stars": 74773,
+   "claims": 49,
+   "manifests": [
+    "requirements.txt"
+   ],
+   "manifest_class": "python"
+  }
+ ]
+}

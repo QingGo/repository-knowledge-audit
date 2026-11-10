@@ -1,0 +1,193 @@
+{
+ "event_id": "mattpocock__skills@7739eaed7f",
+ "repo": "mattpocock/skills",
+ "base": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+ "head": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+ "date": "",
+ "message": "",
+ "kind": "kb_edit",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".changeset/subagents-fresh-context.md",
+   "previous": ".changeset/subagents-fresh-context.md",
+   "status": "added"
+  },
+  {
+   "filename": "CLAUDE.md",
+   "previous": "CLAUDE.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/code-review/SKILL.md",
+   "previous": "skills/engineering/code-review/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+   "previous": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/implement-spec/SKILL.md",
+   "previous": "skills/engineering/implement-spec/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/improve-codebase-architecture/SKILL.md",
+   "previous": "skills/engineering/improve-codebase-architecture/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/research/SKILL.md",
+   "previous": "skills/engineering/research/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/engineering/wayfinder/SKILL.md",
+   "previous": "skills/engineering/wayfinder/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/in-progress/chief-of-staff/SKILL.md",
+   "previous": "skills/in-progress/chief-of-staff/SKILL.md",
+   "status": "modified"
+  },
+  {
+   "filename": "skills/productivity/grilling/SKILL.md",
+   "previous": "skills/productivity/grilling/SKILL.md",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/mattpocock__skills.kblint.json",
+ "docs": [
+  "CLAUDE.md",
+  "AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 2,
+   "claims": 68,
+   "findings": 2,
+   "queue": 18
+  },
+  "runtime_s": 0.071,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 2,
+   "claims": 72,
+   "findings": 2,
+   "queue": 18
+  },
+  "runtime_s": 0.076,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 2,
+   "after": 2,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 2,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 2,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.068,
+  "new": [],
+  "persisting": [
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: agents/openai.yaml",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L19",
+      "checked: agents/openai.yaml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-2e9e35fef4127d01",
+     "locator": "AGENTS.md#L19",
+     "observed": "AGENTS.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: agents/openai.yaml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "CLAUDE.md",
+     "CLAUDE.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: agents/openai.yaml",
+     "CLAUDE.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "CLAUDE.md",
+     "evidence": [
+      "CLAUDE.md#L19",
+      "checked: agents/openai.yaml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-a1de71b0cd5820cc",
+     "locator": "CLAUDE.md#L19",
+     "observed": "CLAUDE.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: agents/openai.yaml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   }
+  ],
+  "fixed": []
+ },
+ "total_runtime_s": 0.215
+}

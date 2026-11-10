@@ -1,0 +1,143 @@
+{
+ "event_id": "avelino__awesome-go@f74f180683",
+ "repo": "avelino/awesome-go",
+ "base": "b004a842431cb139a5c96c981a588806d6be1460",
+ "head": "f74f1806836e156a6d105740055c27577653e4b0",
+ "date": "",
+ "message": "",
+ "kind": "targeted_drift",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".github/PULL_REQUEST_TEMPLATE.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": ".github/scripts/check-pr-diff/main.go",
+   "previous": null,
+   "status": "added"
+  },
+  {
+   "filename": ".github/scripts/check-quality.js",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": ".github/scripts/check-quality/main.go",
+   "previous": null,
+   "status": "added"
+  },
+  {
+   "filename": ".github/workflows/pr-quality-check.yaml",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": ".github/workflows/recheck-open-prs.yaml",
+   "previous": null,
+   "status": "added"
+  },
+  {
+   "filename": "CONTRIBUTING.md",
+   "previous": null,
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/avelino__awesome-go.kblint.json",
+ "docs": [
+  "AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 1,
+   "claims": 22,
+   "findings": 0,
+   "queue": 11
+  },
+  "runtime_s": 0.059,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 1,
+   "claims": 22,
+   "findings": 1,
+   "queue": 11
+  },
+  "runtime_s": 0.064,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 0,
+   "after": 1,
+   "new": 1,
+   "new_blocking": 1,
+   "new_unknown_non_blocking": 0,
+   "persisting": 0,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 1,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 1,
+  "runtime_s": 0.052,
+  "new": [
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L38: file path `.github/scripts/check-quality.js` not found (checked: .github/scripts/check-quality.js)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: .github/scripts/check-quality.js",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L38",
+      "checked: .github/scripts/check-quality.js"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-385b04abad2a6953",
+     "locator": "AGENTS.md#L38",
+     "observed": "AGENTS.md#L38: file path `.github/scripts/check-quality.js` not found (checked: .github/scripts/check-quality.js)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: .github/scripts/check-quality.js",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": true
+   }
+  ],
+  "persisting": [],
+  "fixed": []
+ },
+ "total_runtime_s": 0.175
+}

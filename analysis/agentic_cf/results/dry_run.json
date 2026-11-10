@@ -1,0 +1,163 @@
+{
+ "model_calls": 0,
+ "cells": [
+  {
+   "case": "R4",
+   "arm": "no_kb",
+   "kb_present": false,
+   "kb_sha256_16": null,
+   "n_files": 5519,
+   "prompt_chars": 1669
+  },
+  {
+   "case": "R4",
+   "arm": "stale_kb",
+   "kb_present": true,
+   "kb_sha256_16": "4b7844261e418055",
+   "n_files": 5521,
+   "prompt_chars": 1669
+  },
+  {
+   "case": "R4",
+   "arm": "corrected_kb",
+   "kb_present": true,
+   "kb_sha256_16": "491e27280a179e5b",
+   "n_files": 5521,
+   "prompt_chars": 1669
+  },
+  {
+   "case": "R5",
+   "arm": "no_kb",
+   "kb_present": false,
+   "kb_sha256_16": null,
+   "n_files": 361,
+   "prompt_chars": 1672
+  },
+  {
+   "case": "R5",
+   "arm": "stale_kb",
+   "kb_present": true,
+   "kb_sha256_16": "422486529722aff2",
+   "n_files": 363,
+   "prompt_chars": 1672
+  },
+  {
+   "case": "R5",
+   "arm": "corrected_kb",
+   "kb_present": true,
+   "kb_sha256_16": "2ed677c864df689d",
+   "n_files": 363,
+   "prompt_chars": 1672
+  },
+  {
+   "case": "R3",
+   "arm": "no_kb",
+   "kb_present": false,
+   "kb_sha256_16": null,
+   "n_files": 305,
+   "prompt_chars": 1875
+  },
+  {
+   "case": "R3",
+   "arm": "stale_kb",
+   "kb_present": true,
+   "kb_sha256_16": "afe3c66012f10e00",
+   "n_files": 307,
+   "prompt_chars": 1875
+  },
+  {
+   "case": "R3",
+   "arm": "corrected_kb",
+   "kb_present": true,
+   "kb_sha256_16": "a1297fc882ea0bce",
+   "n_files": 307,
+   "prompt_chars": 1875
+  }
+ ],
+ "tool_api_check": {
+  "steps": [
+   ".circleci/\n.dockerignore (65B)\n.gemini/\n.gitattributes (160B)\n.github/\n.gitignore (64B)\n.gitmodules (0B)\n.mailmap (162B)\n.prettierignore (33B)\nAGENTS.md (1147B)\nCLAUDE.md (11B)\nCONTRIBUTING.md (9289B)\nDockerfile (3302B)\nLICENSE (11357B)\nREADME.md (12892B)\nSECURITY.md (447B)\nbufferpool/\ncache/\ncheck.sh (1845B)\ncheck_gofmt.sh (51B)\ncodegen/\ncommands/\ncommon/\ncompare/\nconfig/\ncreate/\ndeploy/\ndeps/\ndocs/\ndocshelper/\ngo.mod (9225B)\ngo.sum (87332B)\nhelpers/\nhtesting/\nhugofs/\nhugolib/\nhugoreleaser.env (310B)\nhugoreleaser.yaml (8683B)\nidentity/\ninternal/\nlangs/\nlivereload/\nmagefile.go (8298B)\nmain.go (956B)\nmain_test.go (12624B)\nmain_withdeploy_off_test.go (844B)\nmain_withdeploy_test.go (839B)\nmarkup/\nmedia/\nmerge-release.sh (598B)\nmetrics/\nminifiers/\nmodules/\nnavigation/\noutput/\nparser/\npublisher/\npull-docs.sh (266B)\nrelated/\nreleaser/\nresources/\nscripts/\nsnap/\nsource/\ntestscripts/\ntpl/\ntransform/\nwatcher/\nwatchtestscripts.sh (246B)",
+   "## Theme\n\n### Role\nYou are an expert front-end and Tailwind CSS developer. Your primary goal is to build reliable, readable, and scalable user interfaces using the existing project structure and design system.\n\n### Directives\n*   **ALWAYS** use existing Tailwind utility classes for styling.\n*   **NEVER** write raw CSS in `.css` files unless absolutely necessary for a non-utility-based global reset.\n*   **NEVER** use inline styles (e.g., `<div style=\"...\">`).\n\n### Project Knowledge\n\n*  **Tech Stack:** R4 (static site generator), AlpineJS, Tailwind CSS. Icons from https://heroicons.com/.\n*  **Core Files and Directories:**\n   - `R4.toml`: R4 configuration file.\n   - `assets/css/styles.css`: Main CSS file with Tailwind directives.\n   - `assets/js/main.js`: Main JavaScript with AlpineJS configuration.\n   - `package.json`: Project dependencies and scripts.\n   - `content/`: Directory for markdown content files.\n   - `layouts/`: Directory for R4 templates and partials.\n   - `layouts/_partials/layouts/icons.html`: SVG icon sprites.\n\n\n\n\n",
+   "docs/.prettierignore:1:# Ignore all SVG icons.\ndocs/.prettierignore:2:**/icons.html\ndocs/AGENTS.md:13:*  **Tech Stack:** R4 (static site generator), AlpineJS, Tailwind CSS. Icons from https://heroicons.com/.\ndocs/AGENTS.md:21:   - `layouts/_partials/layouts/icons.html`: SVG icon sprites.\ndocs/layouts/baseof.html:67:    {{/* Common icons. */}}\ndocs/layouts/baseof.html:68:    {{ partial \"layouts/icons.html\" . }}\ndocs/static/manifest.json:4:    \"icons\": [\ndocs/layouts/_partials/layouts/icons.html:44:{{/* https://heroicons.com/mini exclamation-circle */}}\ndocs/layouts/_partials/layouts/icons.html:51:{{/* https://heroicons.com/mini exclamation-triangle */}}\ndocs/layouts/_partials/layouts/icons.html:58:{{/* https://heroicons.com/mini information-circle */}}\ndocs/layouts/_partials/layouts/icons.html:65:{{/* https://heroicons.com/mini light-bulb */}}\ndocs/layouts/_partials/layouts/icons.html:72:{{/* https://heroicons.com/outline bars-3 (hamburger menu) */}}\ndocs/layouts/_partials/layouts/icons.html:79:{{/* https://heroicons.com/outline x-mark (close) */}}\ndocs/layouts/_partials/layouts/home/features.html:1:{{/* icons source: https://heroicons.com/ */}}\ndocs/content/en/functions/transform/Emojify.md:3:description: Runs a string through the Emoji emoticons processor.\ndocs/content/en/functions/transform/Emojify.md:14:`emojify` runs a passed string through the Emoji emoticons processor.\ndocs/content/en/functions/transform/Emojify.md:16:See the list of [emoji shortcodes] for available emoticons.",
+   "rc=0\n",
+   "rc=0\n",
+   "wrote docs/layouts/_partials/layouts/_probe.txt (6 chars)",
+   "probe\n",
+   "command not allowed; allowed: the repository test subset, git status/diff, python -m py_compile <file>, node --check <file>, gofmt -l <file>",
+   "rc=1\nnode:internal/modules/esm/get_format:185\n  throw new ERR_UNKNOWN_FILE_EXTENSION(ext, filepath);\n        ^\n\nTypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension \".go\" for /SCRATCH_NOT_SHIPPED\n    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:185:9)\n    at defaultGetFormat (node:internal/modules/esm/get_format:211:36)\n    at checkSyntax (node:internal/main/check_syntax:67:20) {\n  code: 'ERR_UNKNOWN_FILE_EXTENSION'\n}\n\nNode.js v24.8.0\n"
+  ],
+  "probe_file_exists": true,
+  "probe_file_read_ok": true,
+  "disallowed_cmd_rejected": true,
+  "allowed_node_check_ran": true
+ },
+ "repo_test_baseline": {
+  "R4/no_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "ok  \tgithub.com/gohugoio/R4/common/hstrings\t0.562s"
+  },
+  "R4/stale_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "ok  \tgithub.com/gohugoio/R4/common/hstrings\t0.331s"
+  },
+  "R4/corrected_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "ok  \tgithub.com/gohugoio/R4/common/hstrings\t0.308s"
+  },
+  "R5/no_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "t -D`\nPASS test/unit/track_event.test.js\nPASS test/unit/cloud_function.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       10 passed, 10 total\nSnapshots:   0 total\nTime:        0.962 s, estimated 2 s\nRan all test suites matching /test\\/unit\\/cloud_function.test.js|test\\/unit\\/track_event.test.js/i."
+  },
+  "R5/stale_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "t -D`\nPASS test/unit/track_event.test.js\nPASS test/unit/cloud_function.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       10 passed, 10 total\nSnapshots:   0 total\nTime:        0.727 s, estimated 1 s\nRan all test suites matching /test\\/unit\\/cloud_function.test.js|test\\/unit\\/track_event.test.js/i."
+  },
+  "R5/corrected_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": "t -D`\nPASS test/unit/track_event.test.js\nPASS test/unit/cloud_function.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       10 passed, 10 total\nSnapshots:   0 total\nTime:        0.617 s, estimated 2 s\nRan all test suites matching /test\\/unit\\/cloud_function.test.js|test\\/unit\\/track_event.test.js/i."
+  },
+  "R3/no_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": ".............                                                            [100%]\n13 passed in 5.58s"
+  },
+  "R3/stale_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": ".............                                                            [100%]\n13 passed in 4.10s"
+  },
+  "R3/corrected_kb": {
+   "hidden_pass_on_base": false,
+   "repo_test_status": "pass",
+   "repo_test_tail": ".............                                                            [100%]\n13 passed in 3.91s"
+  }
+ },
+ "parser_check": [
+  {
+   "name": "prose wrapping",
+   "expected": "ls",
+   "got": "ls"
+  },
+  {
+   "name": "fenced",
+   "expected": "submit",
+   "got": "submit"
+  },
+  {
+   "name": "two objects",
+   "expected": "ls",
+   "got": "ls"
+  },
+  {
+   "name": "no json",
+   "expected": null,
+   "got": null
+  }
+ ]
+}

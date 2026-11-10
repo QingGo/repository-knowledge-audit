@@ -1,0 +1,18 @@
+{
+ "F-385b04abad2a6953": {
+  "class": "true_stale",
+  "note": "targeted drift event: commit f74f1806 'Migrate PR quality checks from Node.js to Go (#6055)' removed .github/scripts/check-quality.js and added the Go directory .github/scripts/check-quality/ (main.go); head AGENTS.md L38 still says the workflow runs .github/scripts/check-quality.js; real new stale pointer"
+ },
+ "F-89473318b0059ddd": {
+  "class": "true_stale",
+  "note": "moved path: target now lives only at skills/last30days/scripts/last30days.py; root AGENTS.md still points at the root-level path (packaging restructure), so the KB pointer is stale from repo root (same judgement as the natural-audit adjudication)"
+ },
+ "F-23d0c6b1ca408d05": {
+  "class": "true_stale",
+  "note": "moved path: target now lives only at skills/last30days/scripts/lib/__init__.py; root AGENTS.md still points at the root-level path (packaging restructure), so the KB pointer is stale from repo root (same judgement as the natural-audit adjudication)"
+ },
+ "F-9604b230f34d4a51": {
+  "class": "true_stale",
+  "note": "moved path: target now lives only at skills/last30days/references/setup-wizard.md; root AGENTS.md still points at the root-level path (packaging restructure), so the KB pointer is stale from repo root (same judgement as the natural-audit adjudication)"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "mode": "ping",
+ "model": "deepseek-chat",
+ "ok": true,
+ "usage": {
+  "prompt_tokens": 39,
+  "completion_tokens": 6,
+  "total_tokens": 45,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 39
+ },
+ "cost_cny": 6.3e-05,
+ "prereg_sha256": "0600462d8e45464372ecf74098af4be16b846f0e32d277c9e46998ea006de793",
+ "ts": "2026-11-09T19:22:52+0800",
+ "note": "connectivity check only; not one of the 540 cells"
+}

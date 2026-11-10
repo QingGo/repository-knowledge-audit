@@ -1,0 +1,281 @@
+{
+ "schema": "kb-replay-summary/1",
+ "generated_at": "2026-11-08T23:19:45+0800",
+ "model": "deepseek-chat",
+ "arms": [
+  "stale_only",
+  "stale_plus_report",
+  "no_kb",
+  "stale_no_hint"
+ ],
+ "seeds": [
+  0,
+  1
+ ],
+ "n_runs": 40,
+ "n_cases": 5,
+ "steps_per_run": 1,
+ "tool_loop": false,
+ "arms_summary": {
+  "stale_only": {
+   "n": 10,
+   "success": 9,
+   "success_rate": 0.9,
+   "mean_refs_fixed_frac": 1.0,
+   "mean_new_unresolved": 0.1,
+   "mean_chars_frac_parent": 1.1361,
+   "mean_chars": 6304.0,
+   "mean_tokens": 9046.4,
+   "mean_cost_cny": 0.01397,
+   "errors": 0,
+   "by_case": {
+    "R1": {
+     "n": 2,
+     "success": 2
+    },
+    "R2": {
+     "n": 2,
+     "success": 2
+    },
+    "R3": {
+     "n": 2,
+     "success": 2
+    },
+    "R4": {
+     "n": 2,
+     "success": 2
+    },
+    "R5": {
+     "n": 2,
+     "success": 1
+    }
+   }
+  },
+  "stale_plus_report": {
+   "n": 10,
+   "success": 10,
+   "success_rate": 1.0,
+   "mean_refs_fixed_frac": 1.0,
+   "mean_new_unresolved": 0.0,
+   "mean_chars_frac_parent": 0.9951,
+   "mean_chars": 6026.7,
+   "mean_tokens": 9333.1,
+   "mean_cost_cny": 0.01072,
+   "errors": 0,
+   "by_case": {
+    "R1": {
+     "n": 2,
+     "success": 2
+    },
+    "R2": {
+     "n": 2,
+     "success": 2
+    },
+    "R3": {
+     "n": 2,
+     "success": 2
+    },
+    "R4": {
+     "n": 2,
+     "success": 2
+    },
+    "R5": {
+     "n": 2,
+     "success": 2
+    }
+   }
+  },
+  "no_kb": {
+   "n": 10,
+   "success": 1,
+   "success_rate": 0.1,
+   "mean_refs_fixed_frac": 1.0,
+   "mean_new_unresolved": 0.6,
+   "mean_chars_frac_parent": 0.8629,
+   "mean_chars": 4428.8,
+   "mean_tokens": 5233.6,
+   "mean_cost_cny": 0.00706,
+   "errors": 0,
+   "by_case": {
+    "R1": {
+     "n": 2,
+     "success": 0
+    },
+    "R2": {
+     "n": 2,
+     "success": 1
+    },
+    "R3": {
+     "n": 2,
+     "success": 0
+    },
+    "R4": {
+     "n": 2,
+     "success": 0
+    },
+    "R5": {
+     "n": 2,
+     "success": 0
+    }
+   }
+  },
+  "stale_no_hint": {
+   "n": 10,
+   "success": 5,
+   "success_rate": 0.5,
+   "mean_refs_fixed_frac": 0.6,
+   "mean_new_unresolved": 0.1,
+   "mean_chars_frac_parent": 1.3222,
+   "mean_chars": 6800.1,
+   "mean_tokens": 9180.2,
+   "mean_cost_cny": 0.01461,
+   "errors": 0,
+   "by_case": {
+    "R1": {
+     "n": 2,
+     "success": 1
+    },
+    "R2": {
+     "n": 2,
+     "success": 1
+    },
+    "R3": {
+     "n": 2,
+     "success": 2
+    },
+    "R4": {
+     "n": 2,
+     "success": 1
+    },
+    "R5": {
+     "n": 2,
+     "success": 0
+    }
+   }
+  }
+ },
+ "controls_all_ok": true,
+ "oracle_fix_kb": {
+  "R1": {
+   "stale_present": [],
+   "stale_total": 22,
+   "refs_fixed": 22,
+   "new_unresolved": [],
+   "bad_make": [],
+   "anchors_missing": [],
+   "anchors_missing_in_gold": [],
+   "chars": 5323,
+   "parent_kb_chars": 6338,
+   "fix_kb_chars": 5323,
+   "chars_frac_parent": 0.8399,
+   "chars_frac_fix": 1.0,
+   "success_ab": true,
+   "success_c": true
+  },
+  "R2": {
+   "stale_present": [],
+   "stale_total": 1,
+   "refs_fixed": 1,
+   "new_unresolved": [],
+   "bad_make": [],
+   "anchors_missing": [],
+   "anchors_missing_in_gold": [],
+   "chars": 11809,
+   "parent_kb_chars": 11808,
+   "fix_kb_chars": 11809,
+   "chars_frac_parent": 1.0001,
+   "chars_frac_fix": 1.0,
+   "success_ab": true,
+   "success_c": true
+  },
+  "R3": {
+   "stale_present": [],
+   "stale_total": 2,
+   "refs_fixed": 2,
+   "new_unresolved": [],
+   "bad_make": [],
+   "anchors_missing": [],
+   "anchors_missing_in_gold": [],
+   "chars": 7522,
+   "parent_kb_chars": 7521,
+   "fix_kb_chars": 7522,
+   "chars_frac_parent": 1.0001,
+   "chars_frac_fix": 1.0,
+   "success_ab": true,
+   "success_c": true
+  },
+  "R4": {
+   "stale_present": [],
+   "stale_total": 1,
+   "refs_fixed": 1,
+   "new_unresolved": [],
+   "bad_make": [],
+   "anchors_missing": [],
+   "anchors_missing_in_gold": [],
+   "chars": 1051,
+   "parent_kb_chars": 1043,
+   "fix_kb_chars": 1051,
+   "chars_frac_parent": 1.0077,
+   "chars_frac_fix": 1.0,
+   "success_ab": true,
+   "success_c": true
+  },
+  "R5": {
+   "stale_present": [],
+   "stale_total": 3,
+   "refs_fixed": 3,
+   "new_unresolved": [],
+   "bad_make": [],
+   "anchors_missing": [],
+   "anchors_missing_in_gold": [],
+   "chars": 4030,
+   "parent_kb_chars": 3623,
+   "fix_kb_chars": 4030,
+   "chars_frac_parent": 1.1123,
+   "chars_frac_fix": 1.0,
+   "success_ab": true,
+   "success_c": true
+  }
+ },
+ "oracle_ab_success": 5,
+ "total_tokens": 327933,
+ "total_cost_cny": 0.4635,
+ "cost_cap_cny": 3.0,
+ "cases": {
+  "R1": {
+   "family": "config/agent-docs drift (removed Path B + local-only setup)",
+   "kb": "AGENTS.md",
+   "stale_total": 22,
+   "parent_kb_chars": 6338,
+   "fix_kb_chars": 5323
+  },
+  "R2": {
+   "family": "removed make target + volatile test count",
+   "kb": "AGENTS.md",
+   "stale_total": 1,
+   "parent_kb_chars": 11808,
+   "fix_kb_chars": 11809
+  },
+  "R3": {
+   "family": "renamed skill + stale doc path",
+   "kb": "AGENTS.md",
+   "stale_total": 2,
+   "parent_kb_chars": 7521,
+   "fix_kb_chars": 7522
+  },
+  "R4": {
+   "family": "moved partial path",
+   "kb": "docs/AGENTS.md",
+   "stale_total": 1,
+   "parent_kb_chars": 1043,
+   "fix_kb_chars": 1051
+  },
+  "R5": {
+   "family": "restructured project layout (subpackage/cloud-function loss)",
+   "kb": "CLAUDE.md",
+   "stale_total": 3,
+   "parent_kb_chars": 3623,
+   "fix_kb_chars": 4030
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "method": "Every R9 finding opened in the KB file and checked against the extracted repo tree (read-only temp copies of the real commits). Classes: true-stale = the referenced repository artifact is absent and the KB line is an actionable defect under the declared KB contract; false-positive-by-contract = the reference points at a declared runtime/generated/external location and is not a defect under the committed config (allow_missing), so the generic config finding is adjudicated out.",
+ "findings": [
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L124",
+   "reference": "docs/paper.md",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "true-stale",
+   "disposition": "Verified",
+   "evidence": "Parent and fix-commit trees contain no docs/ directory at all (git ls-tree of both commits); the line is unchanged by the fix commit, so the finding persists after repair.",
+   "after_repair": "still present (residual)"
+  },
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L125",
+   "reference": "docs/arch_design.md",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "true-stale",
+   "disposition": "Verified",
+   "evidence": "Same missing docs/ directory; line unchanged by the fix commit.",
+   "after_repair": "still present (residual)"
+  },
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L126",
+   "reference": "docs/implementation_notes.md",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "true-stale",
+   "disposition": "Verified",
+   "evidence": "Same missing docs/ directory; line unchanged by the fix commit.",
+   "after_repair": "still present (residual)"
+  },
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L23",
+   "reference": "make profile-deep",
+   "rule": "R9",
+   "severity": "low",
+   "class": "true-stale",
+   "disposition": "Removed",
+   "evidence": "Root Makefile at the parent commit has targets install/lint/test-unit/test-integration/profile/profile-light/profile-compare/profile-nsys/profile-ncu/profile-chrome/profile-ncu-list/smoke/server/cli/clean but no profile-deep; the fix commit replaces the line with `make profile-chrome` (target exists) - 1 of the 2 deleted/2 inserted lines in AGENTS.md.",
+   "after_repair": "removed by fix commit"
+  },
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L196",
+   "reference": "artifacts/last_profile.json",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "false-positive-by-contract",
+   "disposition": "False-positive-by-contract",
+   "evidence": "KB line itself says `make profile` writes JSON to artifacts/last_profile.json: a generated runtime artifact, intentionally absent from the checkout. Suppressed by the committed config allow_missing ^(artifacts|...)/; only the generic (no allow_missing) sensitivity scan reports it.",
+   "after_repair": "not in workflow findings (adjudicated out)"
+  },
+  {
+   "repo": "R2",
+   "locator": "AGENTS.md#L205",
+   "reference": "weights/tokenizer.json",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "false-positive-by-contract",
+   "disposition": "False-positive-by-contract",
+   "evidence": "External 150 GB model store (`weights/`, 46 safetensors) referenced by the KB but deliberately not in the repository; suppressed by the same allow_missing recipe.",
+   "after_repair": "not in workflow findings (adjudicated out)"
+  },
+  {
+   "repo": "R3",
+   "locator": "AGENTS.md#L111",
+   "reference": "docs/performance.md",
+   "rule": "R9",
+   "severity": "medium",
+   "class": "true-stale",
+   "disposition": "Removed",
+   "evidence": "docs/ contains api.md, compare_engram_lora_analysis.md, distributed.md, paper_alignment.md, tutorial.md - no performance.md; the fix commit rewrites the line to point at docs/paper_alignment.md (exists). 5 changed lines in AGENTS.md total.",
+   "after_repair": "removed by fix commit (R9 = 0)"
+  }
+ ],
+ "non_r9_stale_repair": {
+  "repo": "R3",
+  "detail": "The same fix commit also renames the stale skill name `memory-update` -> `short-term-memory` (4 occurrences). The repo has .agents/skills/short-term-memory/SKILL.md and no memory-update directory, but the name is not a path-like reference, so R9 does not report it: a rule-surface limit, recorded here manually.",
+  "r9_detectable": false
+ },
+ "summary": {
+  "unique_findings_adjudicated": 7,
+  "true_stale": 5,
+  "false_positive_by_contract": 2,
+  "removed_by_minimal_repair": 2,
+  "residual_true_stale_after_repair": 3
+ }
+}

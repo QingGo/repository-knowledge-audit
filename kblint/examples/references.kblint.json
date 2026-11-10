@@ -1,0 +1,15 @@
+{
+  "docs": ["AGENTS.md", "CLAUDE.md", "docs/AGENTS.md", "SKILL.md", "**/SKILL.md"],
+  "exclude": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/.venv/**"],
+  "git": {"enabled": false},
+  "now": "2026-11-05",
+  "references": {
+    "enabled": true,
+    "check_paths": true,
+    "check_links": true,
+    "check_make": true,
+    "check_npm": true,
+    "allow_missing": ["^(artifacts|weights|runs|outputs|dist|build|node_modules)/"],
+    "inventory": []
+  }
+}

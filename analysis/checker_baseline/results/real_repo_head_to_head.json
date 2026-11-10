@@ -1,0 +1,45 @@
+{
+ "n_repos": 16,
+ "n_r9": 28,
+ "kblint": {
+  "findings": 28,
+  "true_stale": 14,
+  "false_positive": 8,
+  "runtime_unavailable": 6,
+  "runtime_s": {
+   "min": 0.069,
+   "median": 0.0935,
+   "max": 0.463,
+   "total": 2.3
+  }
+ },
+ "baselines": {
+  "link": {
+   "true_stale": 0,
+   "false_positive": 1,
+   "runtime_unavailable": 0,
+   "matched": 1,
+   "extra": 0
+  },
+  "path": {
+   "true_stale": 14,
+   "false_positive": 8,
+   "runtime_unavailable": 6,
+   "matched": 28,
+   "extra": 2
+  },
+  "ext": {
+   "true_stale": 14,
+   "false_positive": 8,
+   "runtime_unavailable": 6,
+   "matched": 28,
+   "extra": 2
+  }
+ },
+ "baseline_runtime_s": 0.1,
+ "command_refs_in_kb_docs": {
+  "make": 10,
+  "npm": 18
+ },
+ "note": "matched = baseline finding equals an adjudicated R9 target; extra = baseline findings not in the adjudicated R9 set (not adjudicated)."
+}

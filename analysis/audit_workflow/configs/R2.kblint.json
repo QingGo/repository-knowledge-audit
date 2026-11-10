@@ -1,0 +1,16 @@
+{
+  "repo": ".",
+  "docs": ["AGENTS.md", "CLAUDE.md", "docs/AGENTS.md"],
+  "exclude": ["**/node_modules/**", "**/.venv/**", "**/dist/**", "**/build/**", "**/__pycache__/**"],
+  "now": "2026-11-05",
+  "git": {"enabled": false},
+  "references": {
+    "enabled": true,
+    "check_paths": true,
+    "check_links": true,
+    "check_make": true,
+    "check_npm": true,
+    "allow_missing": ["^(artifacts|weights|runs|outputs|dist|build|node_modules|data|checkpoints|cache|\\.cache|logs|profiles)/"],
+    "inventory": []
+  }
+}

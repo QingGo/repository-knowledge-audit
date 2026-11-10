@@ -1,0 +1,114 @@
+{
+ "F-a25f4c06b44cf270": {
+  "class": "false_positive",
+  "note": "historical removal mention: L181 says 'We removed the agent-specific dotdir mirrors at the repo root (.github/copilot-instructions.md ...)' - a record of deletion, not a live pointer"
+ },
+ "F-e6a33552dbeb996d": {
+  "class": "false_positive",
+  "note": "historical removal mention (L181 lists root caveman/SKILL.md as removed); file exists under plugins/caveman/skills/"
+ },
+ "F-b8a426c98226d562": {
+  "class": "false_positive",
+  "note": "cleanup/leftover mention: L183 says stale cavecrew/SKILL.md mirror 'remove on sight' (documented leftover, not a live pointer)"
+ },
+ "F-71da0b190f9e17e2": {
+  "class": "runtime_unavailable",
+  "note": "repo-local runtime config path (<cwd>/.caveman/config.json) resolved at run time; generated, not committed"
+ },
+ "F-66e7af8890233473": {
+  "class": "runtime_unavailable",
+  "note": "per-user-repo file created by installer --with-init in the target repo, not in this repository"
+ },
+ "F-8512f44ae4549365": {
+  "class": "runtime_unavailable",
+  "note": "per-user-repo file created by installer --with-init in the target repo, not in this repository"
+ },
+ "F-ce871c2ea2728128": {
+  "class": "runtime_unavailable",
+  "note": "file staged inside a temporary plugin dir for `agy plugin install`, not a repo artifact"
+ },
+ "F-2583eec64801812a": {
+  "class": "runtime_unavailable",
+  "note": "eval output snapshot (CAVEMAN_EVAL_SET=fidelity writes snapshots/fidelity.json), generated artifact"
+ },
+ "F-385b04abad2a6953": {
+  "class": "true_stale",
+  "note": "real drift: KB says .github/scripts/check-quality.js, implementation is now the Go directory .github/scripts/check-quality/ (main.go); workflow runs `go run ./.github/scripts/check-quality/`"
+ },
+ "F-34e11b7184540c4d": {
+  "class": "false_positive",
+  "note": "illustrative template reference: '[x](docs/x.md)' is the format example for adding long docs, not a real link"
+ },
+ "F-d79e9e3d5322e73c": {
+  "class": "false_positive",
+  "note": "documented deletion: the sweep table's 'Replaces' column says `.github/dependabot.yml` (deleted); negative mention, not a live pointer"
+ },
+ "F-4ba648c9ddbca0b1": {
+  "class": "true_stale",
+  "note": "repo restructured into skills/last30days/; root AGENTS.md still points at tests/, docs/, .github/ paths that no longer exist at repo root"
+ },
+ "F-319eb5acf1e5d508": {
+  "class": "true_stale",
+  "note": "path absent at repo root; docs tree is not present in this checkout"
+ },
+ "F-37095cb9e09a43c4": {
+  "class": "true_stale",
+  "note": "repo restructured; root .github/ no longer exists (no workflows/scripts at repo root)"
+ },
+ "F-89473318b0059ddd": {
+  "class": "true_stale",
+  "note": "moved: script now lives at skills/last30days/scripts/last30days.py; root-relative path is stale after packaging restructure"
+ },
+ "F-4fcfd0be11790d51": {
+  "class": "true_stale",
+  "note": "repo restructured; root .github/ workflows are gone (no .github at repo root)"
+ },
+ "F-48725a2bbbef3a62": {
+  "class": "true_stale",
+  "note": "tests/ tree is not present at repo root in this checkout"
+ },
+ "F-23d0c6b1ca408d05": {
+  "class": "true_stale",
+  "note": "moved: file now at skills/last30days/scripts/lib/__init__.py; root-relative path stale after packaging restructure"
+ },
+ "F-bfc323e043dc04d6": {
+  "class": "true_stale",
+  "note": "tests/ tree is not present at repo root in this checkout"
+ },
+ "F-f67fbb0729da26e5": {
+  "class": "true_stale",
+  "note": "docs/solutions path absent (docs tree not at repo root)"
+ },
+ "F-9604b230f34d4a51": {
+  "class": "true_stale",
+  "note": "moved: file now at skills/last30days/references/setup-wizard.md; root-relative path stale"
+ },
+ "F-cd77d2c94e233f0b": {
+  "class": "true_stale",
+  "note": "tests/ tree is not present at repo root in this checkout"
+ },
+ "F-d5a39d726ea6534b": {
+  "class": "true_stale",
+  "note": "tests/ tree is not present at repo root in this checkout"
+ },
+ "F-9979c2e5221c2da6": {
+  "class": "true_stale",
+  "note": "repo restructured; root .github/ workflows are gone (no .github at repo root)"
+ },
+ "F-102246abf9a5b179": {
+  "class": "false_positive",
+  "note": "negative/forbidden-string mention: listed as a forbidden doc string in the CI check, not a live artifact pointer"
+ },
+ "F-668de2f01ec8a39f": {
+  "class": "runtime_unavailable",
+  "note": "machine-local settings override file (.claude/settings.local.json), never committed by design"
+ },
+ "F-2e9e35fef4127d01": {
+  "class": "false_positive",
+  "note": "skill-relative path: `agents/openai.yaml` is a file inside each skill dir (exists at skills/*/agents/openai.yaml); README-style root-relative check cannot express the skill package base"
+ },
+ "F-a1de71b0cd5820cc": {
+  "class": "false_positive",
+  "note": "skill-relative path (same claim mirrored in CLAUDE.md); file exists under skills/*/agents/openai.yaml"
+ }
+}

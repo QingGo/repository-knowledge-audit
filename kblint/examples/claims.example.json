@@ -1,0 +1,54 @@
+[
+  {
+    "claim_id": "ENV-003",
+    "claim": "torch 2.14.1+cu130 is the training environment pin",
+    "scope": {
+      "repository": "sample_repo",
+      "version": "r49",
+      "environment": "GPU node group A"
+    },
+    "evidence": {
+      "type": "artifact",
+      "path": "artifacts/r50_v2.json"
+    },
+    "invalidation": {
+      "condition": "artifact pool changes to a different torch build, or expiry env_change_date 2026-10-01 passes"
+    },
+    "status": "verified",
+    "last_checked": "2026-11-05T00:00:00+08:00"
+  },
+  {
+    "claim_id": "KB-DOCS-014",
+    "claim": "the tuning entrypoint is scripts/tune_old.sh",
+    "scope": {
+      "repository": "sample_repo",
+      "version": "r49"
+    },
+    "evidence": {
+      "type": "path",
+      "path": "docs/stale_reference.md"
+    },
+    "invalidation": {
+      "condition": "the referenced script is renamed, moved, or deleted"
+    },
+    "status": "stale",
+    "last_checked": "2026-11-05T00:00:00+08:00"
+  },
+  {
+    "claim_id": "TARGET-002",
+    "claim": "the acceptance target is 35.83 ms",
+    "scope": {
+      "repository": "sample_repo",
+      "version": "r49"
+    },
+    "evidence": {
+      "type": "command",
+      "command": "python3 -m kblint scan --repo examples/sample_repo --config examples/sample.kblint.json --out /tmp/kblint-target --format json"
+    },
+    "invalidation": {
+      "condition": "an artifact records the acceptance target or the target is retired"
+    },
+    "status": "unknown",
+    "last_checked": "2026-11-05T00:00:00+08:00"
+  }
+]

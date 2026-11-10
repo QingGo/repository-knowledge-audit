@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/pins.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] mixed artifact environments for pin '2.14.1': doc declares 2.14.1+cu130; pool contains 2.12.1×1, 2.14.1×1. observed: doc declares 2.14.1+cu130; matching artifacts record 2.12.1×1, 2.14.1×1 expected: a doc pin is only verifiable when the governed artifact pool has a single environment, or the pin is scoped per round/device; mixed pools are an unresolved scope conflict"
+          },
+          "properties": {
+            "claim_id": "c_f4618be5bf1520de",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-9dbd45ac30bccd59",
+            "verification_method": "artifact pool pin-value distribution"
+          },
+          "ruleId": "R1"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/target.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 35.83ms. observed: claim number 35.83ms (acceptance target) has no matching artifact value (displaying '35.83') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_02cf7e3019436ab2",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-1da34e9afb6a9eb2",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/other_target.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 35.83ms. observed: claim number 35.83ms (acceptance target) has no matching artifact value (displaying '35.83') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_50f392ada7d8de9b",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-a16466aa2ac0eebe",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/numbers.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] artifact_mismatch: 400tflops vs dw13_tile_tflops = 358.093. observed: claim states 400tflops (best dw13 tile reaches); artifacts/bench.json :: dw13_tile_tflops = 358.093 expected: the cited artifact field must agree within display precision (half last place 0.5) or relative tolerance 0.0005 (observed relative difference 1.05e-01)"
+          },
+          "properties": {
+            "claim_id": "c_796d74a879a3f051",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-e8e916eb44b89df3",
+            "verification_method": "cited artifact field lookup + display-precision / relative tolerance"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/conflict_b.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[revalidation_due] number not located in artifact index: 61.93ms. observed: claim number 61.93ms (r49 configuration best step) has no matching artifact value (displaying '61.93') expected: a measured number should be reproducible from a configured artifact"
+          },
+          "properties": {
+            "claim_id": "c_f3c2fa6fe03550a7",
+            "confidence": "high",
+            "disposition": "revalidation_due",
+            "finding_id": "F-dcc689eaff6deeb9",
+            "verification_method": "artifact index search (no display-precision match)"
+          },
+          "ruleId": "R2"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/conflict_a.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] cross-doc conflict on 'r49 configuration best step' (ms): 60.94 vs 61.93. observed: docs/conflict_a.md states 60.94ms; other doc(s) state different values: docs/conflict_b.md:61.93 expected: the same subject must have one value across docs unless a claim/section is explicitly marked superseded/deprecated"
+          },
+          "properties": {
+            "claim_id": "c_58c721a3ac3b59d7",
+            "confidence": "medium",
+            "disposition": "confirmed",
+            "finding_id": "F-b5a59194cb387eee",
+            "verification_method": "normalized (unit, key-context) anchor grouping + relative tolerance"
+          },
+          "ruleId": "R3"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/negative.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] negative/flag claim predates environment change 2026-10-01. observed: claim dated 2026-09-01 (negative_marker) is older than environment-change date 2026-10-01 expected: negative results and flags must be revalidated after an environment change or carry a date/expiry"
+          },
+          "properties": {
+            "claim_id": "c_11b3f388323268b3",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-b71b56bc6e66e8bc",
+            "verification_method": "config expiry date comparison + negative/flag marker scan"
+          },
+          "ruleId": "R5"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docs/other_target.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[unresolved] missing canonical declaration for topic 'acceptance target'. observed: docs/other_target.md discusses 'acceptance target' without referencing the canonical docs/target.md #L3 expected: claims about 'acceptance target' should declare the canonical source (docs/target.md) or link its locator"
+          },
+          "properties": {
+            "claim_id": "c_50f392ada7d8de9b",
+            "confidence": "medium",
+            "disposition": "unresolved",
+            "finding_id": "F-e544d0822eb61b4c",
+            "verification_method": "configured topic matching + canonical declaration absence"
+          },
+          "ruleId": "R6"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "kblint",
+          "rules": [
+            {
+              "id": "R1",
+              "name": "pin/version consistency",
+              "shortDescription": {
+                "text": "doc-declared env pin vs configured artifact field"
+              }
+            },
+            {
+              "id": "R2",
+              "name": "number provenance",
+              "shortDescription": {
+                "text": "claim number resolved against the artifact index"
+              }
+            },
+            {
+              "id": "R3",
+              "name": "cross-doc conflict",
+              "shortDescription": {
+                "text": "same subject, conflicting values across docs"
+              }
+            },
+            {
+              "id": "R4",
+              "name": "missing supersedes/deprecation",
+              "shortDescription": {
+                "text": "newer artifact contradicts an unmarked claim"
+              }
+            },
+            {
+              "id": "R5",
+              "name": "negative-result/flag expiry",
+              "shortDescription": {
+                "text": "stale or undated negative results and flags"
+              }
+            },
+            {
+              "id": "R6",
+              "name": "source-of-truth declaration",
+              "shortDescription": {
+                "text": "topic claim without a canonical declaration"
+              }
+            },
+            {
+              "id": "R7",
+              "name": "untracked/no-owner knowledge file",
+              "shortDescription": {
+                "text": "git tracking and owner metadata"
+              }
+            },
+            {
+              "id": "R8",
+              "name": "audit queue",
+              "shortDescription": {
+                "text": "claims that are not deterministically checkable (not defects)"
+              }
+            },
+            {
+              "id": "R9",
+              "name": "reference check",
+              "shortDescription": {
+                "text": "links/paths/make targets/npm scripts that do not exist in the repo"
+              }
+            }
+          ],
+          "version": "0.3.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

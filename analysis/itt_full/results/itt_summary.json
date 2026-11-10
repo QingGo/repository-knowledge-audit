@@ -1,0 +1,3884 @@
+{
+ "meta": {
+  "generated_by": "analysis/itt_full/reanalyze.py",
+  "n_tasks": 54,
+  "responsive_tasks": {
+   "chat": 46,
+   "reasoner": 41
+  },
+  "bootstrap": {
+   "resamples": 1000,
+   "seed": 0,
+   "unit": "tasks",
+   "interval": "percentile 2.5/97.5"
+  },
+  "sign_test": "exact two-sided paired binomial, ties dropped",
+  "mde80_formula": "2.8016 * sd(task-level diff) / sqrt(n)",
+  "data_files": [
+   "bench_chat.jsonl",
+   "bench_reasoner.jsonl",
+   "bench_c0tests_chat.jsonl",
+   "bench_c0tests_reasoner.jsonl",
+   "mixed_chat.jsonl",
+   "mitigation_chat.jsonl",
+   "bench_authority_chat.jsonl",
+   "bench_authority_order_chat.jsonl",
+   "bench_authority_c2an_chat.jsonl",
+   "analysis/verified_x_stale/results/bench_x.jsonl"
+  ],
+  "notes": [
+   "condition pass rate per task = mean over that task's seeds (chat 2 seeds; reasoner 1; c0tests 1; mixed/mitigation 1; authority 2)",
+   "significance is reported two ways (95% CI excluding 0; exact sign p<.05); they can disagree and both are shown",
+   "ITT = all 54 tasks; SUB = KB-responsive subset (46 chat / 41 reasoner)"
+  ]
+ },
+ "arm_rates": {
+  "bench_chat_itt": {
+   "c0": 0.1574,
+   "c1": 0.8056,
+   "c2": 0.0463,
+   "c3": 0.1759,
+   "c2v": 0.3148,
+   "c2f": 0.4537
+  },
+  "bench_chat_sub46": {
+   "c0": 0.1848,
+   "c1": 0.9457,
+   "c2": 0.0543,
+   "c3": 0.2065,
+   "c2v": 0.3696,
+   "c2f": 0.5326
+  },
+  "bench_reasoner_itt": {
+   "c0": 0.1667,
+   "c1": 0.7593,
+   "c2": 0.0741,
+   "c3": 0.1481,
+   "c2v": 0.8889,
+   "c2f": 0.963
+  },
+  "bench_reasoner_sub41": {
+   "c0": 0.2195,
+   "c1": 1,
+   "c2": 0.0976,
+   "c3": 0.1951,
+   "c2v": 0.9268,
+   "c2f": 0.9756
+  },
+  "c0tests_chat_itt": {
+   "c0v": 0.5741,
+   "c0f": 0.5926
+  },
+  "c0tests_reasoner_itt": {
+   "c0v": 0.9259,
+   "c0f": 0.9444
+  },
+  "mixed_chat_itt": {
+   "c0": 0.1574,
+   "c1": 0.8056,
+   "c2": 0.0463,
+   "h1": 0.6111,
+   "h2": 0.0556,
+   "m1": 0.3704,
+   "m2": 0.0556,
+   "m3": 0.0556,
+   "m4": 0.037,
+   "m5": 0.463,
+   "m6": 0.1296
+  },
+  "mixed_chat_sub46": {
+   "h1": 0.7174,
+   "h2": 0.0652,
+   "m1": 0.4348,
+   "m2": 0.0652,
+   "m3": 0.0652,
+   "m4": 0.0435,
+   "m5": 0.5435,
+   "m6": 0.1522,
+   "c0": 0.1848,
+   "c1": 0.9457,
+   "c2": 0.0543
+  },
+  "mitigation_chat_itt": {
+   "n1": 0.6481,
+   "n2": 0,
+   "v1": 0.7778,
+   "v2": 0.037,
+   "scope1": 0.6296,
+   "scope2": 0,
+   "tag1": 0.6667,
+   "tag2": 0,
+   "obs1": 0.6852,
+   "obs2": 0.0185,
+   "warn1": 0.5185,
+   "warn2": 0.0185
+  },
+  "mitigation_chat_sub46": {
+   "n1": 0.7391,
+   "n2": 0,
+   "v1": 0.913,
+   "v2": 0.0435,
+   "scope1": 0.7391,
+   "scope2": 0,
+   "tag1": 0.7826,
+   "tag2": 0,
+   "obs1": 0.8043,
+   "obs2": 0.0217,
+   "warn1": 0.6087,
+   "warn2": 0.0217
+  },
+  "authority_chat_itt": {
+   "c1": 0.8056,
+   "c1v": 0.8796,
+   "c1f": 0.8519,
+   "c2": 0.0463,
+   "c2v": 0.3148,
+   "c2f": 0.4537,
+   "c2a": 0.8704,
+   "c2ar": 0.7315,
+   "c2an": 0.8056
+  },
+  "authority_chat_sub46": {
+   "c1": 0.9457,
+   "c1v": 0.9674,
+   "c1f": 0.9348,
+   "c2": 0.0543,
+   "c2v": 0.3696,
+   "c2f": 0.5326,
+   "c2a": 0.9891,
+   "c2ar": 0.837,
+   "c2an": 0.9239
+  }
+ },
+ "table1_effects": {
+  "chat": {
+   "useful_minus_no_kb": {
+    "itt": {
+     "label": "useful_minus_no_kb",
+     "n": 54,
+     "mean": 0.6481,
+     "ci95": [
+      0.528,
+      0.759
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 38,
+      "worsened": 1,
+      "tied": 15
+     },
+     "sign_sig": true,
+     "sd": 0.4721,
+     "mde80": 0.18,
+     "ci_width": 0.231
+    },
+    "sub": {
+     "label": "useful_minus_no_kb",
+     "n": 46,
+     "mean": 0.7609,
+     "ci95": [
+      0.641,
+      0.87
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 38,
+      "worsened": 1,
+      "tied": 7
+     },
+     "sign_sig": true,
+     "sd": 0.4182,
+     "mde80": 0.1727,
+     "ci_width": 0.229
+    }
+   },
+   "stale_minus_no_kb": {
+    "itt": {
+     "label": "stale_minus_no_kb",
+     "n": 54,
+     "mean": -0.1111,
+     "ci95": [
+      -0.194,
+      -0.037
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0391,
+      "improved": 1,
+      "worsened": 8,
+      "tied": 45
+     },
+     "sign_sig": true,
+     "sd": 0.3172,
+     "mde80": 0.1209,
+     "ci_width": 0.157
+    },
+    "sub": {
+     "label": "stale_minus_no_kb",
+     "n": 46,
+     "mean": -0.1304,
+     "ci95": [
+      -0.228,
+      -0.043
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0391,
+      "improved": 1,
+      "worsened": 8,
+      "tied": 37
+     },
+     "sign_sig": true,
+     "sd": 0.3405,
+     "mde80": 0.1407,
+     "ci_width": 0.185
+    }
+   },
+   "full_suite_minus_stale": {
+    "itt": {
+     "label": "full_suite_minus_stale",
+     "n": 54,
+     "mean": 0.4074,
+     "ci95": [
+      0.287,
+      0.537
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 25,
+      "worsened": 0,
+      "tied": 29
+     },
+     "sign_sig": true,
+     "sd": 0.4666,
+     "mde80": 0.1779,
+     "ci_width": 0.25
+    },
+    "sub": {
+     "label": "full_suite_minus_stale",
+     "n": 46,
+     "mean": 0.4783,
+     "ci95": [
+      0.337,
+      0.609
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 25,
+      "worsened": 0,
+      "tied": 21
+     },
+     "sign_sig": true,
+     "sd": 0.4709,
+     "mde80": 0.1945,
+     "ci_width": 0.272
+    }
+   },
+   "full_suite_minus_no_kb": {
+    "itt": {
+     "label": "full_suite_minus_no_kb",
+     "n": 54,
+     "mean": 0.2963,
+     "ci95": [
+      0.176,
+      0.426
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 18,
+      "worsened": 1,
+      "tied": 35
+     },
+     "sign_sig": true,
+     "sd": 0.4609,
+     "mde80": 0.1757,
+     "ci_width": 0.25
+    },
+    "sub": {
+     "label": "full_suite_minus_no_kb",
+     "n": 46,
+     "mean": 0.3478,
+     "ci95": [
+      0.217,
+      0.479
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 18,
+      "worsened": 1,
+      "tied": 27
+     },
+     "sign_sig": true,
+     "sd": 0.4815,
+     "mde80": 0.1989,
+     "ci_width": 0.262
+    }
+   },
+   "neutral_minus_no_kb": {
+    "itt": {
+     "label": "neutral_minus_no_kb",
+     "n": 54,
+     "mean": 0.0185,
+     "ci95": [
+      0.0,
+      0.046
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 2,
+      "worsened": 0,
+      "tied": 52
+     },
+     "sign_sig": false,
+     "sd": 0.0953,
+     "mde80": 0.0363,
+     "ci_width": 0.046
+    },
+    "sub": {
+     "label": "neutral_minus_no_kb",
+     "n": 46,
+     "mean": 0.0217,
+     "ci95": [
+      0.0,
+      0.054
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 2,
+      "worsened": 0,
+      "tied": 44
+     },
+     "sign_sig": false,
+     "sd": 0.1031,
+     "mde80": 0.0426,
+     "ci_width": 0.054
+    }
+   },
+   "useful_minus_stale": {
+    "itt": {
+     "label": "useful_minus_stale",
+     "n": 54,
+     "mean": 0.7593,
+     "ci95": [
+      0.657,
+      0.861
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 45,
+      "worsened": 0,
+      "tied": 9
+     },
+     "sign_sig": true,
+     "sd": 0.3854,
+     "mde80": 0.1469,
+     "ci_width": 0.204
+    },
+    "sub": {
+     "label": "useful_minus_stale",
+     "n": 46,
+     "mean": 0.8913,
+     "ci95": [
+      0.815,
+      0.946
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 45,
+      "worsened": 0,
+      "tied": 1
+     },
+     "sign_sig": true,
+     "sd": 0.2336,
+     "mde80": 0.0965,
+     "ci_width": 0.131
+    }
+   }
+  },
+  "reasoner": {
+   "useful_minus_no_kb": {
+    "itt": {
+     "label": "useful_minus_no_kb",
+     "n": 54,
+     "mean": 0.5926,
+     "ci95": [
+      0.463,
+      0.722
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 32,
+      "worsened": 0,
+      "tied": 22
+     },
+     "sign_sig": true,
+     "sd": 0.496,
+     "mde80": 0.1891,
+     "ci_width": 0.259
+    },
+    "sub": {
+     "label": "useful_minus_no_kb",
+     "n": 41,
+     "mean": 0.7805,
+     "ci95": [
+      0.634,
+      0.902
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 32,
+      "worsened": 0,
+      "tied": 9
+     },
+     "sign_sig": true,
+     "sd": 0.4191,
+     "mde80": 0.1834,
+     "ci_width": 0.268
+    }
+   },
+   "stale_minus_no_kb": {
+    "itt": {
+     "label": "stale_minus_no_kb",
+     "n": 54,
+     "mean": -0.0926,
+     "ci95": [
+      -0.185,
+      -0.019
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0625,
+      "improved": 0,
+      "worsened": 5,
+      "tied": 49
+     },
+     "sign_sig": false,
+     "sd": 0.2926,
+     "mde80": 0.1115,
+     "ci_width": 0.166
+    },
+    "sub": {
+     "label": "stale_minus_no_kb",
+     "n": 41,
+     "mean": -0.122,
+     "ci95": [
+      -0.22,
+      -0.024
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0625,
+      "improved": 0,
+      "worsened": 5,
+      "tied": 36
+     },
+     "sign_sig": false,
+     "sd": 0.3313,
+     "mde80": 0.145,
+     "ci_width": 0.196
+    }
+   },
+   "full_suite_minus_stale": {
+    "itt": {
+     "label": "full_suite_minus_stale",
+     "n": 54,
+     "mean": 0.8889,
+     "ci95": [
+      0.796,
+      0.963
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 48,
+      "worsened": 0,
+      "tied": 6
+     },
+     "sign_sig": true,
+     "sd": 0.3172,
+     "mde80": 0.1209,
+     "ci_width": 0.167
+    },
+    "sub": {
+     "label": "full_suite_minus_stale",
+     "n": 41,
+     "mean": 0.878,
+     "ci95": [
+      0.756,
+      0.951
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 36,
+      "worsened": 0,
+      "tied": 5
+     },
+     "sign_sig": true,
+     "sd": 0.3313,
+     "mde80": 0.145,
+     "ci_width": 0.195
+    }
+   },
+   "full_suite_minus_no_kb": {
+    "itt": {
+     "label": "full_suite_minus_no_kb",
+     "n": 54,
+     "mean": 0.7963,
+     "ci95": [
+      0.685,
+      0.889
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 43,
+      "worsened": 0,
+      "tied": 11
+     },
+     "sign_sig": true,
+     "sd": 0.4065,
+     "mde80": 0.155,
+     "ci_width": 0.204
+    },
+    "sub": {
+     "label": "full_suite_minus_no_kb",
+     "n": 41,
+     "mean": 0.7561,
+     "ci95": [
+      0.61,
+      0.878
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 31,
+      "worsened": 0,
+      "tied": 10
+     },
+     "sign_sig": true,
+     "sd": 0.4348,
+     "mde80": 0.1902,
+     "ci_width": 0.268
+    }
+   },
+   "neutral_minus_no_kb": {
+    "itt": {
+     "label": "neutral_minus_no_kb",
+     "n": 54,
+     "mean": -0.0185,
+     "ci95": [
+      -0.093,
+      0.037
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 51
+     },
+     "sign_sig": false,
+     "sd": 0.2372,
+     "mde80": 0.0904,
+     "ci_width": 0.13
+    },
+    "sub": {
+     "label": "neutral_minus_no_kb",
+     "n": 41,
+     "mean": -0.0244,
+     "ci95": [
+      -0.098,
+      0.049
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 38
+     },
+     "sign_sig": false,
+     "sd": 0.2727,
+     "mde80": 0.1193,
+     "ci_width": 0.147
+    }
+   },
+   "useful_minus_stale": {
+    "itt": {
+     "label": "useful_minus_stale",
+     "n": 54,
+     "mean": 0.6852,
+     "ci95": [
+      0.556,
+      0.796
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 37,
+      "worsened": 0,
+      "tied": 17
+     },
+     "sign_sig": true,
+     "sd": 0.4688,
+     "mde80": 0.1787,
+     "ci_width": 0.24
+    },
+    "sub": {
+     "label": "useful_minus_stale",
+     "n": 41,
+     "mean": 0.9024,
+     "ci95": [
+      0.805,
+      0.976
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 37,
+      "worsened": 0,
+      "tied": 4
+     },
+     "sign_sig": true,
+     "sd": 0.3004,
+     "mde80": 0.1314,
+     "ci_width": 0.171
+    }
+   }
+  }
+ },
+ "test_controls": {
+  "chat": {
+   "rates_itt": {
+    "c0": 0.1574,
+    "c2": 0.0463,
+    "c0v": 0.5741,
+    "c0f": 0.5926,
+    "c2v": 0.3148,
+    "c2f": 0.4537
+   },
+   "rates_sub": {
+    "c0": 0.1848,
+    "c2": 0.0543,
+    "c0v": 0.6739,
+    "c0f": 0.6957,
+    "c2v": 0.3696,
+    "c2f": 0.5326
+   },
+   "contrasts_itt": {
+    "no_kb_plus_1_test_minus_no_kb": {
+     "label": "",
+     "n": 54,
+     "mean": 0.4167,
+     "ci95": [
+      0.287,
+      0.546
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 23,
+      "worsened": 0,
+      "tied": 31
+     },
+     "sign_sig": true,
+     "sd": 0.4929,
+     "mde80": 0.1879,
+     "ci_width": 0.259
+    },
+    "no_kb_plus_full_minus_no_kb": {
+     "label": "",
+     "n": 54,
+     "mean": 0.4352,
+     "ci95": [
+      0.306,
+      0.565
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 24,
+      "worsened": 0,
+      "tied": 30
+     },
+     "sign_sig": true,
+     "sd": 0.4957,
+     "mde80": 0.189,
+     "ci_width": 0.259
+    },
+    "stale_plus_1_test_minus_no_kb_plus_1_test": {
+     "label": "",
+     "n": 54,
+     "mean": -0.2593,
+     "ci95": [
+      -0.38,
+      -0.157
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 0,
+      "worsened": 15,
+      "tied": 39
+     },
+     "sign_sig": true,
+     "sd": 0.4315,
+     "mde80": 0.1645,
+     "ci_width": 0.223
+    },
+    "stale_plus_full_minus_no_kb_plus_full": {
+     "label": "",
+     "n": 54,
+     "mean": -0.1389,
+     "ci95": [
+      -0.241,
+      -0.065
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0039,
+      "improved": 0,
+      "worsened": 9,
+      "tied": 45
+     },
+     "sign_sig": true,
+     "sd": 0.3282,
+     "mde80": 0.1251,
+     "ci_width": 0.176
+    },
+    "no_kb_plus_full_minus_useful_note": {
+     "label": "",
+     "n": 54,
+     "mean": -0.213,
+     "ci95": [
+      -0.315,
+      -0.111
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.001,
+      "improved": 1,
+      "worsened": 14,
+      "tied": 39
+     },
+     "sign_sig": true,
+     "sd": 0.4075,
+     "mde80": 0.1554,
+     "ci_width": 0.204
+    }
+   },
+   "contrasts_sub": {
+    "no_kb_plus_1_test_minus_no_kb": {
+     "label": "",
+     "n": 46,
+     "mean": 0.4891,
+     "ci95": [
+      0.348,
+      0.62
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 23,
+      "worsened": 0,
+      "tied": 23
+     },
+     "sign_sig": true,
+     "sd": 0.4999,
+     "mde80": 0.2065,
+     "ci_width": 0.272
+    },
+    "no_kb_plus_full_minus_no_kb": {
+     "label": "",
+     "n": 46,
+     "mean": 0.5109,
+     "ci95": [
+      0.359,
+      0.641
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 24,
+      "worsened": 0,
+      "tied": 22
+     },
+     "sign_sig": true,
+     "sd": 0.4999,
+     "mde80": 0.2065,
+     "ci_width": 0.282
+    },
+    "stale_plus_1_test_minus_no_kb_plus_1_test": {
+     "label": "",
+     "n": 46,
+     "mean": -0.3043,
+     "ci95": [
+      -0.424,
+      -0.185
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 0,
+      "worsened": 15,
+      "tied": 31
+     },
+     "sign_sig": true,
+     "sd": 0.4531,
+     "mde80": 0.1872,
+     "ci_width": 0.239
+    },
+    "stale_plus_full_minus_no_kb_plus_full": {
+     "label": "",
+     "n": 46,
+     "mean": -0.163,
+     "ci95": [
+      -0.272,
+      -0.065
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0039,
+      "improved": 0,
+      "worsened": 9,
+      "tied": 37
+     },
+     "sign_sig": true,
+     "sd": 0.3505,
+     "mde80": 0.1448,
+     "ci_width": 0.207
+    },
+    "no_kb_plus_full_minus_useful_note": {
+     "label": "",
+     "n": 46,
+     "mean": -0.25,
+     "ci95": [
+      -0.37,
+      -0.141
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.001,
+      "improved": 1,
+      "worsened": 14,
+      "tied": 31
+     },
+     "sign_sig": true,
+     "sd": 0.4314,
+     "mde80": 0.1782,
+     "ci_width": 0.229
+    }
+   }
+  },
+  "reasoner": {
+   "rates_itt": {
+    "c0": 0.1667,
+    "c2": 0.0741,
+    "c0v": 0.9259,
+    "c0f": 0.9444,
+    "c2v": 0.8889,
+    "c2f": 0.963
+   },
+   "rates_sub": {
+    "c0": 0.2195,
+    "c2": 0.0976,
+    "c0v": 0.9512,
+    "c0f": 1,
+    "c2v": 0.9268,
+    "c2f": 0.9756
+   },
+   "contrasts_itt": {
+    "no_kb_plus_1_test_minus_no_kb": {
+     "label": "",
+     "n": 54,
+     "mean": 0.7593,
+     "ci95": [
+      0.648,
+      0.87
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 41,
+      "worsened": 0,
+      "tied": 13
+     },
+     "sign_sig": true,
+     "sd": 0.4315,
+     "mde80": 0.1645,
+     "ci_width": 0.222
+    },
+    "no_kb_plus_full_minus_no_kb": {
+     "label": "",
+     "n": 54,
+     "mean": 0.7778,
+     "ci95": [
+      0.667,
+      0.889
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 42,
+      "worsened": 0,
+      "tied": 12
+     },
+     "sign_sig": true,
+     "sd": 0.4196,
+     "mde80": 0.16,
+     "ci_width": 0.222
+    },
+    "stale_plus_1_test_minus_no_kb_plus_1_test": {
+     "label": "",
+     "n": 54,
+     "mean": -0.037,
+     "ci95": [
+      -0.148,
+      0.056
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.7266,
+      "improved": 3,
+      "worsened": 5,
+      "tied": 46
+     },
+     "sign_sig": false,
+     "sd": 0.3867,
+     "mde80": 0.1474,
+     "ci_width": 0.204
+    },
+    "stale_plus_full_minus_no_kb_plus_full": {
+     "label": "",
+     "n": 54,
+     "mean": 0.0185,
+     "ci95": [
+      -0.056,
+      0.111
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 3,
+      "worsened": 2,
+      "tied": 49
+     },
+     "sign_sig": false,
+     "sd": 0.3066,
+     "mde80": 0.1169,
+     "ci_width": 0.167
+    },
+    "no_kb_plus_full_minus_useful_note": {
+     "label": "",
+     "n": 54,
+     "mean": 0.1852,
+     "ci95": [
+      0.074,
+      0.278
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.002,
+      "improved": 10,
+      "worsened": 0,
+      "tied": 44
+     },
+     "sign_sig": true,
+     "sd": 0.3921,
+     "mde80": 0.1495,
+     "ci_width": 0.204
+    }
+   },
+   "contrasts_sub": {
+    "no_kb_plus_1_test_minus_no_kb": {
+     "label": "",
+     "n": 41,
+     "mean": 0.7317,
+     "ci95": [
+      0.585,
+      0.854
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 30,
+      "worsened": 0,
+      "tied": 11
+     },
+     "sign_sig": true,
+     "sd": 0.4486,
+     "mde80": 0.1963,
+     "ci_width": 0.269
+    },
+    "no_kb_plus_full_minus_no_kb": {
+     "label": "",
+     "n": 41,
+     "mean": 0.7805,
+     "ci95": [
+      0.634,
+      0.902
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 32,
+      "worsened": 0,
+      "tied": 9
+     },
+     "sign_sig": true,
+     "sd": 0.4191,
+     "mde80": 0.1834,
+     "ci_width": 0.268
+    },
+    "stale_plus_1_test_minus_no_kb_plus_1_test": {
+     "label": "",
+     "n": 41,
+     "mean": -0.0244,
+     "ci95": [
+      -0.098,
+      0.049
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 38
+     },
+     "sign_sig": false,
+     "sd": 0.2727,
+     "mde80": 0.1193,
+     "ci_width": 0.147
+    },
+    "stale_plus_full_minus_no_kb_plus_full": {
+     "label": "",
+     "n": 41,
+     "mean": -0.0244,
+     "ci95": [
+      -0.073,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 1,
+      "tied": 40
+     },
+     "sign_sig": false,
+     "sd": 0.1562,
+     "mde80": 0.0683,
+     "ci_width": 0.073
+    },
+    "no_kb_plus_full_minus_useful_note": {
+     "label": "",
+     "n": 41,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 41
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    }
+   }
+  }
+ },
+ "mixed_packs": {
+  "rates_itt": {
+   "c0": 0.1574,
+   "c1": 0.8056,
+   "c2": 0.0463,
+   "h1": 0.6111,
+   "h2": 0.0556,
+   "m1": 0.3704,
+   "m2": 0.0556,
+   "m3": 0.0556,
+   "m4": 0.037,
+   "m5": 0.463,
+   "m6": 0.1296
+  },
+  "rates_sub": {
+   "h1": 0.7174,
+   "h2": 0.0652,
+   "m1": 0.4348,
+   "m2": 0.0652,
+   "m3": 0.0652,
+   "m4": 0.0435,
+   "m5": 0.5435,
+   "m6": 0.1522,
+   "c0": 0.1848,
+   "c1": 0.9457,
+   "c2": 0.0543
+  },
+  "contrasts": {
+   "mixed_useful_minus_no_kb": {
+    "itt": {
+     "label": "mixed_useful_minus_no_kb",
+     "n": 54,
+     "mean": 0.213,
+     "ci95": [
+      0.074,
+      0.343
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0127,
+      "improved": 14,
+      "worsened": 3,
+      "tied": 37
+     },
+     "sign_sig": true,
+     "sd": 0.5103,
+     "mde80": 0.1945,
+     "ci_width": 0.269
+    },
+    "sub": {
+     "label": "mixed_useful_minus_no_kb",
+     "n": 46,
+     "mean": 0.25,
+     "ci95": [
+      0.098,
+      0.402
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0127,
+      "improved": 14,
+      "worsened": 3,
+      "tied": 29
+     },
+     "sign_sig": true,
+     "sd": 0.5452,
+     "mde80": 0.2252,
+     "ci_width": 0.304
+    }
+   },
+   "mixed_useful_among_neutral_minus_no_kb": {
+    "itt": {
+     "label": "mixed_useful_among_neutral_minus_no_kb",
+     "n": 54,
+     "mean": 0.3056,
+     "ci95": [
+      0.167,
+      0.444
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0004,
+      "improved": 18,
+      "worsened": 2,
+      "tied": 34
+     },
+     "sign_sig": true,
+     "sd": 0.5178,
+     "mde80": 0.1974,
+     "ci_width": 0.277
+    },
+    "sub": {
+     "label": "mixed_useful_among_neutral_minus_no_kb",
+     "n": 46,
+     "mean": 0.3587,
+     "ci95": [
+      0.207,
+      0.5
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0004,
+      "improved": 18,
+      "worsened": 2,
+      "tied": 26
+     },
+     "sign_sig": true,
+     "sd": 0.5443,
+     "mde80": 0.2248,
+     "ci_width": 0.293
+    }
+   },
+   "mixed_useful_minus_single_useful_same_header": {
+    "itt": {
+     "label": "mixed_useful_minus_single_useful_same_header",
+     "n": 54,
+     "mean": -0.2407,
+     "ci95": [
+      -0.389,
+      -0.093
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0044,
+      "improved": 3,
+      "worsened": 16,
+      "tied": 35
+     },
+     "sign_sig": true,
+     "sd": 0.5472,
+     "mde80": 0.2086,
+     "ci_width": 0.296
+    },
+    "sub": {
+     "label": "mixed_useful_minus_single_useful_same_header",
+     "n": 46,
+     "mean": -0.2826,
+     "ci95": [
+      -0.435,
+      -0.109
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0044,
+      "improved": 3,
+      "worsened": 16,
+      "tied": 27
+     },
+     "sign_sig": true,
+     "sd": 0.5836,
+     "mde80": 0.2411,
+     "ci_width": 0.326
+    }
+   },
+   "mixed_header_cost_single_useful_minus_single_useful": {
+    "itt": {
+     "label": "mixed_header_cost_single_useful_minus_single_useful",
+     "n": 54,
+     "mean": -0.1944,
+     "ci95": [
+      -0.306,
+      -0.092
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0074,
+      "improved": 2,
+      "worsened": 13,
+      "tied": 39
+     },
+     "sign_sig": true,
+     "sd": 0.4168,
+     "mde80": 0.1589,
+     "ci_width": 0.214
+    },
+    "sub": {
+     "label": "mixed_header_cost_single_useful_minus_single_useful",
+     "n": 46,
+     "mean": -0.2283,
+     "ci95": [
+      -0.359,
+      -0.12
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0074,
+      "improved": 2,
+      "worsened": 13,
+      "tied": 31
+     },
+     "sign_sig": true,
+     "sd": 0.4436,
+     "mde80": 0.1832,
+     "ci_width": 0.239
+    }
+   },
+   "mixed_1of6_stale_minus_no_kb": {
+    "itt": {
+     "label": "mixed_1of6_stale_minus_no_kb",
+     "n": 54,
+     "mean": -0.1019,
+     "ci95": [
+      -0.185,
+      -0.037
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0312,
+      "improved": 0,
+      "worsened": 6,
+      "tied": 48
+     },
+     "sign_sig": true,
+     "sd": 0.2975,
+     "mde80": 0.1134,
+     "ci_width": 0.148
+    },
+    "sub": {
+     "label": "mixed_1of6_stale_minus_no_kb",
+     "n": 46,
+     "mean": -0.1196,
+     "ci95": [
+      -0.217,
+      -0.043
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0312,
+      "improved": 0,
+      "worsened": 6,
+      "tied": 40
+     },
+     "sign_sig": true,
+     "sd": 0.3195,
+     "mde80": 0.132,
+     "ci_width": 0.174
+    }
+   },
+   "mixed_3of6_stale_minus_no_kb": {
+    "itt": {
+     "label": "mixed_3of6_stale_minus_no_kb",
+     "n": 54,
+     "mean": -0.1019,
+     "ci95": [
+      -0.185,
+      -0.037
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0312,
+      "improved": 0,
+      "worsened": 6,
+      "tied": 48
+     },
+     "sign_sig": true,
+     "sd": 0.2975,
+     "mde80": 0.1134,
+     "ci_width": 0.148
+    },
+    "sub": {
+     "label": "mixed_3of6_stale_minus_no_kb",
+     "n": 46,
+     "mean": -0.1196,
+     "ci95": [
+      -0.217,
+      -0.043
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0312,
+      "improved": 0,
+      "worsened": 6,
+      "tied": 40
+     },
+     "sign_sig": true,
+     "sd": 0.3195,
+     "mde80": 0.132,
+     "ci_width": 0.174
+    }
+   },
+   "mixed_target_swap_stale_minus_useful": {
+    "itt": {
+     "label": "mixed_target_swap_stale_minus_useful",
+     "n": 54,
+     "mean": -0.3148,
+     "ci95": [
+      -0.444,
+      -0.185
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 1,
+      "worsened": 18,
+      "tied": 35
+     },
+     "sign_sig": true,
+     "sd": 0.5075,
+     "mde80": 0.1935,
+     "ci_width": 0.259
+    },
+    "sub": {
+     "label": "mixed_target_swap_stale_minus_useful",
+     "n": 46,
+     "mean": -0.3696,
+     "ci95": [
+      -0.522,
+      -0.217
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0001,
+      "improved": 1,
+      "worsened": 18,
+      "tied": 27
+     },
+     "sign_sig": true,
+     "sd": 0.5316,
+     "mde80": 0.2196,
+     "ci_width": 0.305
+    }
+   },
+   "mixed_3of6_minus_1of6_stale": {
+    "itt": {
+     "label": "mixed_3of6_minus_1of6_stale",
+     "n": 54,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 54
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    },
+    "sub": {
+     "label": "mixed_3of6_minus_1of6_stale",
+     "n": 46,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 46
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    }
+   },
+   "mixed_stale_with_useful_neighbours_minus_stale_neutral": {
+    "itt": {
+     "label": "mixed_stale_with_useful_neighbours_minus_stale_neutral",
+     "n": 54,
+     "mean": -0.0185,
+     "ci95": [
+      -0.093,
+      0.037
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 51
+     },
+     "sign_sig": false,
+     "sd": 0.2372,
+     "mde80": 0.0904,
+     "ci_width": 0.13
+    },
+    "sub": {
+     "label": "mixed_stale_with_useful_neighbours_minus_stale_neutral",
+     "n": 46,
+     "mean": -0.0217,
+     "ci95": [
+      -0.109,
+      0.043
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 43
+     },
+     "sign_sig": false,
+     "sd": 0.2573,
+     "mde80": 0.1063,
+     "ci_width": 0.152
+    }
+   },
+   "mixed_all_irrelevant_minus_no_kb": {
+    "itt": {
+     "label": "mixed_all_irrelevant_minus_no_kb",
+     "n": 54,
+     "mean": -0.0278,
+     "ci95": [
+      -0.074,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 0,
+      "worsened": 2,
+      "tied": 52
+     },
+     "sign_sig": false,
+     "sd": 0.151,
+     "mde80": 0.0576,
+     "ci_width": 0.074
+    },
+    "sub": {
+     "label": "mixed_all_irrelevant_minus_no_kb",
+     "n": 46,
+     "mean": -0.0326,
+     "ci95": [
+      -0.087,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 0,
+      "worsened": 2,
+      "tied": 44
+     },
+     "sign_sig": false,
+     "sd": 0.1634,
+     "mde80": 0.0675,
+     "ci_width": 0.087
+    }
+   }
+  },
+  "mean_six_packs_minus_no_kb": {
+   "itt": {
+    "mean": 0.0278,
+    "ci95": [
+     -0.046,
+     0.096
+    ],
+    "ci_sig": false,
+    "sign": {
+     "p": 0.0161,
+     "improved": 22,
+     "worsened": 8,
+     "tied": 24
+    },
+    "sign_sig": true,
+    "sd": 0.2625,
+    "mde80": 0.1001,
+    "mean_six_packs_rate": 0.1852
+   },
+   "sub": {
+    "mean": 0.0326,
+    "ci95": [
+     -0.051,
+     0.105
+    ],
+    "ci_sig": false,
+    "sign": {
+     "p": 0.0161,
+     "improved": 22,
+     "worsened": 8,
+     "tied": 16
+    },
+    "sign_sig": true,
+    "sd": 0.2846,
+    "mde80": 0.1176,
+    "mean_six_packs_rate": 0.2174
+   }
+  },
+  "mean_six_packs_rate": {
+   "itt": 0.1852,
+   "sub": 0.2174
+  }
+ },
+ "writing_variants": {
+  "itt": {
+   "rates": {
+    "n1": 0.6481,
+    "n2": 0,
+    "v1": 0.7778,
+    "v2": 0.037,
+    "scope1": 0.6296,
+    "scope2": 0,
+    "tag1": 0.6667,
+    "tag2": 0,
+    "obs1": 0.6852,
+    "obs2": 0.0185,
+    "warn1": 0.5185,
+    "warn2": 0.0185
+   },
+   "deltas": {
+    "v1_minus_n1": {
+     "label": "v1-n1",
+     "n": 54,
+     "mean": 0.1296,
+     "ci95": [
+      0.019,
+      0.241
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0654,
+      "improved": 9,
+      "worsened": 2,
+      "tied": 43
+     },
+     "sign_sig": false,
+     "sd": 0.4364,
+     "mde80": 0.1664,
+     "ci_width": 0.222
+    },
+    "scope1_minus_n1": {
+     "label": "scope1-n1",
+     "n": 54,
+     "mean": -0.0185,
+     "ci95": [
+      -0.093,
+      0.037
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 2,
+      "tied": 51
+     },
+     "sign_sig": false,
+     "sd": 0.2372,
+     "mde80": 0.0904,
+     "ci_width": 0.13
+    },
+    "tag1_minus_n1": {
+     "label": "tag1-n1",
+     "n": 54,
+     "mean": 0.0185,
+     "ci95": [
+      -0.093,
+      0.13
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 5,
+      "worsened": 4,
+      "tied": 45
+     },
+     "sign_sig": false,
+     "sd": 0.4117,
+     "mde80": 0.1569,
+     "ci_width": 0.223
+    },
+    "obs1_minus_n1": {
+     "label": "obs1-n1",
+     "n": 54,
+     "mean": 0.037,
+     "ci95": [
+      -0.037,
+      0.13
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.6875,
+      "improved": 4,
+      "worsened": 2,
+      "tied": 48
+     },
+     "sign_sig": false,
+     "sd": 0.3344,
+     "mde80": 0.1275,
+     "ci_width": 0.167
+    },
+    "warn1_minus_n1": {
+     "label": "warn1-n1",
+     "n": 54,
+     "mean": -0.1296,
+     "ci95": [
+      -0.259,
+      -0.019
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0654,
+      "improved": 2,
+      "worsened": 9,
+      "tied": 43
+     },
+     "sign_sig": false,
+     "sd": 0.4364,
+     "mde80": 0.1664,
+     "ci_width": 0.24
+    },
+    "v2_minus_n2": {
+     "label": "v2-n2",
+     "n": 54,
+     "mean": 0.037,
+     "ci95": [
+      0.0,
+      0.093
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 2,
+      "worsened": 0,
+      "tied": 52
+     },
+     "sign_sig": false,
+     "sd": 0.1906,
+     "mde80": 0.0727,
+     "ci_width": 0.093
+    },
+    "scope2_minus_n2": {
+     "label": "scope2-n2",
+     "n": 54,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 54
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    },
+    "tag2_minus_n2": {
+     "label": "tag2-n2",
+     "n": 54,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 54
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    },
+    "obs2_minus_n2": {
+     "label": "obs2-n2",
+     "n": 54,
+     "mean": 0.0185,
+     "ci95": [
+      0.0,
+      0.056
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 0,
+      "tied": 53
+     },
+     "sign_sig": false,
+     "sd": 0.1361,
+     "mde80": 0.0519,
+     "ci_width": 0.056
+    },
+    "warn2_minus_n2": {
+     "label": "warn2-n2",
+     "n": 54,
+     "mean": 0.0185,
+     "ci95": [
+      0.0,
+      0.056
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 0,
+      "tied": 53
+     },
+     "sign_sig": false,
+     "sd": 0.1361,
+     "mde80": 0.0519,
+     "ci_width": 0.056
+    }
+   }
+  },
+  "sub": {
+   "rates": {
+    "n1": 0.7391,
+    "n2": 0,
+    "v1": 0.913,
+    "v2": 0.0435,
+    "scope1": 0.7391,
+    "scope2": 0,
+    "tag1": 0.7826,
+    "tag2": 0,
+    "obs1": 0.8043,
+    "obs2": 0.0217,
+    "warn1": 0.6087,
+    "warn2": 0.0217
+   },
+   "deltas": {
+    "v1_minus_n1": {
+     "label": "v1-n1",
+     "n": 46,
+     "mean": 0.1739,
+     "ci95": [
+      0.043,
+      0.304
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0215,
+      "improved": 9,
+      "worsened": 1,
+      "tied": 36
+     },
+     "sign_sig": true,
+     "sd": 0.4374,
+     "mde80": 0.1807,
+     "ci_width": 0.261
+    },
+    "scope1_minus_n1": {
+     "label": "scope1-n1",
+     "n": 46,
+     "mean": 0,
+     "ci95": [
+      -0.065,
+      0.065
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 1,
+      "tied": 44
+     },
+     "sign_sig": false,
+     "sd": 0.2108,
+     "mde80": 0.0871,
+     "ci_width": 0.13
+    },
+    "tag1_minus_n1": {
+     "label": "tag1-n1",
+     "n": 46,
+     "mean": 0.0435,
+     "ci95": [
+      -0.065,
+      0.152
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.7266,
+      "improved": 5,
+      "worsened": 3,
+      "tied": 38
+     },
+     "sign_sig": false,
+     "sd": 0.4193,
+     "mde80": 0.1732,
+     "ci_width": 0.217
+    },
+    "obs1_minus_n1": {
+     "label": "obs1-n1",
+     "n": 46,
+     "mean": 0.0652,
+     "ci95": [
+      -0.022,
+      0.152
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.375,
+      "improved": 4,
+      "worsened": 1,
+      "tied": 41
+     },
+     "sign_sig": false,
+     "sd": 0.3267,
+     "mde80": 0.135,
+     "ci_width": 0.174
+    },
+    "warn1_minus_n1": {
+     "label": "warn1-n1",
+     "n": 46,
+     "mean": -0.1304,
+     "ci95": [
+      -0.261,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.1094,
+      "improved": 2,
+      "worsened": 8,
+      "tied": 36
+     },
+     "sign_sig": false,
+     "sd": 0.4526,
+     "mde80": 0.1869,
+     "ci_width": 0.261
+    },
+    "v2_minus_n2": {
+     "label": "v2-n2",
+     "n": 46,
+     "mean": 0.0435,
+     "ci95": [
+      0.0,
+      0.109
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5,
+      "improved": 2,
+      "worsened": 0,
+      "tied": 44
+     },
+     "sign_sig": false,
+     "sd": 0.2062,
+     "mde80": 0.0852,
+     "ci_width": 0.109
+    },
+    "scope2_minus_n2": {
+     "label": "scope2-n2",
+     "n": 46,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 46
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    },
+    "tag2_minus_n2": {
+     "label": "tag2-n2",
+     "n": 46,
+     "mean": 0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 0,
+      "worsened": 0,
+      "tied": 46
+     },
+     "sign_sig": false,
+     "sd": 0.0,
+     "mde80": 0.0,
+     "ci_width": 0.0
+    },
+    "obs2_minus_n2": {
+     "label": "obs2-n2",
+     "n": 46,
+     "mean": 0.0217,
+     "ci95": [
+      0.0,
+      0.065
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 0,
+      "tied": 45
+     },
+     "sign_sig": false,
+     "sd": 0.1474,
+     "mde80": 0.0609,
+     "ci_width": 0.065
+    },
+    "warn2_minus_n2": {
+     "label": "warn2-n2",
+     "n": 46,
+     "mean": 0.0217,
+     "ci95": [
+      0.0,
+      0.065
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 1,
+      "worsened": 0,
+      "tied": 45
+     },
+     "sign_sig": false,
+     "sd": 0.1474,
+     "mde80": 0.0609,
+     "ci_width": 0.065
+    }
+   }
+  }
+ },
+ "authority": {
+  "rates_itt": {
+   "c1": 0.8056,
+   "c1v": 0.8796,
+   "c1f": 0.8519,
+   "c2": 0.0463,
+   "c2v": 0.3148,
+   "c2f": 0.4537,
+   "c2a": 0.8704,
+   "c2ar": 0.7315,
+   "c2an": 0.8056
+  },
+  "rates_sub": {
+   "c1": 0.9457,
+   "c1v": 0.9674,
+   "c1f": 0.9348,
+   "c2": 0.0543,
+   "c2v": 0.3696,
+   "c2f": 0.5326,
+   "c2a": 0.9891,
+   "c2ar": 0.837,
+   "c2an": 0.9239
+  },
+  "contrasts": {
+   "c1v_minus_c1": {
+    "itt": {
+     "label": "c1v_minus_c1",
+     "n": 54,
+     "mean": 0.0741,
+     "ci95": [
+      0.009,
+      0.148
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.1797,
+      "improved": 7,
+      "worsened": 2,
+      "tied": 45
+     },
+     "sign_sig": false,
+     "sd": 0.2816,
+     "mde80": 0.1074,
+     "ci_width": 0.139
+    },
+    "sub": {
+     "label": "c1v_minus_c1",
+     "n": 46,
+     "mean": 0.0217,
+     "ci95": [
+      -0.022,
+      0.076
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.6875,
+      "improved": 4,
+      "worsened": 2,
+      "tied": 40
+     },
+     "sign_sig": false,
+     "sd": 0.1812,
+     "mde80": 0.0749,
+     "ci_width": 0.098
+    }
+   },
+   "c1f_minus_c1": {
+    "itt": {
+     "label": "c1f_minus_c1",
+     "n": 54,
+     "mean": 0.0463,
+     "ci95": [
+      -0.037,
+      0.13
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.5078,
+      "improved": 6,
+      "worsened": 3,
+      "tied": 45
+     },
+     "sign_sig": false,
+     "sd": 0.3112,
+     "mde80": 0.1187,
+     "ci_width": 0.167
+    },
+    "sub": {
+     "label": "c1f_minus_c1",
+     "n": 46,
+     "mean": -0.0109,
+     "ci95": [
+      -0.076,
+      0.054
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 1.0,
+      "improved": 3,
+      "worsened": 3,
+      "tied": 40
+     },
+     "sign_sig": false,
+     "sd": 0.2233,
+     "mde80": 0.0923,
+     "ci_width": 0.13
+    }
+   },
+   "c1f_minus_c2f": {
+    "itt": {
+     "label": "c1f_minus_c2f",
+     "n": 54,
+     "mean": 0.3981,
+     "ci95": [
+      0.269,
+      0.528
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 23,
+      "worsened": 0,
+      "tied": 31
+     },
+     "sign_sig": true,
+     "sd": 0.4796,
+     "mde80": 0.1828,
+     "ci_width": 0.259
+    },
+    "sub": {
+     "label": "c1f_minus_c2f",
+     "n": 46,
+     "mean": 0.4022,
+     "ci95": [
+      0.261,
+      0.543
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 20,
+      "worsened": 0,
+      "tied": 26
+     },
+     "sign_sig": true,
+     "sd": 0.4787,
+     "mde80": 0.1977,
+     "ci_width": 0.282
+    }
+   },
+   "c1v_minus_c2v": {
+    "itt": {
+     "label": "c1v_minus_c2v",
+     "n": 54,
+     "mean": 0.5648,
+     "ci95": [
+      0.426,
+      0.694
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 32,
+      "worsened": 0,
+      "tied": 22
+     },
+     "sign_sig": true,
+     "sd": 0.4861,
+     "mde80": 0.1853,
+     "ci_width": 0.268
+    },
+    "sub": {
+     "label": "c1v_minus_c2v",
+     "n": 46,
+     "mean": 0.5978,
+     "ci95": [
+      0.457,
+      0.739
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 29,
+      "worsened": 0,
+      "tied": 17
+     },
+     "sign_sig": true,
+     "sd": 0.4787,
+     "mde80": 0.1977,
+     "ci_width": 0.282
+    }
+   },
+   "c2a_minus_c2": {
+    "itt": {
+     "label": "c2a_minus_c2",
+     "n": 54,
+     "mean": 0.8241,
+     "ci95": [
+      0.722,
+      0.917
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 46,
+      "worsened": 0,
+      "tied": 8
+     },
+     "sign_sig": true,
+     "sd": 0.3655,
+     "mde80": 0.1393,
+     "ci_width": 0.195
+    },
+    "sub": {
+     "label": "c2a_minus_c2",
+     "n": 46,
+     "mean": 0.9348,
+     "ci95": [
+      0.859,
+      0.989
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 44,
+      "worsened": 0,
+      "tied": 2
+     },
+     "sign_sig": true,
+     "sd": 0.2263,
+     "mde80": 0.0935,
+     "ci_width": 0.13
+    }
+   },
+   "c2ar_minus_c2": {
+    "itt": {
+     "label": "c2ar_minus_c2",
+     "n": 54,
+     "mean": 0.6852,
+     "ci95": [
+      0.574,
+      0.806
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 41,
+      "worsened": 0,
+      "tied": 13
+     },
+     "sign_sig": true,
+     "sd": 0.4267,
+     "mde80": 0.1627,
+     "ci_width": 0.232
+    },
+    "sub": {
+     "label": "c2ar_minus_c2",
+     "n": 46,
+     "mean": 0.7826,
+     "ci95": [
+      0.663,
+      0.88
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 39,
+      "worsened": 0,
+      "tied": 7
+     },
+     "sign_sig": true,
+     "sd": 0.3749,
+     "mde80": 0.1549,
+     "ci_width": 0.217
+    }
+   },
+   "c2a_minus_c1": {
+    "itt": {
+     "label": "c2a_minus_c1",
+     "n": 54,
+     "mean": 0.0648,
+     "ci95": [
+      0.009,
+      0.12
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0703,
+      "improved": 7,
+      "worsened": 1,
+      "tied": 46
+     },
+     "sign_sig": false,
+     "sd": 0.2182,
+     "mde80": 0.0832,
+     "ci_width": 0.111
+    },
+    "sub": {
+     "label": "c2a_minus_c1",
+     "n": 46,
+     "mean": 0.0435,
+     "ci95": [
+      0.0,
+      0.098
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.2188,
+      "improved": 5,
+      "worsened": 1,
+      "tied": 40
+     },
+     "sign_sig": false,
+     "sd": 0.1772,
+     "mde80": 0.0732,
+     "ci_width": 0.098
+    }
+   },
+   "c2ar_minus_c1": {
+    "itt": {
+     "label": "c2ar_minus_c1",
+     "n": 54,
+     "mean": -0.0741,
+     "ci95": [
+      -0.148,
+      0.0
+     ],
+     "ci_sig": false,
+     "sign": {
+      "p": 0.146,
+      "improved": 3,
+      "worsened": 9,
+      "tied": 42
+     },
+     "sign_sig": false,
+     "sd": 0.2816,
+     "mde80": 0.1074,
+     "ci_width": 0.148
+    },
+    "sub": {
+     "label": "c2ar_minus_c1",
+     "n": 46,
+     "mean": -0.1087,
+     "ci95": [
+      -0.185,
+      -0.043
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0215,
+      "improved": 1,
+      "worsened": 9,
+      "tied": 36
+     },
+     "sign_sig": true,
+     "sd": 0.2771,
+     "mde80": 0.1145,
+     "ci_width": 0.142
+    }
+   },
+   "c2ar_minus_c2a": {
+    "itt": {
+     "label": "c2ar_minus_c2a",
+     "n": 54,
+     "mean": -0.1389,
+     "ci95": [
+      -0.25,
+      -0.046
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0386,
+      "improved": 2,
+      "worsened": 10,
+      "tied": 42
+     },
+     "sign_sig": true,
+     "sd": 0.3688,
+     "mde80": 0.1406,
+     "ci_width": 0.204
+    },
+    "sub": {
+     "label": "c2ar_minus_c2a",
+     "n": 46,
+     "mean": -0.1522,
+     "ci95": [
+      -0.261,
+      -0.065
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0215,
+      "improved": 1,
+      "worsened": 9,
+      "tied": 36
+     },
+     "sign_sig": true,
+     "sd": 0.3632,
+     "mde80": 0.15,
+     "ci_width": 0.196
+    }
+   },
+   "c2an_minus_c2a": {
+    "itt": {
+     "label": "c2an_minus_c2a",
+     "n": 54,
+     "mean": -0.0648,
+     "ci95": [
+      -0.111,
+      -0.019
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0391,
+      "improved": 1,
+      "worsened": 8,
+      "tied": 45
+     },
+     "sign_sig": true,
+     "sd": 0.1954,
+     "mde80": 0.0745,
+     "ci_width": 0.092
+    },
+    "sub": {
+     "label": "c2an_minus_c2a",
+     "n": 46,
+     "mean": -0.0652,
+     "ci95": [
+      -0.12,
+      -0.022
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0703,
+      "improved": 1,
+      "worsened": 7,
+      "tied": 38
+     },
+     "sign_sig": false,
+     "sd": 0.2002,
+     "mde80": 0.0827,
+     "ci_width": 0.098
+    }
+   },
+   "c2an_minus_c2": {
+    "itt": {
+     "label": "c2an_minus_c2",
+     "n": 54,
+     "mean": 0.7593,
+     "ci95": [
+      0.666,
+      0.852
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 46,
+      "worsened": 0,
+      "tied": 8
+     },
+     "sign_sig": true,
+     "sd": 0.3729,
+     "mde80": 0.1422,
+     "ci_width": 0.186
+    },
+    "sub": {
+     "label": "c2an_minus_c2",
+     "n": 46,
+     "mean": 0.8696,
+     "ci95": [
+      0.793,
+      0.935
+     ],
+     "ci_sig": true,
+     "sign": {
+      "p": 0.0,
+      "improved": 45,
+      "worsened": 0,
+      "tied": 1
+     },
+     "sign_sig": true,
+     "sd": 0.2457,
+     "mde80": 0.1015,
+     "ci_width": 0.142
+    }
+   }
+  }
+ },
+ "verified_header_2x2": {
+  "design": "2x2 note truth x header; 54 tasks x 2 seeds = 108 cells/arm",
+  "prereg": "analysis/verified_x_stale/PREREG.md",
+  "cells": {
+   "c1": {
+    "n_cells": 108,
+    "pass_cells": 81.0,
+    "rate": 0.75
+   },
+   "c1ver": {
+    "n_cells": 108,
+    "pass_cells": 87.0,
+    "rate": 0.8056
+   },
+   "c2": {
+    "n_cells": 108,
+    "pass_cells": 0,
+    "rate": 0
+   },
+   "c2ver": {
+    "n_cells": 108,
+    "pass_cells": 0,
+    "rate": 0
+   }
+  },
+  "correct_header_delta": {
+   "mean": 0.0556,
+   "ci95": [
+    0.0,
+    0.12
+   ],
+   "ci_sig": false,
+   "sign": {
+    "p": 0.2188,
+    "improved": 5,
+    "worsened": 1,
+    "tied": 48
+   },
+   "sd": 0.2312,
+   "mde80": 0.0881
+  },
+  "stale_header_delta": {
+   "mean": 0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sign": {
+    "p": 1.0,
+    "improved": 0,
+    "worsened": 0,
+    "tied": 54
+   },
+   "note": "floor: 0/108 stale cells pass under both headers",
+   "identical": true
+  },
+  "paper": "S6.20 / paper §4.4: +5.6 pp [0.00, +12.04], 81/108 -> 87/108, p=0.154"
+ },
+ "mde": {
+  "chat.useful_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4721,
+   "ci_width_sub": 0.229,
+   "ci_width_itt": 0.231,
+   "mde80_sub": 0.1727,
+   "mde80_itt": 0.18
+  },
+  "chat.stale_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3172,
+   "ci_width_sub": 0.185,
+   "ci_width_itt": 0.157,
+   "mde80_sub": 0.1407,
+   "mde80_itt": 0.1209
+  },
+  "chat.full_suite_minus_stale": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4666,
+   "ci_width_sub": 0.272,
+   "ci_width_itt": 0.25,
+   "mde80_sub": 0.1945,
+   "mde80_itt": 0.1779
+  },
+  "chat.full_suite_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4609,
+   "ci_width_sub": 0.262,
+   "ci_width_itt": 0.25,
+   "mde80_sub": 0.1989,
+   "mde80_itt": 0.1757
+  },
+  "chat.neutral_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.0953,
+   "ci_width_sub": 0.054,
+   "ci_width_itt": 0.046,
+   "mde80_sub": 0.0426,
+   "mde80_itt": 0.0363
+  },
+  "chat.useful_minus_stale": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3854,
+   "ci_width_sub": 0.131,
+   "ci_width_itt": 0.204,
+   "mde80_sub": 0.0965,
+   "mde80_itt": 0.1469
+  },
+  "chat.no_kb_plus_1_test_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4929,
+   "ci_width_sub": 0.272,
+   "ci_width_itt": 0.259,
+   "mde80_sub": 0.2065,
+   "mde80_itt": 0.1879
+  },
+  "chat.no_kb_plus_full_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4957,
+   "ci_width_sub": 0.282,
+   "ci_width_itt": 0.259,
+   "mde80_sub": 0.2065,
+   "mde80_itt": 0.189
+  },
+  "chat.stale_plus_1_test_minus_no_kb_plus_1_test": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4315,
+   "ci_width_sub": 0.239,
+   "ci_width_itt": 0.223,
+   "mde80_sub": 0.1872,
+   "mde80_itt": 0.1645
+  },
+  "chat.stale_plus_full_minus_no_kb_plus_full": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3282,
+   "ci_width_sub": 0.207,
+   "ci_width_itt": 0.176,
+   "mde80_sub": 0.1448,
+   "mde80_itt": 0.1251
+  },
+  "chat.no_kb_plus_full_minus_useful_note": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4075,
+   "ci_width_sub": 0.229,
+   "ci_width_itt": 0.204,
+   "mde80_sub": 0.1782,
+   "mde80_itt": 0.1554
+  },
+  "chat.mixed_useful_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.5103,
+   "ci_width_sub": 0.304,
+   "ci_width_itt": 0.269,
+   "mde80_sub": 0.2252,
+   "mde80_itt": 0.1945
+  },
+  "chat.mixed_useful_among_neutral_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.5178,
+   "ci_width_sub": 0.293,
+   "ci_width_itt": 0.277,
+   "mde80_sub": 0.2248,
+   "mde80_itt": 0.1974
+  },
+  "chat.mixed_useful_minus_single_useful_same_header": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.5472,
+   "ci_width_sub": 0.326,
+   "ci_width_itt": 0.296,
+   "mde80_sub": 0.2411,
+   "mde80_itt": 0.2086
+  },
+  "chat.mixed_header_cost_single_useful_minus_single_useful": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4168,
+   "ci_width_sub": 0.239,
+   "ci_width_itt": 0.214,
+   "mde80_sub": 0.1832,
+   "mde80_itt": 0.1589
+  },
+  "chat.mixed_1of6_stale_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2975,
+   "ci_width_sub": 0.174,
+   "ci_width_itt": 0.148,
+   "mde80_sub": 0.132,
+   "mde80_itt": 0.1134
+  },
+  "chat.mixed_3of6_stale_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2975,
+   "ci_width_sub": 0.174,
+   "ci_width_itt": 0.148,
+   "mde80_sub": 0.132,
+   "mde80_itt": 0.1134
+  },
+  "chat.mixed_target_swap_stale_minus_useful": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.5075,
+   "ci_width_sub": 0.305,
+   "ci_width_itt": 0.259,
+   "mde80_sub": 0.2196,
+   "mde80_itt": 0.1935
+  },
+  "chat.mixed_3of6_minus_1of6_stale": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.0,
+   "ci_width_sub": 0.0,
+   "ci_width_itt": 0.0,
+   "mde80_sub": 0.0,
+   "mde80_itt": 0.0
+  },
+  "chat.mixed_stale_with_useful_neighbours_minus_stale_neutral": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2372,
+   "ci_width_sub": 0.152,
+   "ci_width_itt": 0.13,
+   "mde80_sub": 0.1063,
+   "mde80_itt": 0.0904
+  },
+  "chat.mixed_all_irrelevant_minus_no_kb": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.151,
+   "ci_width_sub": 0.087,
+   "ci_width_itt": 0.074,
+   "mde80_sub": 0.0675,
+   "mde80_itt": 0.0576
+  },
+  "chat.c1v_minus_c1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2816,
+   "ci_width_sub": 0.098,
+   "ci_width_itt": 0.139,
+   "mde80_sub": 0.0749,
+   "mde80_itt": 0.1074
+  },
+  "chat.c1f_minus_c1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3112,
+   "ci_width_sub": 0.13,
+   "ci_width_itt": 0.167,
+   "mde80_sub": 0.0923,
+   "mde80_itt": 0.1187
+  },
+  "chat.c1f_minus_c2f": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4796,
+   "ci_width_sub": 0.282,
+   "ci_width_itt": 0.259,
+   "mde80_sub": 0.1977,
+   "mde80_itt": 0.1828
+  },
+  "chat.c1v_minus_c2v": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4861,
+   "ci_width_sub": 0.282,
+   "ci_width_itt": 0.268,
+   "mde80_sub": 0.1977,
+   "mde80_itt": 0.1853
+  },
+  "chat.c2a_minus_c2": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3655,
+   "ci_width_sub": 0.13,
+   "ci_width_itt": 0.195,
+   "mde80_sub": 0.0935,
+   "mde80_itt": 0.1393
+  },
+  "chat.c2ar_minus_c2": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4267,
+   "ci_width_sub": 0.217,
+   "ci_width_itt": 0.232,
+   "mde80_sub": 0.1549,
+   "mde80_itt": 0.1627
+  },
+  "chat.c2a_minus_c1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2182,
+   "ci_width_sub": 0.098,
+   "ci_width_itt": 0.111,
+   "mde80_sub": 0.0732,
+   "mde80_itt": 0.0832
+  },
+  "chat.c2ar_minus_c1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.2816,
+   "ci_width_sub": 0.142,
+   "ci_width_itt": 0.148,
+   "mde80_sub": 0.1145,
+   "mde80_itt": 0.1074
+  },
+  "chat.c2ar_minus_c2a": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3688,
+   "ci_width_sub": 0.196,
+   "ci_width_itt": 0.204,
+   "mde80_sub": 0.15,
+   "mde80_itt": 0.1406
+  },
+  "chat.c2an_minus_c2a": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.1954,
+   "ci_width_sub": 0.098,
+   "ci_width_itt": 0.092,
+   "mde80_sub": 0.0827,
+   "mde80_itt": 0.0745
+  },
+  "chat.c2an_minus_c2": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3729,
+   "ci_width_sub": 0.142,
+   "ci_width_itt": 0.186,
+   "mde80_sub": 0.1015,
+   "mde80_itt": 0.1422
+  },
+  "chat.v1_minus_n1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4364,
+   "ci_width_sub": 0.261,
+   "ci_width_itt": 0.222,
+   "mde80_sub": 0.1807,
+   "mde80_itt": 0.1664
+  },
+  "chat.warn1_minus_n1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.4364,
+   "ci_width_sub": 0.261,
+   "ci_width_itt": 0.24,
+   "mde80_sub": 0.1869,
+   "mde80_itt": 0.1664
+  },
+  "chat.obs1_minus_n1": {
+   "n_sub": 46,
+   "n_itt": 54,
+   "sd": 0.3344,
+   "ci_width_sub": 0.174,
+   "ci_width_itt": 0.167,
+   "mde80_sub": 0.135,
+   "mde80_itt": 0.1275
+  }
+ },
+ "comparison_46_vs_54": [
+  {
+   "id": "T1-useful-chat",
+   "paper_quote": "All-task ITT effects are +0.648/+0.593 for useful notes",
+   "paper_subset_value": "+0.648",
+   "recomputed_subset": 0.7609,
+   "recomputed_itt": 0.6481,
+   "subset_ci": [
+    0.641,
+    0.87
+   ],
+   "itt_ci": [
+    0.528,
+    0.759
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0,
+   "itt_sign_p": 0.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "already-ITT (reproduced)",
+   "note": "",
+   "suggested_replacement": "No change: Table 1 already reports the all-54 ITT value (+0.648); recomputed +0.648 [+0.528, +0.759]. "
+  },
+  {
+   "id": "T1-stale-chat",
+   "paper_quote": "−0.111/−0.093 for stale notes",
+   "paper_subset_value": "−0.111",
+   "recomputed_subset": -0.1304,
+   "recomputed_itt": -0.1111,
+   "subset_ci": [
+    -0.228,
+    -0.043
+   ],
+   "itt_ci": [
+    -0.194,
+    -0.037
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0391,
+   "itt_sign_p": 0.0391,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "already-ITT (reproduced)",
+   "note": "",
+   "suggested_replacement": "No change: ITT −0.111 reproduces; subset −0.130."
+  },
+  {
+   "id": "T1-neutral-chat",
+   "paper_quote": "Neutral notes are close to no KB (+0.022/−0.024)",
+   "paper_subset_value": "+0.022 (subset)",
+   "recomputed_subset": 0.0217,
+   "recomputed_itt": 0.0185,
+   "subset_ci": [
+    0.0,
+    0.054
+   ],
+   "itt_ci": [
+    0.0,
+    0.046
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 0.5,
+   "itt_sign_p": 0.5,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "Table 1 neutral row currently gives only the subset CI; ITT value missing.",
+   "suggested_replacement": "Add ITT cell: Neutral − no KB (chat) +0.018 [+0.000, +0.046]; reasoner −0.018 [-0.093, +0.037]."
+  },
+  {
+   "id": "T1-full-vs-none-chat",
+   "paper_quote": "| Full suite − no KB | +0.348 [0.217, 0.478] / +0.435 [0.306, 0.565] |",
+   "paper_subset_value": "+0.435 ITT (published)",
+   "recomputed_subset": 0.3478,
+   "recomputed_itt": 0.2963,
+   "subset_ci": [
+    0.217,
+    0.479
+   ],
+   "itt_ci": [
+    0.176,
+    0.426
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0001,
+   "itt_sign_p": 0.0001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "Published chat ITT cell +0.435 equals the c0f−c0 test-control value, not c2f−c0: recomputed c2f−c0 ITT is +0.296 [0.176,0.426]. Likely a table copy/labeling error.",
+   "suggested_replacement": "Replace the chat ITT cell with +0.296 [0.176, 0.426] (c2f − c0) OR relabel the row as the no-KB full-test control (+0.435 [0.306, 0.565])."
+  },
+  {
+   "id": "T1-full-vs-none-reasoner",
+   "paper_quote": "| +0.756 [0.610, 0.878] / +0.778 [0.667, 0.889] |",
+   "paper_subset_value": "+0.778 ITT (published)",
+   "recomputed_subset": 0.7561,
+   "recomputed_itt": 0.7963,
+   "subset_ci": [
+    0.61,
+    0.878
+   ],
+   "itt_ci": [
+    0.685,
+    0.889
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0,
+   "itt_sign_p": 0.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "Published reasoner ITT +0.778 equals the c0f−c0 test-control value; recomputed c2f−c0 ITT is +0.796 [0.685,0.889].",
+   "suggested_replacement": "Replace reasoner ITT cell with +0.796 [0.685, 0.889] (c2f − c0) OR relabel as the no-KB full-test control (+0.778 [0.667, 0.889])."
+  },
+  {
+   "id": "T1-full-vs-stale-reproduced",
+   "paper_quote": "| Full suite − stale | +0.478 [0.348, 0.609] / +0.407 [0.287, 0.528] |",
+   "paper_subset_value": "+0.407 ITT (published)",
+   "recomputed_subset": 0.4783,
+   "recomputed_itt": 0.4074,
+   "subset_ci": [
+    0.337,
+    0.609
+   ],
+   "itt_ci": [
+    0.287,
+    0.537
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0,
+   "itt_sign_p": 0.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "already-ITT (reproduced)",
+   "note": "",
+   "suggested_replacement": "No change: ITT +0.407 reproduces (chat); reasoner +0.889 reproduces."
+  },
+  {
+   "id": "T1-stale-counts-chat",
+   "paper_quote": "chat 1/8/37, sign p=0.039",
+   "paper_subset_value": "1/8/37 (subset)",
+   "recomputed_subset": -0.1304,
+   "recomputed_itt": -0.1111,
+   "subset_ci": [
+    -0.228,
+    -0.043
+   ],
+   "itt_ci": [
+    -0.194,
+    -0.037
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0391,
+   "itt_sign_p": 0.0391,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "ITT non-tied counts are unchanged (1 improved / 8 worsened / 45 tied); exact sign p is also unchanged (0.039).",
+   "suggested_replacement": "Add ITT counts to Table 1: chat 1/8/45, p=0.039; reasoner 0/5/49, p=0.0625 (identical non-tied counts because the remainder are ties)."
+  },
+  {
+   "id": "T2-no-kb-1test",
+   "paper_quote": "| No KB + 1 hidden test − no KB | +0.489 [0.348, 0.630] |",
+   "paper_subset_value": "+0.489",
+   "recomputed_subset": 0.4891,
+   "recomputed_itt": 0.4167,
+   "subset_ci": [
+    0.348,
+    0.62
+   ],
+   "itt_ci": [
+    0.287,
+    0.546
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0,
+   "itt_sign_p": 0.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes +0.417 [+0.287, +0.546] at 54 tasks (subset +0.489); significance unchanged."
+  },
+  {
+   "id": "T2-no-kb-full",
+   "paper_quote": "| No KB + full suite − no KB | +0.511 [0.370, 0.652] |",
+   "paper_subset_value": "+0.511",
+   "recomputed_subset": 0.5109,
+   "recomputed_itt": 0.4352,
+   "subset_ci": [
+    0.359,
+    0.641
+   ],
+   "itt_ci": [
+    0.306,
+    0.565
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0,
+   "itt_sign_p": 0.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes +0.435 [+0.306, +0.565] at 54 tasks (subset +0.511); significance unchanged."
+  },
+  {
+   "id": "T2-stale-1test",
+   "paper_quote": "| Stale + 1 test − (no KB + 1 test) | −0.304 [−0.435, −0.185] |",
+   "paper_subset_value": "−0.304",
+   "recomputed_subset": -0.3043,
+   "recomputed_itt": -0.2593,
+   "subset_ci": [
+    -0.424,
+    -0.185
+   ],
+   "itt_ci": [
+    -0.38,
+    -0.157
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0001,
+   "itt_sign_p": 0.0001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.259 [-0.380, -0.157] at 54 tasks (subset -0.304); significance unchanged."
+  },
+  {
+   "id": "T2-stale-full",
+   "paper_quote": "| Stale + full suite − (no KB + full suite) | −0.163 [−0.272, −0.076] |",
+   "paper_subset_value": "−0.163",
+   "recomputed_subset": -0.163,
+   "recomputed_itt": -0.1389,
+   "subset_ci": [
+    -0.272,
+    -0.065
+   ],
+   "itt_ci": [
+    -0.241,
+    -0.065
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0039,
+   "itt_sign_p": 0.0039,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.139 [-0.241, -0.065] at 54 tasks (subset -0.163); significance unchanged."
+  },
+  {
+   "id": "T2-full-vs-useful",
+   "paper_quote": "| No KB + full suite − useful note | −0.250 [−0.370, −0.130] |",
+   "paper_subset_value": "−0.250",
+   "recomputed_subset": -0.25,
+   "recomputed_itt": -0.213,
+   "subset_ci": [
+    -0.37,
+    -0.141
+   ],
+   "itt_ci": [
+    -0.315,
+    -0.111
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.001,
+   "itt_sign_p": 0.001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.213 [-0.315, -0.111] at 54 tasks (subset -0.250); significance unchanged."
+  },
+  {
+   "id": "T2-mixed-useful-vs-single",
+   "paper_quote": "| Mixed useful − single useful (same header) | −0.283 [−0.457, −0.109] |",
+   "paper_subset_value": "−0.283",
+   "recomputed_subset": -0.2826,
+   "recomputed_itt": -0.2407,
+   "subset_ci": [
+    -0.435,
+    -0.109
+   ],
+   "itt_ci": [
+    -0.389,
+    -0.093
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0044,
+   "itt_sign_p": 0.0044,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.241 [-0.389, -0.093] at 54 tasks (subset -0.283); significance unchanged."
+  },
+  {
+   "id": "T2-mixed-1of6",
+   "paper_quote": "| Mixed 1/6 stale − no KB | −0.120 [−0.217, −0.043] |",
+   "paper_subset_value": "−0.120",
+   "recomputed_subset": -0.1196,
+   "recomputed_itt": -0.1019,
+   "subset_ci": [
+    -0.217,
+    -0.043
+   ],
+   "itt_ci": [
+    -0.185,
+    -0.037
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0312,
+   "itt_sign_p": 0.0312,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.102 [-0.185, -0.037] at 54 tasks (subset -0.120); significance unchanged."
+  },
+  {
+   "id": "T2-mixed-3of6",
+   "paper_quote": "| Mixed 3/6 stale − no KB | −0.120 [−0.217, −0.043] |",
+   "paper_subset_value": "−0.120",
+   "recomputed_subset": -0.1196,
+   "recomputed_itt": -0.1019,
+   "subset_ci": [
+    -0.217,
+    -0.043
+   ],
+   "itt_ci": [
+    -0.185,
+    -0.037
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0312,
+   "itt_sign_p": 0.0312,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.102 [-0.185, -0.037] at 54 tasks (subset -0.120); significance unchanged."
+  },
+  {
+   "id": "T2-target-swap",
+   "paper_quote": "| Mixed target swap (stale − useful) | −0.370 [−0.522, −0.217] |",
+   "paper_subset_value": "−0.370",
+   "recomputed_subset": -0.3696,
+   "recomputed_itt": -0.3148,
+   "subset_ci": [
+    -0.522,
+    -0.217
+   ],
+   "itt_ci": [
+    -0.444,
+    -0.185
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0001,
+   "itt_sign_p": 0.0001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.315 [-0.444, -0.185] at 54 tasks (subset -0.370); significance unchanged."
+  },
+  {
+   "id": "T2-all-irrelevant",
+   "paper_quote": "| All-irrelevant pack − no KB | −0.033 [−0.087, 0.000] |",
+   "paper_subset_value": "−0.033",
+   "recomputed_subset": -0.0326,
+   "recomputed_itt": -0.0278,
+   "subset_ci": [
+    -0.087,
+    0.0
+   ],
+   "itt_ci": [
+    -0.074,
+    0.0
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 0.5,
+   "itt_sign_p": 0.5,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Table 2 row becomes -0.028 [-0.074, +0.000] at 54 tasks (subset -0.033); significance unchanged."
+  },
+  {
+   "id": "T2-mean-six",
+   "paper_quote": "| Mean of six mixed packs − no KB | +0.033 [−0.054, 0.109] |",
+   "paper_subset_value": "+0.033",
+   "recomputed_subset": 0.0326,
+   "recomputed_itt": 0.0278,
+   "subset_ci": [
+    -0.051,
+    0.105
+   ],
+   "itt_ci": [
+    -0.046,
+    0.096
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 0.0161,
+   "itt_sign_p": 0.0161,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Row becomes +0.028 [-0.046, +0.096] at 54 tasks (subset +0.033); still a null."
+  },
+  {
+   "id": "S43-m1-rate",
+   "paper_quote": "A useful target among five distractors keeps only +0.250 over no KB (m1 0.435 vs 0.185)",
+   "paper_subset_value": "m1 0.435 vs c0 0.185",
+   "recomputed_subset": 0.25,
+   "recomputed_itt": 0.213,
+   "subset_ci": [
+    0.098,
+    0.402
+   ],
+   "itt_ci": [
+    0.074,
+    0.343
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0127,
+   "itt_sign_p": 0.0127,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "a useful target among five distractors keeps +0.213 [+0.074, +0.343] over no KB at all 54 tasks (m1 0.370 vs 0.157; subset 0.435 vs 0.185)"
+  },
+  {
+   "id": "S43-m5-rate",
+   "paper_quote": "a useful target among five neutral entries keeps +0.358 (m5 0.543 vs 0.185)",
+   "paper_subset_value": "m5 0.543 vs 0.185",
+   "recomputed_subset": 0.3587,
+   "recomputed_itt": 0.3056,
+   "subset_ci": [
+    0.207,
+    0.5
+   ],
+   "itt_ci": [
+    0.167,
+    0.444
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0004,
+   "itt_sign_p": 0.0004,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "a useful target among five neutral entries keeps +0.306 [+0.167, +0.444] at 54 tasks (m5 0.463 vs 0.157)"
+  },
+  {
+   "id": "S43-header",
+   "paper_quote": "The mixed header costs 0.229 (h1 0.717 vs c1 0.946) and the five distractors another 0.282 (m1 0.435 vs h1 0.717), totaling 0.511 of dilution",
+   "paper_subset_value": "0.229 + 0.282 = 0.511 (subset)",
+   "recomputed_subset": 0.5112,
+   "recomputed_itt": 0.4352,
+   "subset_ci": [
+    0.217,
+    0.522
+   ],
+   "itt_ci": [
+    0.093,
+    0.389
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": null,
+   "itt_sign_p": null,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "At all 54 tasks the mixed header costs 0.194 (h1 0.611 vs c1 0.806; [+0.092, +0.306]) and the five distractors another 0.241 (m1 0.370 vs h1 0.611; [+0.093, +0.389]), totaling 0.435 of dilution (subset 0.511)"
+  },
+  {
+   "id": "S43-m2-rate",
+   "paper_quote": "a pack with one stale target costs 0.120 pass rate (m2 0.065 vs 0.185)",
+   "paper_subset_value": "−0.120 (subset)",
+   "recomputed_subset": -0.1196,
+   "recomputed_itt": -0.1019,
+   "subset_ci": [
+    -0.217,
+    -0.043
+   ],
+   "itt_ci": [
+    -0.185,
+    -0.037
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0312,
+   "itt_sign_p": 0.0312,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "At all 54 tasks a one-stale pack costs 0.102 (m2 0.056 vs 0.157; -0.102 [-0.185, -0.037])"
+  },
+  {
+   "id": "S43-target-swap",
+   "paper_quote": "The target-level comparison is the within-pack swap m1−m2 = +0.370",
+   "paper_subset_value": "+0.370 (subset)",
+   "recomputed_subset": -0.3696,
+   "recomputed_itt": -0.3148,
+   "subset_ci": [
+    -0.522,
+    -0.217
+   ],
+   "itt_ci": [
+    -0.444,
+    -0.185
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0001,
+   "itt_sign_p": 0.0001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "Published row is sign-flipped (stale − useful = −0.370); key is m2−m1. ITT stale−useful = −0.315.",
+   "suggested_replacement": "the within-pack swap (stale − useful) is −0.315 [-0.444, -0.185] at 54 tasks (m1−m2 = +0.315)"
+  },
+  {
+   "id": "S42-tests-chat-rates",
+   "paper_quote": "A no-KB model that sees one hidden test reaches 0.674 (chat)",
+   "paper_subset_value": "0.674 (subset)",
+   "recomputed_subset": 0.6739,
+   "recomputed_itt": 0.5741,
+   "subset_ci": null,
+   "itt_ci": [
+    null,
+    null
+   ],
+   "subset_ci_sig": null,
+   "itt_ci_sig": null,
+   "subset_sign_p": null,
+   "itt_sign_p": null,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "A no-KB chat model that sees one hidden test reaches 0.574 across all 54 tasks (0.674 on the 46 KB-responsive tasks)"
+  },
+  {
+   "id": "S42-tests-reasoner-rates",
+   "paper_quote": "and 0.951 (reasoner)",
+   "paper_subset_value": "0.951 (subset)",
+   "recomputed_subset": 0.9512,
+   "recomputed_itt": 0.9259,
+   "subset_ci": null,
+   "itt_ci": [
+    null,
+    null
+   ],
+   "subset_ci_sig": null,
+   "itt_ci_sig": null,
+   "subset_sign_p": null,
+   "itt_sign_p": null,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "0.926 (reasoner, all 54; 0.951 subset)"
+  },
+  {
+   "id": "S42-override-chat-1test",
+   "paper_quote": "with one test 0.370 vs 0.674 (Δ −0.304 [−0.435, −0.185])",
+   "paper_subset_value": "0.370 vs 0.674 (subset)",
+   "recomputed_subset": -0.3043,
+   "recomputed_itt": -0.2593,
+   "subset_ci": [
+    -0.424,
+    -0.185
+   ],
+   "itt_ci": [
+    -0.38,
+    -0.157
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0001,
+   "itt_sign_p": 0.0001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "with one test 0.315 vs 0.574 (Δ -0.259 [-0.380, -0.157] at 54 tasks)"
+  },
+  {
+   "id": "S42-override-chat-full",
+   "paper_quote": "with the full suite 0.533 vs 0.696 (Δ −0.163 [−0.272, −0.076])",
+   "paper_subset_value": "0.533 vs 0.696 (subset)",
+   "recomputed_subset": -0.163,
+   "recomputed_itt": -0.1389,
+   "subset_ci": [
+    -0.272,
+    -0.065
+   ],
+   "itt_ci": [
+    -0.241,
+    -0.065
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0039,
+   "itt_sign_p": 0.0039,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "with the full suite 0.454 vs 0.593 (Δ -0.139 [-0.241, -0.065] at 54 tasks)"
+  },
+  {
+   "id": "S42-reasoner-override",
+   "paper_quote": "Reasoner does not show this override (0.951 vs 0.927; 1.000 vs 0.976, n.s.)",
+   "paper_subset_value": "0.951 vs 0.927; 1.000 vs 0.976 (subset)",
+   "recomputed_subset": -0.0244,
+   "recomputed_itt": -0.037,
+   "subset_ci": [
+    -0.098,
+    0.049
+   ],
+   "itt_ci": [
+    -0.148,
+    0.056
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 1.0,
+   "itt_sign_p": 0.7266,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "At 54 tasks: c2v−c0v = −0.037 [-0.148,+0.056] n.s.; c2f−c0f = +0.018 [-0.056,+0.111] n.s. (subset c2f−c0f was −0.024). Conclusion (no reasoner override) unchanged; all quoted rates change: ITT c0v 0.926, c2v 0.889, c0f 0.944, c2f 0.963.",
+   "suggested_replacement": "Reasoner does not show this override at 54 tasks (one test 0.926 vs 0.889; full suite 0.944 vs 0.963; both n.s.)"
+  },
+  {
+   "id": "S42-full-vs-useful",
+   "paper_quote": "Full-suite-only is not equivalent to a correct note (−0.250 [−0.370, −0.130])",
+   "paper_subset_value": "−0.250 (subset)",
+   "recomputed_subset": -0.25,
+   "recomputed_itt": -0.213,
+   "subset_ci": [
+    -0.37,
+    -0.141
+   ],
+   "itt_ci": [
+    -0.315,
+    -0.111
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.001,
+   "itt_sign_p": 0.001,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "Full-suite-only is not equivalent to a correct note (-0.213 [-0.315, -0.111] at 54 tasks)"
+  },
+  {
+   "id": "S42-c1v-c1",
+   "paper_quote": "adding tests changes little (c1v−c1 +0.022; c1f−c1 −0.011)",
+   "paper_subset_value": "+0.022 / −0.011 (subset)",
+   "recomputed_subset": 0.0217,
+   "recomputed_itt": 0.0741,
+   "subset_ci": [
+    -0.022,
+    0.076
+   ],
+   "itt_ci": [
+    0.009,
+    0.148
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.6875,
+   "itt_sign_p": 0.1797,
+   "sign_flip": false,
+   "significance_change": true,
+   "change_type": "significance",
+   "note": "At 54 tasks, one test beside a correct note is +0.074 [0.009,0.148] (CI-significant, exact sign p=0.18); full suite +0.046 (n.s.) — 'changes little' holds only for the full suite.",
+   "suggested_replacement": "adding one test beside a correct note adds +0.074 [+0.009, +0.148] at 54 tasks (full suite +0.046 [-0.037, +0.130], n.s.)"
+  },
+  {
+   "id": "S42-c1f-c1",
+   "paper_quote": "c1f−c1 −0.011",
+   "paper_subset_value": "−0.011 (subset)",
+   "recomputed_subset": -0.0109,
+   "recomputed_itt": 0.0463,
+   "subset_ci": [
+    -0.076,
+    0.054
+   ],
+   "itt_ci": [
+    -0.037,
+    0.13
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 1.0,
+   "itt_sign_p": 0.5078,
+   "sign_flip": true,
+   "significance_change": false,
+   "change_type": "sign-flip",
+   "note": "Point estimate flips sign between the 46- and 54-task scopes (-0.011 -> +0.046); both are n.s. (ITT CI [-0.037,+0.130]), so the claim 'adding a full suite changes little' still holds but the quoted sign must not be read as a decrement.",
+   "suggested_replacement": "adding the full suite to a correct note changes little (+0.046 [-0.037, +0.130] at 54 tasks; subset −0.011)"
+  },
+  {
+   "id": "S42-c2a-c1",
+   "paper_quote": "An appended correction nearly restores the correct-note level (0.989; c2a−c1 +0.043 [0.000, 0.098])",
+   "paper_subset_value": "+0.043 [0.000, 0.098] (subset)",
+   "recomputed_subset": 0.0435,
+   "recomputed_itt": 0.0648,
+   "subset_ci": [
+    0.0,
+    0.098
+   ],
+   "itt_ci": [
+    0.009,
+    0.12
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.2188,
+   "itt_sign_p": 0.0703,
+   "sign_flip": false,
+   "significance_change": true,
+   "change_type": "significance",
+   "note": "At 54 tasks c2a is 0.870 vs c1 0.806: +0.065 [0.009,0.121] — the correction is now significantly slightly ABOVE the correct-note level, not below it.",
+   "suggested_replacement": "An appended correction restores the correct-note level at 54 tasks (c2a 0.870 vs c1 0.806; c2a−c1 +0.065 [+0.009, +0.120])"
+  },
+  {
+   "id": "S42-c2ar-c2a",
+   "paper_quote": "placed before the stale text it reaches 0.837 (c2ar−c2a −0.152 [−0.261, −0.054])",
+   "paper_subset_value": "−0.152 (subset)",
+   "recomputed_subset": -0.1522,
+   "recomputed_itt": -0.1389,
+   "subset_ci": [
+    -0.261,
+    -0.065
+   ],
+   "itt_ci": [
+    -0.25,
+    -0.046
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0215,
+   "itt_sign_p": 0.0386,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "placed before the stale text it reaches 0.731 at 54 tasks (c2ar−c2a -0.139 [-0.250, -0.046])"
+  },
+  {
+   "id": "S42-c2an-c2a",
+   "paper_quote": "lowers recovery to 0.924 (c2an−c2a −0.065 [−0.120, −0.011])",
+   "paper_subset_value": "−0.065 (subset)",
+   "recomputed_subset": -0.0652,
+   "recomputed_itt": -0.0648,
+   "subset_ci": [
+    -0.12,
+    -0.022
+   ],
+   "itt_ci": [
+    -0.111,
+    -0.019
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0703,
+   "itt_sign_p": 0.0391,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "",
+   "suggested_replacement": "lowers recovery to 0.806 at 54 tasks (c2an−c2a -0.065 [-0.111, -0.019])"
+  },
+  {
+   "id": "S44-verified-header",
+   "paper_quote": "A verified header on a correct entry recovered +0.174 [0.043, 0.304] over a neutral header on the KB-responsive subset",
+   "paper_subset_value": "+0.174 (subset)",
+   "recomputed_subset": 0.1739,
+   "recomputed_itt": 0.1296,
+   "subset_ci": [
+    0.043,
+    0.304
+   ],
+   "itt_ci": [
+    0.019,
+    0.241
+   ],
+   "subset_ci_sig": true,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.0215,
+   "itt_sign_p": 0.0654,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "Same-run all-54: +0.130 [0.019,0.241] (CI excludes 0) but exact sign p=0.065; the pre-registered 2x2 all-54 estimate is +5.6 pp [0.00,+12.04], n.s. — label effect still not robust.",
+   "suggested_replacement": "a verified header on a correct entry recovers +0.130 [+0.019, +0.241] over a neutral header at 54 tasks (subset +0.174), though the pre-registered 2x2 all-54 estimate is +5.6 pp [0.00,+12.04] (n.s.)"
+  },
+  {
+   "id": "S44-scope-tag",
+   "paper_quote": "Scope lines and \"last checked\" tags do nothing",
+   "paper_subset_value": "0.000 / 0.043 (subset)",
+   "recomputed_subset": 0,
+   "recomputed_itt": -0.0185,
+   "subset_ci": [
+    -0.065,
+    0.065
+   ],
+   "itt_ci": [
+    -0.093,
+    0.037
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 1.0,
+   "itt_sign_p": 1.0,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "At 54 tasks: scope line useful −0.019 (n.s.), tag +0.019 (n.s.); stale variants remain exactly 0.000 (floor). Conclusion unchanged.",
+   "suggested_replacement": "Scope lines and \"last checked\" tags do not change useful or stale rates at 54 tasks (scope −0.019 n.s.; tag +0.019 n.s.; stale 0.000)."
+  },
+  {
+   "id": "S44-obs",
+   "paper_quote": "observation framing +0.065/+0.022 (n.s.)",
+   "paper_subset_value": "+0.065/+0.022 (subset)",
+   "recomputed_subset": 0.0652,
+   "recomputed_itt": 0.037,
+   "subset_ci": [
+    -0.022,
+    0.152
+   ],
+   "itt_ci": [
+    -0.037,
+    0.13
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": false,
+   "subset_sign_p": 0.375,
+   "itt_sign_p": 0.6875,
+   "sign_flip": false,
+   "significance_change": false,
+   "change_type": "numeric-only",
+   "note": "At 54 tasks: useful +0.037 [−0.037,0.130] n.s.; stale +0.019 [0.000,0.056] n.s. Conclusion unchanged.",
+   "suggested_replacement": "observation framing gives +0.037 useful (n.s.) and +0.019 stale (n.s.) at 54 tasks"
+  },
+  {
+   "id": "S44-warning",
+   "paper_quote": "a global warning costs 0.130 [−0.261, 0.000] useful effect",
+   "paper_subset_value": "−0.130 [−0.261, 0.000] (subset, n.s.)",
+   "recomputed_subset": -0.1304,
+   "recomputed_itt": -0.1296,
+   "subset_ci": [
+    -0.261,
+    0.0
+   ],
+   "itt_ci": [
+    -0.259,
+    -0.019
+   ],
+   "subset_ci_sig": false,
+   "itt_ci_sig": true,
+   "subset_sign_p": 0.1094,
+   "itt_sign_p": 0.0654,
+   "sign_flip": false,
+   "significance_change": true,
+   "change_type": "significance",
+   "note": "At 54 tasks the warning costs −0.130 [−0.241,−0.019]: the CI now excludes zero (CI-significant; exact sign p=0.065). The 'costs useful effect' claim strengthens from a directional n.s. estimate to a CI-significant one.",
+   "suggested_replacement": "a global warning costs -0.130 [-0.259, -0.019] useful effect at 54 tasks (subset −0.130 [−0.261, 0.000])"
+  }
+ ],
+ "flags": {
+  "n_claims_checked": 38,
+  "sign_flips": [
+   "S42-c1f-c1"
+  ],
+  "significance_changes": [
+   "S42-c1v-c1",
+   "S42-c2a-c1",
+   "S44-warning"
+  ],
+  "numeric_only": [
+   "T1-neutral-chat",
+   "T1-full-vs-none-chat",
+   "T1-full-vs-none-reasoner",
+   "T1-stale-counts-chat",
+   "T2-no-kb-1test",
+   "T2-no-kb-full",
+   "T2-stale-1test",
+   "T2-stale-full",
+   "T2-full-vs-useful",
+   "T2-mixed-useful-vs-single",
+   "T2-mixed-1of6",
+   "T2-mixed-3of6",
+   "T2-target-swap",
+   "T2-all-irrelevant",
+   "T2-mean-six",
+   "S43-m1-rate",
+   "S43-m5-rate",
+   "S43-header",
+   "S43-m2-rate",
+   "S43-target-swap",
+   "S42-tests-chat-rates",
+   "S42-tests-reasoner-rates",
+   "S42-override-chat-1test",
+   "S42-override-chat-full",
+   "S42-reasoner-override",
+   "S42-full-vs-useful",
+   "S42-c2ar-c2a",
+   "S42-c2an-c2a",
+   "S44-verified-header",
+   "S44-scope-tag",
+   "S44-obs"
+  ],
+  "data_or_label_errors": [
+   "T1-full-vs-none-chat",
+   "T1-full-vs-none-reasoner"
+  ],
+  "supplement_only_significance_changes": [
+   {
+    "metric": "c2ar_minus_c1 (prepended correction vs correct-only)",
+    "subset": "-0.109 [-0.196,-0.033] (CI excludes 0)",
+    "itt": "-0.074 [-0.148, 0.000] (CI touches 0, n.s.)",
+    "note": "S6.13 already reports the ITT column; paper.md main text does not quote this contrast, so no main-text replacement is needed, but the supplement sentence 'worse than a correct-only note' should carry the ITT CI."
+   }
+  ],
+  "table2_significance_unchanged": true,
+  "table2_note": "all 12 Table 2 rows keep the same CI-significance status at 54 tasks; only the magnitudes/rates change.",
+  "table1_note": "Table 1's four ITT rows reproduce (useful/stale/full-stale) except the 'Full suite - no KB' ITT cells, which equal the c0f-c0 test-control values rather than c2f-c0.",
+  "mde_note": "MDE80 at 54 tasks is lower than at 46 for most contrasts (~8% sqrt(n) gain) but can be higher when the added tasks have larger task-level variance (e.g. authority c1v-c1).",
+  "inference_criterion_changes": [
+   {
+    "metric": "mean_of_six_mixed_packs_minus_no_kb",
+    "subset": "+0.033 [-0.054, 0.109] (CI n.s.; sign p=<see script)",
+    "itt": "+0.028 [-0.046, 0.096] (CI n.s.; exact sign p=0.0161, 22 improved / 8 worsened / 24 tied)",
+    "note": "The 54-task sign test rejects while the CI includes zero: the mean effect is tiny (+0.028) and most tasks are ties. Keep the paper's CI-based 'statistically null' wording; do not switch the headline to a sign-test win."
+   },
+   {
+    "metric": "v1_minus_n1 (verified header, useful note)",
+    "subset": "+0.174 [0.043,0.304], exact sign p=0.0215",
+    "itt": "+0.130 [0.019,0.241], exact sign p=0.0654",
+    "note": "CI excludes zero at both scopes, but the exact sign test is n.s. at 54 tasks; the pre-registered 2x2 all-task estimate (+5.6 pp [0.00,+12.04], p=0.154) already supports 'not robust'."
+   }
+  ]
+ }
+}

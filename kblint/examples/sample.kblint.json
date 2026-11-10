@@ -1,0 +1,51 @@
+{
+  "repo": "sample_repo",
+  "docs": [
+    "docs/**/*.md"
+  ],
+  "artifacts": [
+    "artifacts/*.json"
+  ],
+  "run_index": {
+    "path": "sample_repo/artifacts/runs_index.jsonl",
+    "format": "jsonl",
+    "file_field": "file",
+    "id_field": "run_id"
+  },
+  "pins": [
+    {
+      "doc_glob": "docs/pins.md",
+      "artifact_glob": "artifacts/r50_*.json",
+      "artifact_keys": [
+        "torch"
+      ],
+      "doc_patterns": [
+        "torch\\s+([0-9.]+\\+cu[0-9]+)"
+      ]
+    }
+  ],
+  "source_of_truth": [
+    {
+      "topic": "acceptance target",
+      "canonical_doc": "docs/target.md",
+      "canonical_locator": "#L3"
+    }
+  ],
+  "expiry": {
+    "env_change_date": "2026-10-01",
+    "negative_flag_regex": []
+  },
+  "tolerance": {
+    "relative": 0.0005
+  },
+  "git": {
+    "enabled": false
+  },
+  "owner": {
+    "frontmatter_keys": []
+  },
+  "now": "2026-11-05",
+  "rules": {
+    "R4": true
+  }
+}

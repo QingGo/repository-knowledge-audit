@@ -1,0 +1,308 @@
+{
+ "event_id": "modelcontextprotocol__servers@991a02acbc",
+ "repo": "modelcontextprotocol/servers",
+ "base": "77507b5a42bd9be40bc30c38822ec62af846a779",
+ "head": "991a02acbcfa43cfc16fc0e46b4bdce691d1ef31",
+ "date": "",
+ "message": "",
+ "kind": "build_change",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".changeset/3133-filesystem-confine-roots.md",
+   "previous": ".changeset/3133-filesystem-confine-roots.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/4912-filesystem-effective-directories-log.md",
+   "previous": ".changeset/4912-filesystem-effective-directories-log.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/632-filesystem-read-only.md",
+   "previous": ".changeset/632-filesystem-read-only.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/everything-cancel-long-running.md",
+   "previous": ".changeset/everything-cancel-long-running.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/everything-icons.md",
+   "previous": ".changeset/everything-icons.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/everything-prompt-arg-descriptions.md",
+   "previous": ".changeset/everything-prompt-arg-descriptions.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/everything-resource-collections.md",
+   "previous": ".changeset/everything-resource-collections.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-5420-minimatch-11.md",
+   "previous": ".changeset/filesystem-5420-minimatch-11.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-append-file.md",
+   "previous": ".changeset/filesystem-append-file.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-copy-file.md",
+   "previous": ".changeset/filesystem-copy-file.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-dangling-symlink-message.md",
+   "previous": ".changeset/filesystem-dangling-symlink-message.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-directory-tree-depth.md",
+   "previous": ".changeset/filesystem-directory-tree-depth.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-edit-file-no-match-diagnostics.md",
+   "previous": ".changeset/filesystem-edit-file-no-match-diagnostics.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-expandhome-backslash.md",
+   "previous": ".changeset/filesystem-expandhome-backslash.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-file-resources.md",
+   "previous": ".changeset/filesystem-file-resources.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-head-tail-zero.md",
+   "previous": ".changeset/filesystem-head-tail-zero.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-read-tool-hints.md",
+   "previous": ".changeset/filesystem-read-tool-hints.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-realpath-no-trim.md",
+   "previous": ".changeset/filesystem-realpath-no-trim.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-remove-unused-glob.md",
+   "previous": ".changeset/filesystem-remove-unused-glob.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/filesystem-unstatable-entry-size.md",
+   "previous": ".changeset/filesystem-unstatable-entry-size.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/memory-3953-lightweight-reads.md",
+   "previous": ".changeset/memory-3953-lightweight-reads.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/memory-4117-persistence-guidance.md",
+   "previous": ".changeset/memory-4117-persistence-guidance.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/memory-5153-idempotent-write-hints.md",
+   "previous": ".changeset/memory-5153-idempotent-write-hints.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/memory-5201-dedup-observations.md",
+   "previous": ".changeset/memory-5201-dedup-observations.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/memory-5202-read-tool-descriptions.md",
+   "previous": ".changeset/memory-5202-read-tool-descriptions.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/search-files-names-not-contents.md",
+   "previous": ".changeset/search-files-names-not-contents.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/search-files-unreadable-subdirectory.md",
+   "previous": ".changeset/search-files-unreadable-subdirectory.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/sequentialthinking-bounded-memory.md",
+   "previous": ".changeset/sequentialthinking-bounded-memory.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/sequentialthinking-multiline-thought-box.md",
+   "previous": ".changeset/sequentialthinking-multiline-thought-box.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/sequentialthinking-remove-yargs.md",
+   "previous": ".changeset/sequentialthinking-remove-yargs.md",
+   "status": "removed"
+  },
+  {
+   "filename": ".changeset/sequentialthinking-trim-description.md",
+   "previous": ".changeset/sequentialthinking-trim-description.md",
+   "status": "removed"
+  },
+  {
+   "filename": "package-lock.json",
+   "previous": "package-lock.json",
+   "status": "modified"
+  },
+  {
+   "filename": "src/everything/CHANGELOG.md",
+   "previous": "src/everything/CHANGELOG.md",
+   "status": "modified"
+  },
+  {
+   "filename": "src/everything/package.json",
+   "previous": "src/everything/package.json",
+   "status": "modified"
+  },
+  {
+   "filename": "src/filesystem/CHANGELOG.md",
+   "previous": "src/filesystem/CHANGELOG.md",
+   "status": "modified"
+  },
+  {
+   "filename": "src/filesystem/package.json",
+   "previous": "src/filesystem/package.json",
+   "status": "modified"
+  },
+  {
+   "filename": "src/memory/CHANGELOG.md",
+   "previous": "src/memory/CHANGELOG.md",
+   "status": "modified"
+  },
+  {
+   "filename": "src/memory/package.json",
+   "previous": "src/memory/package.json",
+   "status": "modified"
+  },
+  {
+   "filename": "src/sequentialthinking/CHANGELOG.md",
+   "previous": "src/sequentialthinking/CHANGELOG.md",
+   "status": "modified"
+  },
+  {
+   "filename": "src/sequentialthinking/package.json",
+   "previous": "src/sequentialthinking/package.json",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/modelcontextprotocol__servers.kblint.json",
+ "docs": [
+  "AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 1,
+   "claims": 186,
+   "findings": 1,
+   "queue": 105
+  },
+  "runtime_s": 0.111,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 1,
+   "claims": 186,
+   "findings": 1,
+   "queue": 105
+  },
+  "runtime_s": 0.1,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 1,
+   "after": 1,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 1,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 1,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.05,
+  "new": [],
+  "persisting": [
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L216: file path `.github/dependabot.yml` not found (checked: .github/dependabot.yml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: .github/dependabot.yml",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L216",
+      "checked: .github/dependabot.yml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-d79e9e3d5322e73c",
+     "locator": "AGENTS.md#L216",
+     "observed": "AGENTS.md#L216: file path `.github/dependabot.yml` not found (checked: .github/dependabot.yml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: .github/dependabot.yml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   }
+  ],
+  "fixed": []
+ },
+ "total_runtime_s": 0.261
+}

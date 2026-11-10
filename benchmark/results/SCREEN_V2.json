@@ -1,0 +1,37 @@
+{
+ "n_rows": 399,
+ "n_tasks": 54,
+ "rows_by_model": {
+  "chat": 162,
+  "reasoner": 162,
+  "agent": 75
+ },
+ "loo": {
+  "mae": 0.273,
+  "r2": 0.603,
+  "spearman": 0.733
+ },
+ "loo_ci95": {
+  "mae": [
+   0.257,
+   0.288
+  ],
+  "r2": [
+   0.524,
+   0.669
+  ],
+  "spearman": [
+   0.681,
+   0.786
+  ]
+ },
+ "harmful_stale": {
+  "n": 133,
+  "positives": 24,
+  "auc": 0.959,
+  "auc_ci95": [
+   0.938,
+   0.989
+  ]
+ }
+}

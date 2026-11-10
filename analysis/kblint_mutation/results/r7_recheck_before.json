@@ -1,0 +1,126 @@
+{
+ "tag": "before",
+ "kblint_version": "0.2.0",
+ "rule_hashes": {
+  "r1_version.py": "af8ac46bf7959e02",
+  "r2_number.py": "57a972f581e5ae29",
+  "r3_conflict.py": "6203d5883eccbfbd",
+  "r4_supersedes.py": "c298a7986bcb3b99",
+  "r5_expiry.py": "7e91e982270c7e34",
+  "r6_source_of_truth.py": "16c06bdf815d3ee2",
+  "r7_untracked.py": "8107d939900afa53",
+  "r8_audit_queue.py": "cbf865a28922dce8",
+  "r9_references.py": "5fd44e8c20ccf397"
+ },
+ "repos": {
+  "R2": {
+   "n_findings": 0,
+   "by_rule": {},
+   "findings": []
+  },
+  "R3": {
+   "n_findings": 2,
+   "by_rule": {
+    "R7": 2
+   },
+   "findings": [
+    {
+     "rule": "R7",
+     "doc": "docs/PRD.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/PRD.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/checklist.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/checklist.md"
+    }
+   ]
+  },
+  "R5": {
+   "n_findings": 6,
+   "by_rule": {
+    "R7": 6
+   },
+   "findings": [
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>prd.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>prd.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    },
+    {
+     "rule": "R7",
+     "doc": "docs/<private KB text removed>.md",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    }
+   ]
+  },
+  "R4": {
+   "n_findings": 0,
+   "by_rule": {},
+   "findings": []
+  },
+  "R1": {
+   "n_findings": 0,
+   "by_rule": {},
+   "findings": []
+  }
+ },
+ "probes": {
+  "R7R-wechat-NC-probe": {
+   "n_findings_total": 6,
+   "n_findings_target_doc": 1,
+   "target_findings": [
+    {
+     "rule": "R7",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    }
+   ]
+  },
+  "R7R-wechat-POS-uncommitted-probe": {
+   "n_findings_total": 6,
+   "n_findings_target_doc": 1,
+   "target_findings": [
+    {
+     "rule": "R7",
+     "disposition": "provenance_gap",
+     "subject": "knowledge doc not tracked in git: docs/<private KB text removed>.md"
+    }
+   ]
+  }
+ },
+ "wechat_expected": {
+  "natural_findings": 0,
+  "probe_NC_target_findings": 0,
+  "probe_POS_uncommitted_target_findings": 1
+ },
+ "wechat_pass": false
+}

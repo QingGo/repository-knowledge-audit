@@ -1,0 +1,61 @@
+{
+  "repo": "/REPOS_ROOT/R0",
+  "docs": [
+    "docs/**/*.md",
+    "README.md",
+    "runs/README.md"
+  ],
+  "artifacts": [
+    "runs/*.json"
+  ],
+  "run_index": {
+    "path": "/REPOS_ROOT/kb-health/corpus/R0/runs_index.jsonl",
+    "format": "jsonl",
+    "file_field": "file",
+    "id_field": "run_id"
+  },
+  "pins": [
+    {
+      "doc_glob": "**/*.md",
+      "artifact_glob": "runs/*.json",
+      "artifact_keys": [
+        "torch"
+      ],
+      "doc_patterns": [
+        "torch\\s+([0-9.]+\\+cu[0-9]+)"
+      ]
+    }
+  ],
+  "source_of_truth": [
+    {
+      "topic": "acceptance target",
+      "canonical_doc": "docs/benchmarks.md",
+      "canonical_locator": "#L74"
+    },
+    {
+      "topic": "discounted wall",
+      "canonical_doc": "docs/benchmarks.md"
+    }
+  ],
+  "expiry": {
+    "env_change_date": "2026-10-28",
+    "negative_flag_regex": [
+      "NANOV41_[A-Z_]+",
+      "MHC_V4",
+      "V4_MODE"
+    ]
+  },
+  "tolerance": {
+    "relative": 0.0005
+  },
+  "git": {
+    "enabled": true
+  },
+  "owner": {
+    "frontmatter_keys": []
+  },
+  "now": "2026-11-05",
+  "rules": {
+    "R4": true
+  }
+}

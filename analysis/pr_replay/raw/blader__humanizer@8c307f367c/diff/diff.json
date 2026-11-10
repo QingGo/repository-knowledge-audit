@@ -1,0 +1,45 @@
+{
+ "schema": "kblint-diff/1",
+ "tool": "kblint diff",
+ "version": "0.3.0",
+ "before": "/REPOS_ROOT/kb-health/analysis/pr_replay/raw/blader__humanizer@8c307f367c/baseline",
+ "after": "/REPOS_ROOT/kb-health/analysis/pr_replay/raw/blader__humanizer@8c307f367c/current",
+ "fail_on_new": "medium",
+ "policy": {
+  "blocking": "NEW findings with disposition=confirmed and severity >= fail-on-new",
+  "unknown_non_blocking": "unresolved / provenance_gap / revalidation_due findings (pre-existing and new) are listed but never block"
+ },
+ "counts": {
+  "before": 0,
+  "after": 0,
+  "new": 0,
+  "new_blocking": 0,
+  "new_unknown_non_blocking": 0,
+  "persisting": 0,
+  "fixed": 0
+ },
+ "dispositions": {
+  "new": {
+   "confirmed": 0,
+   "unresolved": 0,
+   "provenance_gap": 0,
+   "revalidation_due": 0
+  },
+  "persisting": {
+   "confirmed": 0,
+   "unresolved": 0,
+   "provenance_gap": 0,
+   "revalidation_due": 0
+  },
+  "fixed": {
+   "confirmed": 0,
+   "unresolved": 0,
+   "provenance_gap": 0,
+   "revalidation_due": 0
+  }
+ },
+ "exit_code": 0,
+ "new": [],
+ "persisting": [],
+ "fixed": []
+}

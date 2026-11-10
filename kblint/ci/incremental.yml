@@ -1,0 +1,61 @@
+# Incremental PR gate for kblint.
+#
+# Copy this file to `.github/workflows/kblint-incremental.yml` in your repository and commit a
+# `kblint.json` config at the repository root (the same config used for a full scan; the example
+# config in this repo is `examples/sample.kblint.json`). The job checks out the PR's base commit as
+# the baseline, scans both trees deterministically (`--now` pinned), and runs `kblint diff`: only NEW
+# confirmed findings at/above `--fail-on-new` fail the PR. Pre-existing findings and Unknown-class
+# findings are listed in the diff report but do not block.
+#
+# If you already store a baseline report as a workflow artifact from your main branch, replace the
+# "checkout base commit" step with `actions/download-artifact` and point --before at that report.
+name: kblint incremental
+
+on:
+  pull_request:
+
+jobs:
+  kblint-incremental:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR tree
+        uses: actions/checkout@v4
+
+      - name: Checkout PR base commit (baseline tree)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: baseline
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scan baseline tree (no failing exit; baseline is informational)
+        run: |
+          PYTHONPATH=kblint python -m kblint scan \
+            --repo baseline --config kblint.json \
+            --out baseline-report --format json,md --now 2026-11-05 --fail-on none
+
+      - name: Scan PR tree (no failing exit; the incremental gate decides)
+        run: |
+          PYTHONPATH=kblint python -m kblint scan \
+            --repo . --config kblint.json \
+            --out current-report --format json,md --now 2026-11-05 --fail-on none
+
+      - name: Incremental audit — only NEW confirmed findings can fail
+        run: |
+          PYTHONPATH=kblint python -m kblint diff \
+            --before baseline-report --after current-report \
+            --out kblint-diff --format md,json --fail-on-new medium
+
+      - name: Upload kblint diff reports (always, incl. non-blocking Unknowns)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kblint-diff
+          path: |
+            kblint-diff/
+            baseline-report/
+            current-report/

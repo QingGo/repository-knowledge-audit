@@ -1,0 +1,5 @@
+kblint 0.3.0: 0 findings (confirmed 0, unresolved 0, provenance_gap 0, revalidation_due 0), 22 audit items; out=/REPOS_ROOT/kb-health/analysis/pr_replay/raw/blader__humanizer@4f4035505d/current
+  wrote audit_queue: ../analysis/pr_replay/raw/blader__humanizer@4f4035505d/current/audit_queue.jsonl
+  wrote findings: ../analysis/pr_replay/raw/blader__humanizer@4f4035505d/current/findings.jsonl
+  wrote sarif: ../analysis/pr_replay/raw/blader__humanizer@4f4035505d/current/report.sarif
+  wrote summary: ../analysis/pr_replay/raw/blader__humanizer@4f4035505d/current/summary.md

@@ -1,0 +1,80 @@
+{
+ "event_id": "addyosmani__agent-skills@d051d88976",
+ "repo": "addyosmani/agent-skills",
+ "base": "4066846dd5323144719655b0fc7a5838e154ed20",
+ "head": "d051d8897653319682c42ab8fdbbd4c558f0d940",
+ "date": "",
+ "message": "",
+ "kind": "docs_only",
+ "negative_control": true,
+ "files": [
+  {
+   "filename": "skills/security-and-hardening/SKILL.md",
+   "previous": "skills/security-and-hardening/SKILL.md",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/addyosmani__agent-skills.kblint.json",
+ "docs": [
+  "AGENTS.md",
+  "CLAUDE.md",
+  "docs/AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 2,
+   "claims": 79,
+   "findings": 0,
+   "queue": 26
+  },
+  "runtime_s": 0.074,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 2,
+   "claims": 79,
+   "findings": 0,
+   "queue": 26
+  },
+  "runtime_s": 0.073,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 0,
+   "after": 0,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 0,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.049,
+  "new": [],
+  "persisting": [],
+  "fixed": []
+ },
+ "total_runtime_s": 0.196
+}

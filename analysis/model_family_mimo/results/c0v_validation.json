@@ -1,0 +1,95 @@
+{
+ "mode": "validation",
+ "when": "2026-11-09T20:49:42+0800",
+ "prereg_sha256": "2776385b2c86a458515cd855feafd5e267c7d084355a76b3bebd4aa313b0b498",
+ "model": "mimo-v2.6-flash",
+ "n_calls": 5,
+ "api_ok": 5,
+ "code_extracted": 5,
+ "pytest_pass": 2,
+ "spent_cny_total": 0.004934,
+ "latencies": [
+  20.043,
+  21.916,
+  12.099,
+  9.742,
+  10.812
+ ],
+ "prompt_tokens": [
+  109,
+  109,
+  109,
+  109,
+  112
+ ],
+ "completion_tokens": [
+  405,
+  467,
+  469,
+  385,
+  467
+ ],
+ "finish_reasons": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "errors": [],
+ "raw_usage": [
+  {
+   "completion_tokens": 405,
+   "prompt_tokens": 109,
+   "total_tokens": 514,
+   "completion_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "completion_tokens": 467,
+   "prompt_tokens": 109,
+   "total_tokens": 576,
+   "completion_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "completion_tokens": 469,
+   "prompt_tokens": 109,
+   "total_tokens": 578,
+   "completion_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "completion_tokens": 385,
+   "prompt_tokens": 109,
+   "total_tokens": 494,
+   "completion_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "completion_tokens": 467,
+   "prompt_tokens": 112,
+   "total_tokens": 579,
+   "completion_tokens_details": {
+    "reasoning_tokens": 0
+   },
+   "prompt_tokens_details": null
+  }
+ ]
+}

@@ -1,0 +1,545 @@
+{
+ "event_id": "mvanhorn__last30days-skill@74fb246357",
+ "repo": "mvanhorn/last30days-skill",
+ "base": "30d47be7020b542ade26eeb02d26a5abccbd3491",
+ "head": "74fb246357111b45ad7726dce3f3c029b70bad89",
+ "date": "",
+ "message": "",
+ "kind": "targeted_drift",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": "CONFIGURATION.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.de.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.es.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.fr.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.ja.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.pt-BR.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "README.zh-CN.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "changelog.d/+quiet-session-start-hook.added.md",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "changelog.d/+session-start-hook.removed.md",
+   "previous": null,
+   "status": "added"
+  },
+  {
+   "filename": "docs/solutions/workflow-issues/session-start-hook-not-for-skill-nux.md",
+   "previous": null,
+   "status": "added"
+  },
+  {
+   "filename": "hooks/hooks.json",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "hooks/scripts/check-config.sh",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "skills/last30days/SKILL.md",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_check_config_env_safety.py",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "tests/test_check_config_memory_dir.py",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "tests/test_check_config_quiet.py",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "tests/test_check_config_x_bearer.py",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "tests/test_check_config_ytdlp_detection.py",
+   "previous": null,
+   "status": "removed"
+  },
+  {
+   "filename": "tests/test_codex_host_contract.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_diagnose_compat.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_grok_bot_host_contract.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_last_run_state.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_onboarding_contract.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_plugin_contract.py",
+   "previous": null,
+   "status": "modified"
+  },
+  {
+   "filename": "tests/test_source_outcomes.py",
+   "previous": null,
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/mvanhorn__last30days-skill.kblint.json",
+ "docs": [
+  "AGENTS.md",
+  "CLAUDE.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 2,
+   "claims": 71,
+   "findings": 10,
+   "queue": 35
+  },
+  "runtime_s": 0.073,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 2,
+   "claims": 71,
+   "findings": 10,
+   "queue": 35
+  },
+  "runtime_s": 0.072,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 10,
+   "after": 10,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 10,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 10,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.051,
+  "new": [],
+  "persisting": [
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L133: file path `docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md` not found (checked: docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L133",
+      "checked: docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-e679474d94064375",
+     "locator": "AGENTS.md#L133",
+     "observed": "AGENTS.md#L133: file path `docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md` not found (checked: docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/plans/2026-04-17-005-feat-beta-skill-from-private-repo-plan.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L16: file path `.github/scripts/prepare_release.py` not found (checked: .github/scripts/prepare_release.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: .github/scripts/prepare_release.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L16",
+      "checked: .github/scripts/prepare_release.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-37095cb9e09a43c4",
+     "locator": "AGENTS.md#L16",
+     "observed": "AGENTS.md#L16: file path `.github/scripts/prepare_release.py` not found (checked: .github/scripts/prepare_release.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: .github/scripts/prepare_release.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L20: file path `scripts/last30days.py` not found (checked: scripts/last30days.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: scripts/last30days.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L20",
+      "checked: scripts/last30days.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-7fb8a0d919c9a1d4",
+     "locator": "AGENTS.md#L20",
+     "observed": "AGENTS.md#L20: file path `scripts/last30days.py` not found (checked: scripts/last30days.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: scripts/last30days.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L54: file path `tests/test_changelog_workflow.py` not found (checked: tests/test_changelog_workflow.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: tests/test_changelog_workflow.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L54",
+      "checked: tests/test_changelog_workflow.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-d798190c7f7e1429",
+     "locator": "AGENTS.md#L54",
+     "observed": "AGENTS.md#L54: file path `tests/test_changelog_workflow.py` not found (checked: tests/test_changelog_workflow.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: tests/test_changelog_workflow.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L57: file path `lib/__init__.py` not found (checked: lib/__init__.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: lib/__init__.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L57",
+      "checked: lib/__init__.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-a4bc2415889c6259",
+     "locator": "AGENTS.md#L57",
+     "observed": "AGENTS.md#L57: file path `lib/__init__.py` not found (checked: lib/__init__.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: lib/__init__.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L61: file path `tests/test_source_log_visibility.py` not found (checked: tests/test_source_log_visibility.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: tests/test_source_log_visibility.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L61",
+      "checked: tests/test_source_log_visibility.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-7b1f760b6c600867",
+     "locator": "AGENTS.md#L61",
+     "observed": "AGENTS.md#L61: file path `tests/test_source_log_visibility.py` not found (checked: tests/test_source_log_visibility.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: tests/test_source_log_visibility.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L62: file path `docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md` not found (checked: docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L62",
+      "checked: docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-131cb1521d80d0d3",
+     "locator": "AGENTS.md#L62",
+     "observed": "AGENTS.md#L62: file path `docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md` not found (checked: docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/solutions/integration-issues/digg-cli-agent-path-setup-wizard.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L63: file path `tests/test_onboarding_contract.py` not found (checked: tests/test_onboarding_contract.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: tests/test_onboarding_contract.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L63",
+      "checked: tests/test_onboarding_contract.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-a43324f421a873a3",
+     "locator": "AGENTS.md#L63",
+     "observed": "AGENTS.md#L63: file path `tests/test_onboarding_contract.py` not found (checked: tests/test_onboarding_contract.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: tests/test_onboarding_contract.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L69: file path `.github/workflows/security.yml` not found (checked: .github/workflows/security.yml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: .github/workflows/security.yml",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L69",
+      "checked: .github/workflows/security.yml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-fc8d7fae4960eea1",
+     "locator": "AGENTS.md#L69",
+     "observed": "AGENTS.md#L69: file path `.github/workflows/security.yml` not found (checked: .github/workflows/security.yml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: .github/workflows/security.yml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L93: file path `tests/test_plugin_contract.py` not found (checked: tests/test_plugin_contract.py)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: tests/test_plugin_contract.py",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L93",
+      "checked: tests/test_plugin_contract.py"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-2efbcee3ff0e27e8",
+     "locator": "AGENTS.md#L93",
+     "observed": "AGENTS.md#L93: file path `tests/test_plugin_contract.py` not found (checked: tests/test_plugin_contract.py)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: tests/test_plugin_contract.py",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   }
+  ],
+  "fixed": []
+ },
+ "total_runtime_s": 0.196
+}

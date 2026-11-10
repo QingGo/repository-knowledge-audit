@@ -1,0 +1,660 @@
+{
+ "seed": 20261109,
+ "source": "analysis/real_scan/scan_rows.json",
+ "n_target": 20,
+ "strategy": "manifest class x claim band x KB-file type, star-spread within cell",
+ "selected": [
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "low",
+    "kb_type": "AGENTS"
+   },
+   "repo": "abi/screenshot-to-code",
+   "path": "AGENTS.md",
+   "stars": 81097,
+   "claims": 27,
+   "audit": 11,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 3375,
+   "manifest_class": "node",
+   "claim_band": "low",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "low",
+    "kb_type": "other"
+   },
+   "repo": "twentyhq/twenty",
+   "path": "CLAUDE.md",
+   "stars": 60631,
+   "claims": 33,
+   "audit": 20,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 6594,
+   "manifest_class": "node",
+   "claim_band": "low",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "mid",
+    "kb_type": "AGENTS"
+   },
+   "repo": "heygen-com/hyperframes",
+   "path": "AGENTS.md",
+   "stars": 80818,
+   "claims": 43,
+   "audit": 13,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 7115,
+   "manifest_class": "node",
+   "claim_band": "mid",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "mid",
+    "kb_type": "other"
+   },
+   "repo": "Egonex-AI/Understand-Anything",
+   "path": "CLAUDE.md",
+   "stars": 91392,
+   "claims": 57,
+   "audit": 16,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 8151,
+   "manifest_class": "node",
+   "claim_band": "mid",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "high",
+    "kb_type": "AGENTS"
+   },
+   "repo": "lobehub/lobehub",
+   "path": "AGENTS.md",
+   "stars": 84379,
+   "claims": 99,
+   "audit": 46,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 13362,
+   "manifest_class": "node",
+   "claim_band": "high",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "high",
+    "kb_type": "AGENTS"
+   },
+   "repo": "career-ops-hq/career-ops",
+   "path": "AGENTS.md",
+   "stars": 81063,
+   "claims": 114,
+   "audit": 48,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "node",
+   "claim_band": "high",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "node",
+    "claim_band": "high",
+    "kb_type": "other"
+   },
+   "repo": "thedaviddias/Front-End-Checklist",
+   "path": "AGENTS.md",
+   "stars": 74677,
+   "claims": 162,
+   "audit": 80,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "node",
+   "claim_band": "high",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "low",
+    "kb_type": "AGENTS"
+   },
+   "repo": "headroomlabs-ai/headroom",
+   "path": "AGENTS.md",
+   "stars": 79128,
+   "claims": 18,
+   "audit": 7,
+   "manifests": [
+    "Cargo.toml",
+    "Makefile",
+    "pyproject.toml"
+   ],
+   "kb_chars": 3494,
+   "manifest_class": "python",
+   "claim_band": "low",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "low",
+    "kb_type": "other"
+   },
+   "repo": "OpenMontageInc/OpenMontage",
+   "path": "AGENTS.md",
+   "stars": 78469,
+   "claims": 6,
+   "audit": 3,
+   "manifests": [
+    "Makefile",
+    "requirements.txt",
+    "setup.py"
+   ],
+   "kb_chars": 384,
+   "manifest_class": "python",
+   "claim_band": "low",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "mid",
+    "kb_type": "AGENTS"
+   },
+   "repo": "hugohe3/ppt-master",
+   "path": "AGENTS.md",
+   "stars": 74773,
+   "claims": 49,
+   "audit": 22,
+   "manifests": [
+    "requirements.txt"
+   ],
+   "kb_chars": 11953,
+   "manifest_class": "python",
+   "claim_band": "mid",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "mid",
+    "kb_type": "other"
+   },
+   "repo": "opendatalab/MinerU",
+   "path": "CLAUDE.md",
+   "stars": 83301,
+   "claims": 47,
+   "audit": 11,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "kb_chars": 5517,
+   "manifest_class": "python",
+   "claim_band": "mid",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "high",
+    "kb_type": "AGENTS"
+   },
+   "repo": "rohitg00/ai-engineering-from-scratch",
+   "path": "AGENTS.md",
+   "stars": 77709,
+   "claims": 113,
+   "audit": 55,
+   "manifests": [
+    "package.json",
+    "requirements.txt"
+   ],
+   "kb_chars": 17657,
+   "manifest_class": "python",
+   "claim_band": "high",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "high",
+    "kb_type": "AGENTS"
+   },
+   "repo": "BerriAI/litellm",
+   "path": "AGENTS.md",
+   "stars": 62900,
+   "claims": 157,
+   "audit": 80,
+   "manifests": [
+    "Makefile",
+    "package.json",
+    "pyproject.toml"
+   ],
+   "kb_chars": 19563,
+   "manifest_class": "python",
+   "claim_band": "high",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "python",
+    "claim_band": "high",
+    "kb_type": "other"
+   },
+   "repo": "K-Dense-AI/scientific-agent-skills",
+   "path": "AGENTS.md",
+   "stars": 56463,
+   "claims": 118,
+   "audit": 54,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "kb_chars": 18440,
+   "manifest_class": "python",
+   "claim_band": "high",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "low",
+    "kb_type": "AGENTS"
+   },
+   "repo": "eternity4719/HowToLiveBetter",
+   "path": "AGENTS.md",
+   "stars": 74321,
+   "claims": 3,
+   "audit": 0,
+   "manifests": [],
+   "kb_chars": 377,
+   "manifest_class": "other",
+   "claim_band": "low",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "low",
+    "kb_type": "other"
+   },
+   "repo": "ai-job-search-dev/ai-job-search",
+   "path": "AGENTS.md",
+   "stars": 70392,
+   "claims": 6,
+   "audit": 2,
+   "manifests": [],
+   "kb_chars": 1586,
+   "manifest_class": "other",
+   "claim_band": "low",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "mid",
+    "kb_type": "AGENTS"
+   },
+   "repo": "router-for-me/CLIProxyAPI",
+   "path": "AGENTS.md",
+   "stars": 57946,
+   "claims": 45,
+   "audit": 20,
+   "manifests": [
+    "go.mod"
+   ],
+   "kb_chars": 6499,
+   "manifest_class": "other",
+   "claim_band": "mid",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "mid",
+    "kb_type": "other"
+   },
+   "repo": "shanraisshan/claude-code-best-practice",
+   "path": "CLAUDE.md",
+   "stars": 68806,
+   "claims": 84,
+   "audit": 22,
+   "manifests": [],
+   "kb_chars": 8077,
+   "manifest_class": "other",
+   "claim_band": "mid",
+   "kb_type": "other"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "high",
+    "kb_type": "AGENTS"
+   },
+   "repo": "ruvnet/ruflo",
+   "path": "AGENTS.md",
+   "stars": 81218,
+   "claims": 160,
+   "audit": 69,
+   "manifests": [
+    "Cargo.toml",
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "other",
+   "claim_band": "high",
+   "kb_type": "AGENTS"
+  },
+  {
+   "slot": {
+    "manifest_class": "other",
+    "claim_band": "high",
+    "kb_type": "other"
+   },
+   "repo": "OpenCut-app/OpenCut",
+   "path": ".github/copilot-instructions.md",
+   "stars": 97718,
+   "claims": 284,
+   "audit": 173,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "kb_chars": 17105,
+   "manifest_class": "other",
+   "claim_band": "high",
+   "kb_type": "other"
+  }
+ ],
+ "reserves": [
+  {
+   "repo": "openinterpreter/openinterpreter",
+   "path": "AGENTS.md",
+   "stars": 68836,
+   "claims": 131,
+   "audit": 81,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "node",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "cline/cline",
+   "path": "AGENTS.md",
+   "stars": 71459,
+   "claims": 25,
+   "audit": 14,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 5433,
+   "manifest_class": "node",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "colbymchenry/codegraph",
+   "path": "AGENTS.md",
+   "stars": 77050,
+   "claims": 81,
+   "audit": 38,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "node",
+   "claim_band": "mid",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "storytold/photocraft",
+   "path": "AGENTS.md",
+   "stars": 77878,
+   "claims": 109,
+   "audit": 60,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "other",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "blader/humanizer",
+   "path": "AGENTS.md",
+   "stars": 66191,
+   "claims": 37,
+   "audit": 22,
+   "manifests": [],
+   "kb_chars": 3438,
+   "manifest_class": "other",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "microsoft/autogen",
+   "path": ".github/copilot-instructions.md",
+   "stars": 61747,
+   "claims": 70,
+   "audit": 31,
+   "manifests": [],
+   "kb_chars": 8770,
+   "manifest_class": "other",
+   "claim_band": "mid",
+   "kb_type": "other",
+   "reserve": true
+  },
+  {
+   "repo": "browser-use/browser-use",
+   "path": "AGENTS.md",
+   "stars": 120310,
+   "claims": 107,
+   "audit": 60,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "python",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "usestrix/strix",
+   "path": "AGENTS.md",
+   "stars": 74355,
+   "claims": 35,
+   "audit": 17,
+   "manifests": [
+    "Makefile",
+    "pyproject.toml"
+   ],
+   "kb_chars": 7309,
+   "manifest_class": "python",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "microsoft/AI-For-Beginners",
+   "path": "AGENTS.md",
+   "stars": 70634,
+   "claims": 90,
+   "audit": 24,
+   "manifests": [
+    "requirements.txt"
+   ],
+   "kb_chars": 9620,
+   "manifest_class": "python",
+   "claim_band": "mid",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "appwrite/appwrite",
+   "path": "AGENTS.md",
+   "stars": 57890,
+   "claims": 152,
+   "audit": 43,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "node",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "agalwood/Motrix",
+   "path": "AGENTS.md",
+   "stars": 57983,
+   "claims": 9,
+   "audit": 1,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 694,
+   "manifest_class": "node",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "ayghri/i-have-adhd",
+   "path": "AGENTS.md",
+   "stars": 60488,
+   "claims": 45,
+   "audit": 16,
+   "manifests": [
+    "package.json"
+   ],
+   "kb_chars": 5199,
+   "manifest_class": "node",
+   "claim_band": "mid",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "tw93/Mole",
+   "path": "AGENTS.md",
+   "stars": 74251,
+   "claims": 99,
+   "audit": 55,
+   "manifests": [
+    "Makefile",
+    "go.mod"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "other",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "cathrynlavery/diagram-design",
+   "path": "AGENTS.md",
+   "stars": 65773,
+   "claims": 17,
+   "audit": 5,
+   "manifests": [],
+   "kb_chars": 2708,
+   "manifest_class": "other",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "bytedance/deer-flow",
+   "path": "AGENTS.md",
+   "stars": 85128,
+   "claims": 79,
+   "audit": 35,
+   "manifests": [
+    "Makefile"
+   ],
+   "kb_chars": 13995,
+   "manifest_class": "other",
+   "claim_band": "mid",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "langflow-ai/langflow",
+   "path": "AGENTS.md",
+   "stars": 156438,
+   "claims": 97,
+   "audit": 29,
+   "manifests": [
+    "package.json",
+    "pyproject.toml"
+   ],
+   "kb_chars": 11709,
+   "manifest_class": "python",
+   "claim_band": "high",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "crewAIInc/crewAI",
+   "path": "AGENTS.md",
+   "stars": 60641,
+   "claims": 19,
+   "audit": 6,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "kb_chars": 1867,
+   "manifest_class": "python",
+   "claim_band": "low",
+   "kb_type": "AGENTS",
+   "reserve": true
+  },
+  {
+   "repo": "xtekky/gpt4free",
+   "path": "AGENTS.md",
+   "stars": 67022,
+   "claims": 61,
+   "audit": 34,
+   "manifests": [
+    "requirements.txt",
+    "setup.py"
+   ],
+   "kb_chars": 20000,
+   "manifest_class": "python",
+   "claim_band": "mid",
+   "kb_type": "AGENTS",
+   "reserve": true
+  }
+ ]
+}

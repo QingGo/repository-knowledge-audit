@@ -1,0 +1,285 @@
+{
+ "repos": {
+  "JuliusBrussee/caveman": {
+   "repo": "JuliusBrussee/caveman",
+   "sha": "3dc497a7f858c774d6e15b25e8c6120ef3a0eda8",
+   "committed": null,
+   "default_tarball_bytes": 7820023,
+   "files": 1829,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/JuliusBrussee__caveman",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 118265,
+    "claims": 5,
+    "manifests": [
+     "go.mod",
+     "package.json"
+    ]
+   }
+  },
+  "abi/screenshot-to-code": {
+   "repo": "abi/screenshot-to-code",
+   "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+   "committed": null,
+   "default_tarball_bytes": 1142258,
+   "files": 316,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/abi__screenshot-to-code",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 81097,
+    "claims": 27,
+    "manifests": [
+     "package.json"
+    ]
+   }
+  },
+  "addyosmani/agent-skills": {
+   "repo": "addyosmani/agent-skills",
+   "sha": "301b02b12bff98e4688e6984af6556802322bbde",
+   "committed": null,
+   "default_tarball_bytes": 380457,
+   "files": 239,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/addyosmani__agent-skills",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 114014,
+    "claims": 55,
+    "manifests": []
+   }
+  },
+  "ai-job-search-dev/ai-job-search": {
+   "repo": "ai-job-search-dev/ai-job-search",
+   "sha": "2b3f613fdaacee90373131652e38454400a0b1c4",
+   "committed": null,
+   "default_tarball_bytes": 1646367,
+   "files": 315,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/ai-job-search-dev__ai-job-search",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 70392,
+    "claims": 6,
+    "manifests": []
+   }
+  },
+  "avelino/awesome-go": {
+   "repo": "avelino/awesome-go",
+   "sha": "499762cd36b35c31c2ae860f3d17d2086464411a",
+   "committed": null,
+   "default_tarball_bytes": 1667610,
+   "files": 108,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/avelino__awesome-go",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 192732,
+    "claims": 23,
+    "manifests": [
+     "go.mod"
+    ]
+   }
+  },
+  "ayghri/i-have-adhd": {
+   "repo": "ayghri/i-have-adhd",
+   "sha": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+   "committed": null,
+   "default_tarball_bytes": 230466,
+   "files": 74,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/ayghri__i-have-adhd",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 60488,
+    "claims": 45,
+    "manifests": [
+     "package.json"
+    ]
+   }
+  },
+  "blader/humanizer": {
+   "repo": "blader/humanizer",
+   "sha": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+   "committed": null,
+   "default_tarball_bytes": 24640,
+   "files": 14,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/blader__humanizer",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 66191,
+    "claims": 37,
+    "manifests": []
+   }
+  },
+  "eternity4719/HowToLiveBetter": {
+   "repo": "eternity4719/HowToLiveBetter",
+   "sha": "dff814dcbb0a2e968acc0af48e418814655ba1df",
+   "committed": null,
+   "default_tarball_bytes": 2985933,
+   "files": 337,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/eternity4719__HowToLiveBetter",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 74321,
+    "claims": 3,
+    "manifests": []
+   }
+  },
+  "github/spec-kit": {
+   "repo": "github/spec-kit",
+   "sha": "a60bd9bad5af2d25df42188330e8281f2dd1c8bb",
+   "committed": null,
+   "default_tarball_bytes": 5335889,
+   "files": 1024,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/github__spec-kit",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 148582,
+    "claims": 23,
+    "manifests": [
+     "pyproject.toml"
+    ]
+   }
+  },
+  "modelcontextprotocol/servers": {
+   "repo": "modelcontextprotocol/servers",
+   "sha": "36380287ed3b15d115b55f546617d723072b1296",
+   "committed": null,
+   "default_tarball_bytes": 1324130,
+   "files": 390,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/modelcontextprotocol__servers",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 91868,
+    "claims": 62,
+    "manifests": [
+     "package.json"
+    ]
+   }
+  },
+  "multica-ai/andrej-karpathy-skills": {
+   "repo": "multica-ai/andrej-karpathy-skills",
+   "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+   "committed": null,
+   "default_tarball_bytes": 12867,
+   "files": 9,
+   "kb_file": "CLAUDE.md",
+   "tree": "/tmp/natural_audit/repos/multica-ai__andrej-karpathy-skills",
+   "selection": {
+    "path": "CLAUDE.md",
+    "stars": 230776,
+    "claims": 45,
+    "manifests": []
+   }
+  },
+  "mvanhorn/last30days-skill": {
+   "repo": "mvanhorn/last30days-skill",
+   "sha": "de9bf7232b37a18df034b1165a45a41daadef7e2",
+   "committed": null,
+   "default_tarball_bytes": 12388093,
+   "files": 212,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/mvanhorn__last30days-skill",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 66986,
+    "claims": 66,
+    "manifests": [
+     "pyproject.toml"
+    ]
+   }
+  },
+  "rtk-ai/rtk": {
+   "repo": "rtk-ai/rtk",
+   "sha": "08a261a0d081ffe11a32986e2f4d76f3fdc33abb",
+   "committed": null,
+   "default_tarball_bytes": 2471710,
+   "files": 902,
+   "kb_file": "CLAUDE.md",
+   "tree": "/tmp/natural_audit/repos/rtk-ai__rtk",
+   "selection": {
+    "path": "CLAUDE.md",
+    "stars": 85881,
+    "claims": 70,
+    "manifests": [
+     "Cargo.toml"
+    ]
+   }
+  },
+  "ultraworkers/claw-code": {
+   "repo": "ultraworkers/claw-code",
+   "sha": "f51a33a8960d167288db295d1d02ff9cc0586abf",
+   "committed": null,
+   "default_tarball_bytes": 6896666,
+   "files": 430,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/ultraworkers__claw-code",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 194947,
+    "claims": 49,
+    "manifests": []
+   }
+  },
+  "usestrix/strix": {
+   "repo": "usestrix/strix",
+   "sha": "215482eb2204cd30ac6b87520e3f5c6511e2e2e8",
+   "committed": null,
+   "default_tarball_bytes": 5230312,
+   "files": 547,
+   "kb_file": "AGENTS.md",
+   "tree": "/tmp/natural_audit/repos/usestrix__strix",
+   "selection": {
+    "path": "AGENTS.md",
+    "stars": 74355,
+    "claims": 35,
+    "manifests": [
+     "Makefile",
+     "pyproject.toml"
+    ]
+   }
+  },
+  "mattpocock/skills": {
+   "repo": "mattpocock/skills",
+   "sha": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+   "committed": null,
+   "default_tarball_bytes": 278609,
+   "files": 184,
+   "kb_file": "CLAUDE.md",
+   "tree": "/tmp/natural_audit/pilot",
+   "selection": {
+    "path": "CLAUDE.md",
+    "stars": 318166,
+    "claims": 36,
+    "manifests": [
+     "package.json"
+    ]
+   }
+  }
+ },
+ "skipped": [
+  {
+   "repo": "DietrichGebert/ponytail",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "headroomlabs-ai/headroom",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "shanraisshan/claude-code-best-practice",
+   "reason": "no extracted tree"
+  }
+ ],
+ "n_fetched": 16
+}

@@ -1,0 +1,925 @@
+{
+ "generated_by": "run_eval.py",
+ "kblint": {
+  "version": "0.2.1",
+  "rule_hashes": {
+   "r1_version.py": "af8ac46bf7959e02",
+   "r2_number.py": "57a972f581e5ae29",
+   "r3_conflict.py": "6203d5883eccbfbd",
+   "r4_supersedes.py": "c298a7986bcb3b99",
+   "r5_expiry.py": "7e91e982270c7e34",
+   "r6_source_of_truth.py": "16c06bdf815d3ee2",
+   "r7_untracked.py": "4b49cd0fc7c28130",
+   "r8_audit_queue.py": "cbf865a28922dce8",
+   "r9_references.py": "5fd44e8c20ccf397",
+   "config.py": "b94ed5d40a3d60c0"
+  },
+  "now": "2026-11-05"
+ },
+ "injected": {
+  "by_rule": {
+   "R1": {
+    "n_mutants": 5,
+    "n_positive": 2,
+    "n_controls_negatives": 3,
+    "negative_scan_claims": 44,
+    "fp_per_100_claims": 0.0,
+    "tp": 2,
+    "fn": 0,
+    "fp": 0,
+    "tn": 3,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "confirmed": 1,
+     "unresolved": 1
+    }
+   },
+   "R2": {
+    "n_mutants": 8,
+    "n_positive": 3,
+    "n_controls_negatives": 5,
+    "negative_scan_claims": 70,
+    "fp_per_100_claims": 0.0,
+    "tp": 3,
+    "fn": 0,
+    "fp": 0,
+    "tn": 5,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "confirmed": 2,
+     "revalidation_due": 1
+    }
+   },
+   "R3": {
+    "n_mutants": 4,
+    "n_positive": 1,
+    "n_controls_negatives": 3,
+    "negative_scan_claims": 42,
+    "fp_per_100_claims": 0.0,
+    "tp": 1,
+    "fn": 0,
+    "fp": 0,
+    "tn": 3,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "confirmed": 1
+    }
+   },
+   "R5": {
+    "n_mutants": 8,
+    "n_positive": 3,
+    "n_controls_negatives": 5,
+    "negative_scan_claims": 70,
+    "fp_per_100_claims": 0.0,
+    "tp": 3,
+    "fn": 0,
+    "fp": 0,
+    "tn": 5,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "confirmed": 2,
+     "revalidation_due": 1
+    }
+   },
+   "R6": {
+    "n_mutants": 4,
+    "n_positive": 1,
+    "n_controls_negatives": 3,
+    "negative_scan_claims": 43,
+    "fp_per_100_claims": 0.0,
+    "tp": 1,
+    "fn": 0,
+    "fp": 0,
+    "tn": 3,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "unresolved": 1
+    }
+   },
+   "R7": {
+    "n_mutants": 15,
+    "n_positive": 7,
+    "n_controls_negatives": 8,
+    "negative_scan_claims": 1416,
+    "fp_per_100_claims": 0.0,
+    "tp": 7,
+    "fn": 0,
+    "fp": 0,
+    "tn": 8,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "provenance_gap": 2,
+     "confirmed": 4,
+     "unresolved": 1
+    }
+   },
+   "R9": {
+    "n_mutants": 21,
+    "n_positive": 8,
+    "n_controls_negatives": 13,
+    "negative_scan_claims": 1631,
+    "fp_per_100_claims": 0.0,
+    "tp": 8,
+    "fn": 0,
+    "fp": 0,
+    "tn": 13,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "tp_dispositions": {
+     "confirmed": 8
+    }
+   }
+  },
+  "overall": {
+   "tp": 25,
+   "fn": 0,
+   "fp": 0,
+   "tn": 40,
+   "fp_per_100_claims": 0.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "false_positive_rate": 0.0
+  },
+  "by_mutation": {
+   "negative_control": {
+    "n": 15,
+    "outcome_counts": {
+     "TN": 15
+    }
+   },
+   "positive": {
+    "n": 25,
+    "outcome_counts": {
+     "TP": 25
+    }
+   },
+   "hard_negative": {
+    "n": 25,
+    "outcome_counts": {
+     "TN": 25
+    }
+   }
+  },
+  "runtime": {
+   "n_scans": 65,
+   "median_s": 0.065,
+   "p90_s": 0.132,
+   "max_s": 0.184,
+   "median_docs": 4,
+   "median_claims": 14
+  },
+  "bug_probes": [
+   {
+    "case_id": "R7R-wechat-NC-probe",
+    "rule": "R7",
+    "mutation": "bug_probe",
+    "target_doc": "docs/<private KB text removed>.md",
+    "expect": "not_detected",
+    "detected": false,
+    "outcome": "TN",
+    "target_tokens": [
+     "not tracked in git"
+    ],
+    "n_target_findings": 0,
+    "target_dispositions": {},
+    "n_findings_total": 0,
+    "n_findings_by_rule": {},
+    "n_queue": 277,
+    "docs": 15,
+    "claims": 1249,
+    "runtime_s": 0.3454,
+    "exit": 0,
+    "stderr": "",
+    "target_findings": []
+   },
+   {
+    "case_id": "R7R-wechat-POS-uncommitted-probe",
+    "rule": "R7",
+    "mutation": "bug_probe",
+    "target_doc": "docs/<private KB text removed>.md",
+    "expect": "detected",
+    "detected": true,
+    "outcome": "TP",
+    "target_tokens": [
+     "uncommitted change"
+    ],
+    "n_target_findings": 1,
+    "target_dispositions": {
+     "confirmed": 1
+    },
+    "n_findings_total": 1,
+    "n_findings_by_rule": {
+     "R7": 1
+    },
+    "n_queue": 277,
+    "docs": 15,
+    "claims": 1249,
+    "runtime_s": 0.2302,
+    "exit": 0,
+    "stderr": "",
+    "target_findings": [
+     {
+      "rule": "R7",
+      "doc": "docs/<private KB text removed>.md",
+      "locator": "docs/<private KB text removed>.md#L1-L69",
+      "disposition": "confirmed",
+      "severity": "low",
+      "subject": "uncommitted change to tracked knowledge doc: docs/<private KB text removed>.md"
+     }
+    ]
+   }
+  ]
+ },
+ "natural": {
+  "corpora": {
+   "R2:r9-primary": {
+    "docs": 1,
+    "claims": 77,
+    "n_findings": 3,
+    "findings_by_rule": {
+     "R9": 3
+    },
+    "dispositions": {
+     "confirmed": 3
+    },
+    "n_queue": 31,
+    "manual_review_fraction": 0.4026,
+    "fp_per_100_claims_unverified": 3.896,
+    "runtime_s": 0.081,
+    "exit": 0,
+    "runtime_median_s": 0.081,
+    "runtime_runs_s": [
+     0.081,
+     0.085,
+     0.073
+    ],
+    "stderr": ""
+   },
+   "R2:r9-extended": {
+    "docs": 3,
+    "claims": 282,
+    "n_findings": 3,
+    "findings_by_rule": {
+     "R9": 3
+    },
+    "dispositions": {
+     "confirmed": 3
+    },
+    "n_queue": 194,
+    "manual_review_fraction": 0.6879,
+    "fp_per_100_claims_unverified": 1.064,
+    "runtime_s": 0.107,
+    "exit": 0,
+    "runtime_median_s": 0.108,
+    "runtime_runs_s": [
+     0.107,
+     0.11,
+     0.108
+    ],
+    "stderr": ""
+   },
+   "R2:r7-git": {
+    "docs": 3,
+    "claims": 282,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 194,
+    "manual_review_fraction": 0.6879,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.135,
+    "exit": 0,
+    "runtime_median_s": 0.127,
+    "runtime_runs_s": [
+     0.135,
+     0.126,
+     0.127
+    ],
+    "stderr": ""
+   },
+   "R3:r9-primary": {
+    "docs": 1,
+    "claims": 79,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 25,
+    "manual_review_fraction": 0.3165,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.24,
+    "exit": 0,
+    "runtime_median_s": 0.073,
+    "runtime_runs_s": [
+     0.24,
+     0.073,
+     0.071
+    ],
+    "stderr": ""
+   },
+   "R3:r9-extended": {
+    "docs": 12,
+    "claims": 1072,
+    "n_findings": 1,
+    "findings_by_rule": {
+     "R9": 1
+    },
+    "dispositions": {
+     "confirmed": 1
+    },
+    "n_queue": 442,
+    "manual_review_fraction": 0.4123,
+    "fp_per_100_claims_unverified": 0.093,
+    "runtime_s": 0.291,
+    "exit": 0,
+    "runtime_median_s": 0.219,
+    "runtime_runs_s": [
+     0.291,
+     0.219,
+     0.208
+    ],
+    "stderr": ""
+   },
+   "R3:r7-git": {
+    "docs": 12,
+    "claims": 1072,
+    "n_findings": 2,
+    "findings_by_rule": {
+     "R7": 2
+    },
+    "dispositions": {
+     "provenance_gap": 2
+    },
+    "n_queue": 442,
+    "manual_review_fraction": 0.4123,
+    "fp_per_100_claims_unverified": 0.187,
+    "runtime_s": 0.223,
+    "exit": 0,
+    "runtime_median_s": 0.236,
+    "runtime_runs_s": [
+     0.223,
+     0.236,
+     0.244
+    ],
+    "stderr": ""
+   },
+   "R5:r9-primary": {
+    "docs": 1,
+    "claims": 50,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 12,
+    "manual_review_fraction": 0.24,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.081,
+    "exit": 0,
+    "runtime_median_s": 0.071,
+    "runtime_runs_s": [
+     0.081,
+     0.069,
+     0.071
+    ],
+    "stderr": ""
+   },
+   "R5:r9-extended": {
+    "docs": 14,
+    "claims": 1160,
+    "n_findings": 2,
+    "findings_by_rule": {
+     "R9": 2
+    },
+    "dispositions": {
+     "confirmed": 2
+    },
+    "n_queue": 273,
+    "manual_review_fraction": 0.2353,
+    "fp_per_100_claims_unverified": 0.172,
+    "runtime_s": 0.178,
+    "exit": 0,
+    "runtime_median_s": 0.178,
+    "runtime_runs_s": [
+     0.178,
+     0.165,
+     0.181
+    ],
+    "stderr": ""
+   },
+   "R5:r7-git": {
+    "docs": 14,
+    "claims": 1160,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 273,
+    "manual_review_fraction": 0.2353,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.205,
+    "exit": 0,
+    "runtime_median_s": 0.185,
+    "runtime_runs_s": [
+     0.205,
+     0.185,
+     0.179
+    ],
+    "stderr": ""
+   },
+   "R4:r9-primary": {
+    "docs": 3,
+    "claims": 19,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 12,
+    "manual_review_fraction": 0.6316,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.098,
+    "exit": 0,
+    "runtime_median_s": 0.091,
+    "runtime_runs_s": [
+     0.098,
+     0.091,
+     0.091
+    ],
+    "stderr": ""
+   },
+   "R4:r9-extended": {
+    "docs": 1026,
+    "claims": 11094,
+    "n_findings": 65,
+    "findings_by_rule": {
+     "R3": 1,
+     "R9": 64
+    },
+    "dispositions": {
+     "confirmed": 65
+    },
+    "n_queue": 2323,
+    "manual_review_fraction": 0.2094,
+    "fp_per_100_claims_unverified": 0.586,
+    "runtime_s": 1.777,
+    "exit": 0,
+    "runtime_median_s": 1.666,
+    "runtime_runs_s": [
+     1.777,
+     1.641,
+     1.666
+    ],
+    "stderr": ""
+   },
+   "R4:r7-git": {
+    "docs": 1026,
+    "claims": 11094,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 2324,
+    "manual_review_fraction": 0.2095,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 1.745,
+    "exit": 0,
+    "runtime_median_s": 1.72,
+    "runtime_runs_s": [
+     1.745,
+     1.72,
+     1.713
+    ],
+    "stderr": ""
+   },
+   "R1:r9-primary": {
+    "docs": 1,
+    "claims": 69,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 22,
+    "manual_review_fraction": 0.3188,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.09,
+    "exit": 0,
+    "runtime_median_s": 0.084,
+    "runtime_runs_s": [
+     0.09,
+     0.08,
+     0.084
+    ],
+    "stderr": ""
+   },
+   "R1:r9-extended": {
+    "docs": 7,
+    "claims": 309,
+    "n_findings": 1,
+    "findings_by_rule": {
+     "R9": 1
+    },
+    "dispositions": {
+     "confirmed": 1
+    },
+    "n_queue": 130,
+    "manual_review_fraction": 0.4207,
+    "fp_per_100_claims_unverified": 0.324,
+    "runtime_s": 0.12,
+    "exit": 0,
+    "runtime_median_s": 0.114,
+    "runtime_runs_s": [
+     0.12,
+     0.114,
+     0.11
+    ],
+    "stderr": ""
+   },
+   "R1:r7-git": {
+    "docs": 7,
+    "claims": 309,
+    "n_findings": 0,
+    "findings_by_rule": {},
+    "dispositions": {},
+    "n_queue": 130,
+    "manual_review_fraction": 0.4207,
+    "fp_per_100_claims_unverified": 0.0,
+    "runtime_s": 0.141,
+    "exit": 0,
+    "runtime_median_s": 0.141,
+    "runtime_runs_s": [
+     0.141,
+     0.16,
+     0.133
+    ],
+    "stderr": ""
+   },
+   "sample_repo:shipped": {
+    "docs": 10,
+    "claims": 18,
+    "n_findings": 9,
+    "findings_by_rule": {
+     "R1": 1,
+     "R2": 4,
+     "R3": 1,
+     "R4": 1,
+     "R5": 1,
+     "R6": 1
+    },
+    "dispositions": {
+     "unresolved": 2,
+     "revalidation_due": 3,
+     "confirmed": 4
+    },
+    "n_queue": 3,
+    "manual_review_fraction": 0.1667,
+    "fp_per_100_claims_unverified": 50.0,
+    "runtime_s": 0.074,
+    "exit": 1,
+    "runtime_median_s": 0.07,
+    "runtime_runs_s": [
+     0.074,
+     0.07,
+     0.069
+    ],
+    "stderr": ""
+   },
+   "R0:corpus": {
+    "docs": 3,
+    "claims": 402,
+    "n_findings": 26,
+    "findings_by_rule": {
+     "R3": 2,
+     "R9": 24
+    },
+    "dispositions": {
+     "confirmed": 26
+    },
+    "n_queue": 333,
+    "manual_review_fraction": 0.8284,
+    "fp_per_100_claims_unverified": 6.468,
+    "runtime_s": 0.188,
+    "exit": 0,
+    "runtime_median_s": 0.184,
+    "runtime_runs_s": [
+     0.188,
+     0.184,
+     0.183
+    ],
+    "stderr": ""
+   }
+  },
+  "verification": {
+   "R2:r9-primary": {
+    "verified": 3,
+    "tp": 3,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0
+   },
+   "R2:r9-extended": {
+    "verified": 3,
+    "tp": 3,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0
+   },
+   "R3:r9-extended": {
+    "verified": 1,
+    "tp": 0,
+    "fp": 1,
+    "ambiguous": 0,
+    "precision_on_verified": 0.0
+   },
+   "R3:r7-git": {
+    "verified": 2,
+    "tp": 2,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0
+   },
+   "R5:r9-extended": {
+    "verified": 2,
+    "tp": 1,
+    "fp": 1,
+    "ambiguous": 0,
+    "precision_on_verified": 0.5
+   },
+   "R4:r9-extended": {
+    "verified": 65,
+    "tp": 0,
+    "fp": 65,
+    "ambiguous": 0,
+    "precision_on_verified": 0.0
+   },
+   "R1:r9-extended": {
+    "verified": 1,
+    "tp": 0,
+    "fp": 1,
+    "ambiguous": 0,
+    "precision_on_verified": 0.0
+   },
+   "sample_repo:shipped": {
+    "verified": 9,
+    "tp": 9,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0
+   },
+   "R0:corpus": {
+    "verified": 26,
+    "tp": 0,
+    "fp": 26,
+    "ambiguous": 0,
+    "precision_on_verified": 0.0
+   }
+  },
+  "verified": {
+   "by_scope": {
+    "r9-primary": {
+     "n_verified": 3,
+     "tp": 3,
+     "fp": 0,
+     "ambiguous": 0,
+     "precision_on_verified": 1.0,
+     "claims_scanned": 294,
+     "fp_per_100_claims": 0.0
+    },
+    "r9-extended": {
+     "n_verified": 72,
+     "tp": 4,
+     "fp": 68,
+     "ambiguous": 0,
+     "precision_on_verified": 0.05555555555555555,
+     "claims_scanned": 13917,
+     "fp_per_100_claims": 0.4886110512323058
+    },
+    "r7-git": {
+     "n_verified": 2,
+     "tp": 2,
+     "fp": 0,
+     "ambiguous": 0,
+     "precision_on_verified": 1.0,
+     "claims_scanned": 13917,
+     "fp_per_100_claims": 0.0
+    },
+    "corpus-snapshot": {
+     "n_verified": 26,
+     "tp": 0,
+     "fp": 26,
+     "ambiguous": 0,
+     "precision_on_verified": 0.0,
+     "claims_scanned": 402,
+     "fp_per_100_claims": 6.467661691542289
+    },
+    "shipped-fixture": {
+     "n_verified": 9,
+     "tp": 9,
+     "fp": 0,
+     "ambiguous": 0,
+     "precision_on_verified": 1.0,
+     "claims_scanned": 18,
+     "fp_per_100_claims": 0.0
+    }
+   },
+   "r9_primary": {
+    "n_verified": 3,
+    "tp": 3,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0,
+    "claims_scanned": 294,
+    "fp_per_100_claims": 0.0
+   },
+   "r9_extended": {
+    "n_verified": 71,
+    "tp": 4,
+    "fp": 67,
+    "ambiguous": 0,
+    "precision_on_verified": 0.056338028169014086,
+    "claims_scanned": 13917,
+    "fp_per_100_claims": 0.4814255945965366
+   },
+   "r7_git": {
+    "n_verified": 2,
+    "tp": 2,
+    "fp": 0,
+    "ambiguous": 0,
+    "precision_on_verified": 1.0,
+    "claims_scanned": 13917,
+    "fp_per_100_claims": 0.0
+   },
+   "corpus_snapshot": null,
+   "runtime_5repos": {
+    "R2": {
+     "r9_primary": 0.081,
+     "r9_extended": 0.108,
+     "r7_git": 0.127
+    },
+    "R3": {
+     "r9_primary": 0.073,
+     "r9_extended": 0.219,
+     "r7_git": 0.236
+    },
+    "R5": {
+     "r9_primary": 0.071,
+     "r9_extended": 0.178,
+     "r7_git": 0.185
+    },
+    "R4": {
+     "r9_primary": 0.091,
+     "r9_extended": 1.666,
+     "r7_git": 1.72
+    },
+    "R1": {
+     "r9_primary": 0.084,
+     "r9_extended": 0.114,
+     "r7_git": 0.141
+    }
+   }
+  },
+  "known_defect_check": {
+   "n_findings": 9,
+   "n_claims": 18,
+   "n_queue": 3,
+   "rules_detected": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6"
+   ],
+   "known_defect_recall": 1.0,
+   "rows": [
+    {
+     "rule": "R1",
+     "doc": "docs/pins.md",
+     "expected_disposition": "unresolved",
+     "detected": true,
+     "dispositions": [
+      "unresolved"
+     ]
+    },
+    {
+     "rule": "R2",
+     "doc": "docs/numbers.md",
+     "expected_disposition": "confirmed",
+     "detected": true,
+     "dispositions": [
+      "confirmed"
+     ]
+    },
+    {
+     "rule": "R3",
+     "doc": "docs/conflict_a.md",
+     "expected_disposition": "confirmed",
+     "detected": true,
+     "dispositions": [
+      "confirmed"
+     ]
+    },
+    {
+     "rule": "R5",
+     "doc": "docs/negative.md",
+     "expected_disposition": "confirmed",
+     "detected": true,
+     "dispositions": [
+      "confirmed"
+     ]
+    },
+    {
+     "rule": "R6",
+     "doc": "docs/other_target.md",
+     "expected_disposition": "unresolved",
+     "detected": true,
+     "dispositions": [
+      "unresolved"
+     ]
+    }
+   ],
+   "r4_experimental": {
+    "n": 1,
+    "note": "R4 off by default and excluded from injected eval"
+   },
+   "clean_control_docs": [
+    "docs/clean.md",
+    "docs/numbers_clean.md"
+   ],
+   "clean_control_findings": [],
+   "runtime_s": 0.072
+  }
+ },
+ "paper_numbers": {
+  "n_mutants": 67,
+  "positives": 25,
+  "negatives": 40,
+  "negatives_incl_bug_probes": 42,
+  "bug_probe_n": 2,
+  "tp": 25,
+  "fp": 0,
+  "fn": 0,
+  "tn": 40,
+  "precision": 1.0,
+  "recall": 1.0,
+  "fpr": 0.0,
+  "fp_per_100": 0.0,
+  "r9_pos": 8,
+  "r9_tp": 8,
+  "r9_precision": 1.0,
+  "r9_recall": 1.0,
+  "r9_fpr": 0.0,
+  "r9_fp_per_100": 0.0,
+  "natural_tp": 3,
+  "natural_fp": 0,
+  "natural_claims": 294,
+  "natural_precision": 1.0,
+  "natural_scope": "r9-primary (AGENTS.md/CLAUDE.md/docs/AGENTS.md/SKILL.md, allow_missing generated/external classes)",
+  "natural_extended": {
+   "tp": 4,
+   "fp": 67,
+   "claims": 13917,
+   "precision": 0.056338028169014086
+  },
+  "r7_natural": {
+   "tp": 2,
+   "fp": 0,
+   "claims": 13917,
+   "precision": 1.0
+  },
+  "runtime_median_s": 0.065,
+  "runtime_5repos_r9_primary_median_s": 0.081,
+  "kblint_version": "0.2.1",
+  "kblint_rule_hashes": {
+   "r1_version.py": "af8ac46bf7959e02",
+   "r2_number.py": "57a972f581e5ae29",
+   "r3_conflict.py": "6203d5883eccbfbd",
+   "r4_supersedes.py": "c298a7986bcb3b99",
+   "r5_expiry.py": "7e91e982270c7e34",
+   "r6_source_of_truth.py": "16c06bdf815d3ee2",
+   "r7_untracked.py": "4b49cd0fc7c28130",
+   "r8_audit_queue.py": "cbf865a28922dce8",
+   "r9_references.py": "5fd44e8c20ccf397",
+   "config.py": "b94ed5d40a3d60c0"
+  },
+  "bug_probes": [
+   {
+    "case_id": "R7R-wechat-NC-probe",
+    "expect": "not_detected",
+    "detected": false,
+    "outcome": "TN"
+   },
+   {
+    "case_id": "R7R-wechat-POS-uncommitted-probe",
+    "expect": "detected",
+    "detected": true,
+    "outcome": "TP"
+   }
+  ]
+ }
+}

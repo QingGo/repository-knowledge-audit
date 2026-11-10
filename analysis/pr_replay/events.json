@@ -1,0 +1,1028 @@
+{
+ "now": "2026-11-09",
+ "fail_on_new": "medium",
+ "events": [
+  {
+   "repo": "blader/humanizer",
+   "kb_file": "AGENTS.md",
+   "base": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+   "head": "b6039ead39f824baf5527471dc3f71fd4774505a",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".claude-plugin/plugin.json",
+     "previous": ".claude-plugin/plugin.json",
+     "status": "modified"
+    }
+   ],
+   "kind": "code_path_change",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 1,
+   "event_id": "blader__humanizer@b6039ead39",
+   "negative_control": false
+  },
+  {
+   "repo": "blader/humanizer",
+   "kb_file": "AGENTS.md",
+   "base": "4f4035505d68dff2afd75494b334e3a5446db6d2",
+   "head": "8c307f367c91bd974002f10f2be2965d642c13df",
+   "branch": "main",
+   "files": [
+    {
+     "filename": "README.md",
+     "previous": "README.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "docs_only",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 1,
+   "event_id": "blader__humanizer@8c307f367c",
+   "negative_control": true
+  },
+  {
+   "repo": "blader/humanizer",
+   "kb_file": "AGENTS.md",
+   "base": "6be1fa4e0c768202b126f8bc5c9bf67ead9162bc",
+   "head": "4f4035505d68dff2afd75494b334e3a5446db6d2",
+   "branch": "main",
+   "files": [
+    {
+     "filename": "README.md",
+     "previous": "README.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "docs_only",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 1,
+   "event_id": "blader__humanizer@4f4035505d",
+   "negative_control": true
+  },
+  {
+   "repo": "mattpocock/skills",
+   "kb_file": "CLAUDE.md",
+   "base": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+   "head": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".changeset/subagents-fresh-context.md",
+     "previous": ".changeset/subagents-fresh-context.md",
+     "status": "added"
+    },
+    {
+     "filename": "CLAUDE.md",
+     "previous": "CLAUDE.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/code-review/SKILL.md",
+     "previous": "skills/engineering/code-review/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+     "previous": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/implement-spec/SKILL.md",
+     "previous": "skills/engineering/implement-spec/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/improve-codebase-architecture/SKILL.md",
+     "previous": "skills/engineering/improve-codebase-architecture/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/research/SKILL.md",
+     "previous": "skills/engineering/research/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/engineering/wayfinder/SKILL.md",
+     "previous": "skills/engineering/wayfinder/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/in-progress/chief-of-staff/SKILL.md",
+     "previous": "skills/in-progress/chief-of-staff/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/productivity/grilling/SKILL.md",
+     "previous": "skills/productivity/grilling/SKILL.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "kb_edit",
+   "has_kb": true,
+   "has_build": false,
+   "n_files": 10,
+   "event_id": "mattpocock__skills@7739eaed7f",
+   "negative_control": false
+  },
+  {
+   "repo": "mattpocock/skills",
+   "kb_file": "CLAUDE.md",
+   "base": "f3fc5632f401156837ee3872f14fe33ccf1024ea",
+   "head": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+     "previous": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+     "status": "modified"
+    },
+    {
+     "filename": ".agents/install-block.md",
+     "previous": ".agents/install-block.md",
+     "status": "modified"
+    },
+    {
+     "filename": "CLAUDE.md",
+     "previous": "CLAUDE.md",
+     "status": "modified"
+    },
+    {
+     "filename": "README.md",
+     "previous": "README.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "kb_edit",
+   "has_kb": true,
+   "has_build": false,
+   "n_files": 4,
+   "event_id": "mattpocock__skills@b0618bc436",
+   "negative_control": false
+  },
+  {
+   "repo": "mattpocock/skills",
+   "kb_file": "CLAUDE.md",
+   "base": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+   "head": "d1478fcb140db0b93c0c8df17bcfd311844749d0",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".changeset/ask-matt-read-skill-first.md",
+     "previous": ".changeset/ask-matt-read-skill-first.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/chief-of-staff-wiki.md",
+     "previous": ".changeset/chief-of-staff-wiki.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/code-review-standards-and-subagents.md",
+     "previous": ".changeset/code-review-standards-and-subagents.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/diagnosing-bugs-prove-mutation.md",
+     "previous": ".changeset/diagnosing-bugs-prove-mutation.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/github-tracker-external-pr-list.md",
+     "previous": ".changeset/github-tracker-external-pr-list.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/github-tracker-own-repo.md",
+     "previous": ".changeset/github-tracker-own-repo.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/grilling-yes-accepts-recommendation.md",
+     "previous": ".changeset/grilling-yes-accepts-recommendation.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/handoff-temp-dir.md",
+     "previous": ".changeset/handoff-temp-dir.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/implement-skill-tool-wording.md",
+     "previous": ".changeset/implement-skill-tool-wording.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/implement-ticket-reference.md",
+     "previous": ".changeset/implement-ticket-reference.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/setup-reachable-repo-and-tracker-recipes.md",
+     "previous": ".changeset/setup-reachable-repo-and-tracker-recipes.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/setup-tracker-fixes.md",
+     "previous": ".changeset/setup-tracker-fixes.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/subagents-fresh-context.md",
+     "previous": ".changeset/subagents-fresh-context.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/tdd-seam-tradeoffs.md",
+     "previous": ".changeset/tdd-seam-tradeoffs.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/teach-quiz-answer-position.md",
+     "previous": ".changeset/teach-quiz-answer-position.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/teach-workspace-root.md",
+     "previous": ".changeset/teach-workspace-root.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/to-tickets-sub-issues.md",
+     "previous": ".changeset/to-tickets-sub-issues.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/wayfinder-labels-refs-research-prs.md",
+     "previous": ".changeset/wayfinder-labels-refs-research-prs.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/wizard-template-fixes-2.md",
+     "previous": ".changeset/wizard-template-fixes-2.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/wizard-template-fixes.md",
+     "previous": ".changeset/wizard-template-fixes.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".claude-plugin/plugin.json",
+     "previous": ".claude-plugin/plugin.json",
+     "status": "modified"
+    },
+    {
+     "filename": "CHANGELOG.md",
+     "previous": "CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "package.json",
+     "previous": "package.json",
+     "status": "modified"
+    }
+   ],
+   "kind": "build_change",
+   "has_kb": false,
+   "has_build": true,
+   "n_files": 23,
+   "event_id": "mattpocock__skills@d1478fcb14",
+   "negative_control": false
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "kb_file": "AGENTS.md",
+   "base": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+   "head": "353ae84755adc40c8a84e4db29b5bf2dfc9e7f5b",
+   "branch": "main",
+   "files": [
+    {
+     "filename": "evals/cases/code-review-and-quality.json",
+     "previous": "evals/cases/code-review-and-quality.json",
+     "status": "modified"
+    },
+    {
+     "filename": "evals/fixtures/review-evidence/CONTRACT.md",
+     "previous": "evals/fixtures/review-evidence/CONTRACT.md",
+     "status": "added"
+    },
+    {
+     "filename": "evals/fixtures/review-evidence/after.py",
+     "previous": "evals/fixtures/review-evidence/after.py",
+     "status": "added"
+    },
+    {
+     "filename": "evals/fixtures/review-evidence/before.py",
+     "previous": "evals/fixtures/review-evidence/before.py",
+     "status": "added"
+    },
+    {
+     "filename": "evals/fixtures/review-evidence/clean.py",
+     "previous": "evals/fixtures/review-evidence/clean.py",
+     "status": "added"
+    },
+    {
+     "filename": "skills/code-review-and-quality/SKILL.md",
+     "previous": "skills/code-review-and-quality/SKILL.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "code_path_change",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 6,
+   "event_id": "addyosmani__agent-skills@353ae84755",
+   "negative_control": false
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "kb_file": "AGENTS.md",
+   "base": "afcafdf58f48862b85021a5cd8cf3cd560dceb93",
+   "head": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".agents/plugins/marketplace.json",
+     "previous": ".agents/plugins/marketplace.json",
+     "status": "modified"
+    },
+    {
+     "filename": ".claude-plugin/marketplace.json",
+     "previous": ".claude-plugin/marketplace.json",
+     "status": "modified"
+    },
+    {
+     "filename": ".claude-plugin/plugin.json",
+     "previous": ".claude-plugin/plugin.json",
+     "status": "modified"
+    },
+    {
+     "filename": ".codex-plugin/plugin.json",
+     "previous": ".codex-plugin/plugin.json",
+     "status": "modified"
+    },
+    {
+     "filename": "plugin.json",
+     "previous": "plugin.json",
+     "status": "modified"
+    }
+   ],
+   "kind": "code_path_change",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 5,
+   "event_id": "addyosmani__agent-skills@8bfcc1f991",
+   "negative_control": false
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "kb_file": "AGENTS.md",
+   "base": "8b376edc5488221c75c1c7c229cdec26aeab3c9b",
+   "head": "afcafdf58f48862b85021a5cd8cf3cd560dceb93",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".github/workflows/test-plugin-install.yml",
+     "previous": ".github/workflows/test-plugin-install.yml",
+     "status": "modified"
+    },
+    {
+     "filename": "scripts/quality-gate-test.js",
+     "previous": "scripts/quality-gate-test.js",
+     "status": "added"
+    },
+    {
+     "filename": "skills/constraint-driven-development/SKILL.md",
+     "previous": "skills/constraint-driven-development/SKILL.md",
+     "status": "modified"
+    },
+    {
+     "filename": "skills/constraint-driven-development/scripts/quality-gate.mjs",
+     "previous": "skills/constraint-driven-development/scripts/quality-gate.mjs",
+     "status": "added"
+    }
+   ],
+   "kind": "code_path_change",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 4,
+   "event_id": "addyosmani__agent-skills@afcafdf58f",
+   "negative_control": false
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "kb_file": "AGENTS.md",
+   "base": "4066846dd5323144719655b0fc7a5838e154ed20",
+   "head": "d051d8897653319682c42ab8fdbbd4c558f0d940",
+   "branch": "main",
+   "files": [
+    {
+     "filename": "skills/security-and-hardening/SKILL.md",
+     "previous": "skills/security-and-hardening/SKILL.md",
+     "status": "modified"
+    }
+   ],
+   "kind": "docs_only",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 1,
+   "event_id": "addyosmani__agent-skills@d051d88976",
+   "negative_control": true
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "kb_file": "AGENTS.md",
+   "base": "3fd94199bc240fff7f85fd16af6fbfca7f91778c",
+   "head": "4c28a7ec97aa5600d32df25b508ed569b53f325f",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".changeset/everything-5434-generated-resource-icons.md",
+     "previous": ".changeset/everything-5434-generated-resource-icons.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/sequentialthinking-5433-bounded-thought-box.md",
+     "previous": ".changeset/sequentialthinking-5433-bounded-thought-box.md",
+     "status": "removed"
+    },
+    {
+     "filename": "package-lock.json",
+     "previous": "package-lock.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/CHANGELOG.md",
+     "previous": "src/everything/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/package.json",
+     "previous": "src/everything/package.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/sequentialthinking/CHANGELOG.md",
+     "previous": "src/sequentialthinking/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/sequentialthinking/package.json",
+     "previous": "src/sequentialthinking/package.json",
+     "status": "modified"
+    }
+   ],
+   "kind": "build_change",
+   "has_kb": false,
+   "has_build": true,
+   "n_files": 7,
+   "event_id": "modelcontextprotocol__servers@4c28a7ec97",
+   "negative_control": false
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "kb_file": "AGENTS.md",
+   "base": "991a02acbcfa43cfc16fc0e46b4bdce691d1ef31",
+   "head": "cc6027865fe16f23a208e5876b92998dc25f18c9",
+   "branch": "main",
+   "files": [
+    {
+     "filename": "src/fetch/pyproject.toml",
+     "previous": "src/fetch/pyproject.toml",
+     "status": "modified"
+    },
+    {
+     "filename": "src/fetch/uv.lock",
+     "previous": "src/fetch/uv.lock",
+     "status": "modified"
+    },
+    {
+     "filename": "src/git/pyproject.toml",
+     "previous": "src/git/pyproject.toml",
+     "status": "modified"
+    },
+    {
+     "filename": "src/git/uv.lock",
+     "previous": "src/git/uv.lock",
+     "status": "modified"
+    },
+    {
+     "filename": "src/time/pyproject.toml",
+     "previous": "src/time/pyproject.toml",
+     "status": "modified"
+    },
+    {
+     "filename": "src/time/uv.lock",
+     "previous": "src/time/uv.lock",
+     "status": "modified"
+    }
+   ],
+   "kind": "build_change",
+   "has_kb": false,
+   "has_build": true,
+   "n_files": 6,
+   "event_id": "modelcontextprotocol__servers@cc6027865f",
+   "negative_control": false
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "kb_file": "AGENTS.md",
+   "base": "77507b5a42bd9be40bc30c38822ec62af846a779",
+   "head": "991a02acbcfa43cfc16fc0e46b4bdce691d1ef31",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".changeset/3133-filesystem-confine-roots.md",
+     "previous": ".changeset/3133-filesystem-confine-roots.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/4912-filesystem-effective-directories-log.md",
+     "previous": ".changeset/4912-filesystem-effective-directories-log.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/632-filesystem-read-only.md",
+     "previous": ".changeset/632-filesystem-read-only.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/everything-cancel-long-running.md",
+     "previous": ".changeset/everything-cancel-long-running.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/everything-icons.md",
+     "previous": ".changeset/everything-icons.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/everything-prompt-arg-descriptions.md",
+     "previous": ".changeset/everything-prompt-arg-descriptions.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/everything-resource-collections.md",
+     "previous": ".changeset/everything-resource-collections.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-5420-minimatch-11.md",
+     "previous": ".changeset/filesystem-5420-minimatch-11.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-append-file.md",
+     "previous": ".changeset/filesystem-append-file.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-copy-file.md",
+     "previous": ".changeset/filesystem-copy-file.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-dangling-symlink-message.md",
+     "previous": ".changeset/filesystem-dangling-symlink-message.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-directory-tree-depth.md",
+     "previous": ".changeset/filesystem-directory-tree-depth.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-edit-file-no-match-diagnostics.md",
+     "previous": ".changeset/filesystem-edit-file-no-match-diagnostics.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-expandhome-backslash.md",
+     "previous": ".changeset/filesystem-expandhome-backslash.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-file-resources.md",
+     "previous": ".changeset/filesystem-file-resources.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-head-tail-zero.md",
+     "previous": ".changeset/filesystem-head-tail-zero.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-read-tool-hints.md",
+     "previous": ".changeset/filesystem-read-tool-hints.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-realpath-no-trim.md",
+     "previous": ".changeset/filesystem-realpath-no-trim.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-remove-unused-glob.md",
+     "previous": ".changeset/filesystem-remove-unused-glob.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/filesystem-unstatable-entry-size.md",
+     "previous": ".changeset/filesystem-unstatable-entry-size.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/memory-3953-lightweight-reads.md",
+     "previous": ".changeset/memory-3953-lightweight-reads.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/memory-4117-persistence-guidance.md",
+     "previous": ".changeset/memory-4117-persistence-guidance.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/memory-5153-idempotent-write-hints.md",
+     "previous": ".changeset/memory-5153-idempotent-write-hints.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/memory-5201-dedup-observations.md",
+     "previous": ".changeset/memory-5201-dedup-observations.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/memory-5202-read-tool-descriptions.md",
+     "previous": ".changeset/memory-5202-read-tool-descriptions.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/search-files-names-not-contents.md",
+     "previous": ".changeset/search-files-names-not-contents.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/search-files-unreadable-subdirectory.md",
+     "previous": ".changeset/search-files-unreadable-subdirectory.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/sequentialthinking-bounded-memory.md",
+     "previous": ".changeset/sequentialthinking-bounded-memory.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/sequentialthinking-multiline-thought-box.md",
+     "previous": ".changeset/sequentialthinking-multiline-thought-box.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/sequentialthinking-remove-yargs.md",
+     "previous": ".changeset/sequentialthinking-remove-yargs.md",
+     "status": "removed"
+    },
+    {
+     "filename": ".changeset/sequentialthinking-trim-description.md",
+     "previous": ".changeset/sequentialthinking-trim-description.md",
+     "status": "removed"
+    },
+    {
+     "filename": "package-lock.json",
+     "previous": "package-lock.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/CHANGELOG.md",
+     "previous": "src/everything/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/package.json",
+     "previous": "src/everything/package.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/filesystem/CHANGELOG.md",
+     "previous": "src/filesystem/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/filesystem/package.json",
+     "previous": "src/filesystem/package.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/memory/CHANGELOG.md",
+     "previous": "src/memory/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/memory/package.json",
+     "previous": "src/memory/package.json",
+     "status": "modified"
+    },
+    {
+     "filename": "src/sequentialthinking/CHANGELOG.md",
+     "previous": "src/sequentialthinking/CHANGELOG.md",
+     "status": "modified"
+    },
+    {
+     "filename": "src/sequentialthinking/package.json",
+     "previous": "src/sequentialthinking/package.json",
+     "status": "modified"
+    }
+   ],
+   "kind": "build_change",
+   "has_kb": false,
+   "has_build": true,
+   "n_files": 40,
+   "event_id": "modelcontextprotocol__servers@991a02acbc",
+   "negative_control": false
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "kb_file": "AGENTS.md",
+   "base": "c583da0291ee872b5f63612fdfef2df79ac65a84",
+   "head": "3fd94199bc240fff7f85fd16af6fbfca7f91778c",
+   "branch": "main",
+   "files": [
+    {
+     "filename": ".changeset/everything-5434-generated-resource-icons.md",
+     "previous": ".changeset/everything-5434-generated-resource-icons.md",
+     "status": "added"
+    },
+    {
+     "filename": "src/everything/__tests__/gzip-file-as-resource.test.ts",
+     "previous": "src/everything/__tests__/gzip-file-as-resource.test.ts",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/__tests__/icons.test.ts",
+     "previous": "src/everything/__tests__/icons.test.ts",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/resources/minted.ts",
+     "previous": "src/everything/resources/minted.ts",
+     "status": "modified"
+    },
+    {
+     "filename": "src/everything/tools/gzip-file-as-resource.ts",
+     "previous": "src/everything/tools/gzip-file-as-resource.ts",
+     "status": "modified"
+    }
+   ],
+   "kind": "code_path_change",
+   "has_kb": false,
+   "has_build": false,
+   "n_files": 5,
+   "event_id": "modelcontextprotocol__servers@3fd94199bc",
+   "negative_control": false
+  },
+  {
+   "repo": "blader/humanizer",
+   "kb_file": "AGENTS.md",
+   "base": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+   "head": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+   "title": "historical-range: oldest fetched commit → natural-audit HEAD",
+   "kind": "historical_range",
+   "negative_control": false,
+   "event_id": "blader__humanizer@0ef9fe5bc3"
+  },
+  {
+   "repo": "mattpocock/skills",
+   "kb_file": "CLAUDE.md",
+   "base": "5ae481693d13b37d4d2c2c92d0b66d299c93e695",
+   "head": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+   "title": "historical-range: oldest fetched commit → natural-audit HEAD",
+   "kind": "historical_range",
+   "negative_control": false,
+   "event_id": "mattpocock__skills@4ae2317ddb"
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "kb_file": "AGENTS.md",
+   "base": "4066846dd5323144719655b0fc7a5838e154ed20",
+   "head": "301b02b12bff98e4688e6984af6556802322bbde",
+   "title": "historical-range: oldest fetched commit → natural-audit HEAD",
+   "kind": "historical_range",
+   "negative_control": false,
+   "event_id": "addyosmani__agent-skills@301b02b12b"
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "kb_file": "AGENTS.md",
+   "base": "77507b5a42bd9be40bc30c38822ec62af846a779",
+   "head": "36380287ed3b15d115b55f546617d723072b1296",
+   "title": "historical-range: oldest fetched commit → natural-audit HEAD",
+   "kind": "historical_range",
+   "negative_control": false,
+   "event_id": "modelcontextprotocol__servers@36380287ed"
+  },
+  {
+   "repo": "mvanhorn/last30days-skill",
+   "kb_file": "AGENTS.md",
+   "base": "30d47be7020b542ade26eeb02d26a5abccbd3491",
+   "head": "74fb246357111b45ad7726dce3f3c029b70bad89",
+   "title": "targeted drift introduction: fix(hooks): stop running last30days on every session start (#1142)",
+   "files": [
+    {
+     "filename": "CONFIGURATION.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.de.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.es.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.fr.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.ja.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.pt-BR.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "README.zh-CN.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "changelog.d/+quiet-session-start-hook.added.md",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "changelog.d/+session-start-hook.removed.md",
+     "previous": null,
+     "status": "added"
+    },
+    {
+     "filename": "docs/solutions/workflow-issues/session-start-hook-not-for-skill-nux.md",
+     "previous": null,
+     "status": "added"
+    },
+    {
+     "filename": "hooks/hooks.json",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "hooks/scripts/check-config.sh",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "skills/last30days/SKILL.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_check_config_env_safety.py",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "tests/test_check_config_memory_dir.py",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "tests/test_check_config_quiet.py",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "tests/test_check_config_x_bearer.py",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "tests/test_check_config_ytdlp_detection.py",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": "tests/test_codex_host_contract.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_diagnose_compat.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_grok_bot_host_contract.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_last_run_state.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_onboarding_contract.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_plugin_contract.py",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": "tests/test_source_outcomes.py",
+     "previous": null,
+     "status": "modified"
+    }
+   ],
+   "kind": "targeted_drift",
+   "negative_control": false,
+   "event_id": "mvanhorn__last30days-skill@74fb246357"
+  },
+  {
+   "repo": "avelino/awesome-go",
+   "kb_file": "AGENTS.md",
+   "base": "b004a842431cb139a5c96c981a588806d6be1460",
+   "head": "f74f1806836e156a6d105740055c27577653e4b0",
+   "title": "targeted drift introduction: Migrate PR quality checks from Node.js to Go (#6055)",
+   "files": [
+    {
+     "filename": ".github/PULL_REQUEST_TEMPLATE.md",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": ".github/scripts/check-pr-diff/main.go",
+     "previous": null,
+     "status": "added"
+    },
+    {
+     "filename": ".github/scripts/check-quality.js",
+     "previous": null,
+     "status": "removed"
+    },
+    {
+     "filename": ".github/scripts/check-quality/main.go",
+     "previous": null,
+     "status": "added"
+    },
+    {
+     "filename": ".github/workflows/pr-quality-check.yaml",
+     "previous": null,
+     "status": "modified"
+    },
+    {
+     "filename": ".github/workflows/recheck-open-prs.yaml",
+     "previous": null,
+     "status": "added"
+    },
+    {
+     "filename": "CONTRIBUTING.md",
+     "previous": null,
+     "status": "modified"
+    }
+   ],
+   "kind": "targeted_drift",
+   "negative_control": false,
+   "event_id": "avelino__awesome-go@f74f180683"
+  },
+  {
+   "repo": "mvanhorn/last30days-skill",
+   "kb_file": "AGENTS.md",
+   "base": "1f7e85a03f262345e992ddebd7b0c121c2f2862e",
+   "head": "de9bf7232b37a18df034b1165a45a41daadef7e2",
+   "title": "targeted drift introduction: 'Restructure as Codex plugin' (72495c1, parent 1f7e85) -> current HEAD; root-level scripts/tests/docs/.github moved under skills/last30days/",
+   "files": [],
+   "kind": "targeted_drift",
+   "negative_control": false,
+   "event_id": "mvanhorn__last30days-skill@restructure"
+  }
+ ],
+ "sampling_rule": "recent default-branch commit events on 4 small natural-audit repos (consecutive commit pairs from public atom feeds; 2-3 reference-relevant changes + 1 docs-only negative control per repo) plus 4 historical-range replays (oldest fetched commit -> natural-audit HEAD, i.e. multi-commit drift windows) = 20 events; SHAs pinned, file lists from public compare .diff endpoints because the unauthenticated REST API quota was exhausted in reconnaissance",
+ "discovery_deviation": "GitHub REST API rate-limited during reconnaissance; SHAs and changed-file lists resolved from public atom/compare endpoints (same pinned SHAs, no auth token)."
+}

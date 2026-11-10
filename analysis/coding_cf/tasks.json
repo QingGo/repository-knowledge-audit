@@ -1,0 +1,148 @@
+{
+  "schema": "coding-cf/1",
+  "preregistered_at": "2026-11-09T00:55:00+08:00",
+  "status": "preregistered-before-any-model-call",
+  "model": "deepseek-chat",
+  "api_helper": "kb-health/probe_screen/run_probes.py: load_env/chat/usage_cost",
+  "max_tokens": 4000,
+  "seeds": [
+    0,
+    1
+  ],
+  "temperatures": {
+    "0": 0.2,
+    "1": 0.3
+  },
+  "cost_cap_cny": 3.0,
+  "stop_at_cny": 2.7,
+  "repo_root": "/REPOS_ROOT",
+  "code_root": "/HOME/code",
+  "base_commit": "parent",
+  "arms": {
+    "no_kb": "no KB text; task prompt only",
+    "stale_kb": "parent-commit KB file text; contains the stale reference fact",
+    "corrected_kb": "fix-commit KB file text; contains the corrected reference fact",
+    "stale_plus_report": "parent-commit KB text plus the deterministic drift report from analysis/replay/cases.json"
+  },
+  "prompt_contract": {
+    "system": "You are an expert software engineer. You cannot run commands or inspect the repository. Return only JSON.",
+    "user_template": "Repository: {repo} at parent commit {parent_sha}.\\n\\nTASK:\\n{task}\\n\\n{context_block}{knowledge_block}\\n\\nOUTPUT CONTRACT: Return a JSON object with exactly one key `diff` whose value is a complete unified diff (starting with `diff --git`) that applies cleanly at the repository root. No markdown fences and no prose outside the JSON.",
+    "knowledge_block_no_kb": "AGENT KB: none provided.",
+    "knowledge_block_kb": "AGENT KB ({kb_path}):\\n```\\n{kb_text}\\n```\\nPaths in the KB are relative to the KB file's directory.",
+    "knowledge_block_report": "AGENT KB ({kb_path}):\\n```\\n{kb_text}\\n```\\nPaths in the KB are relative to the KB file's directory.\\n\\nDRIFT REPORT (deterministic):\\n{drift_report}",
+    "context_block_template": "EXISTING CONTENT (the KB tells you where this lives; path not provided):\\n```\\n{content}\\n```\\n\\n"
+  },
+  "cases": [
+    {
+      "id": "R4",
+      "repo": "R4",
+      "parent_sha": "544ae6061549792de74e8ff89c5def91cb8888b1",
+      "fix_sha": "70e71a62d7132d548ab079254d90028f1adec9bf",
+      "kb_path": "docs/AGENTS.md",
+      "stale_reference": "layouts/_partials/icons.html",
+      "corrected_reference": "layouts/_partials/layouts/icons.html",
+      "manipulation_check": "stale and corrected KB differ only in the icon-sprite path fact; no-KB has no path/location text",
+      "task": "Add a new `terminal` icon to the documentation site's SVG icon sprite. It must be a valid `<symbol id=\"icon--terminal\" viewBox=\"0 0 20 20\">` containing a nonempty `<path>`. Apply the change to the documentation site's existing icon-sprite file.",
+      "expected_paths": [
+        "docs/layouts/_partials/layouts/icons.html"
+      ],
+      "hidden_check": {
+        "id": "hugo_terminal_symbol_v1",
+        "description": "XML-parse docs/layouts/_partials/layouts/icons.html; require symbol id icon--terminal with viewBox and nonempty path; reject only-stale-path edits",
+        "script": "coding_cf.py:check_hugo"
+      },
+      "repo_test": {
+        "cmd": [
+          "go",
+          "test",
+          "./common/hstrings",
+          "-count=1"
+        ],
+        "cwd": "case_root"
+      },
+      "setup": "git archive parent into temp; no deps beyond Go toolchain",
+      "context_ref": "docs/layouts/_partials/layouts/icons.html",
+      "prompt_uses_context": true
+    },
+    {
+      "id": "R5",
+      "repo": "R5",
+      "parent_sha": "328f6da445ac176ddabc05c1ddd6563d5362598e",
+      "fix_sha": "50a71b46e12bf9623b0667103fe225d51a24b5a9",
+      "kb_path": "CLAUDE.md",
+      "stale_reference": "root pages/, static/, user/, pay/",
+      "corrected_reference": "miniprogram/ root and miniprogram/app.json",
+      "manipulation_check": "stale and corrected KB differ only in the project-root fact; no-KB has no path/location text",
+      "task": "Add a new `stats` page to the mini-program and register it in the app's page list. Create the page's `.js`, `.json`, `.wxml`, and `.wxss` files and add its route to the app configuration.",
+      "expected_paths": [
+        "miniprogram/pages/stats/stats.js",
+        "miniprogram/pages/stats/stats.json",
+        "miniprogram/pages/stats/stats.wxml",
+        "miniprogram/pages/stats/stats.wxss",
+        "miniprogram/app.json"
+      ],
+      "hidden_check": {
+        "id": "wechat_stats_page_v1",
+        "description": "Require all four page files under miniprogram/pages/stats/; miniprogram/app.json pages contains pages/stats/stats; node --check stats.js; Page( present",
+        "script": "coding_cf.py:check_wechat"
+      },
+      "repo_test": {
+        "cmd": [
+          "npx",
+          "jest",
+          "test/unit/cloud_function.test.js",
+          "test/unit/track_event.test.js",
+          "--runInBand"
+        ],
+        "cwd": "case_root"
+      },
+      "setup": "git archive parent; symlink preinstalled temp node_modules from /tmp/cf-phase1/R5/node_modules",
+      "context_ref": "miniprogram/app.json",
+      "prompt_uses_context": true
+    },
+    {
+      "id": "R3",
+      "repo": "R3",
+      "parent_sha": "b674155f2b941b64e0b4110c2c7450badb2c28aa",
+      "fix_sha": "07635ed1a8fb97ea17fee4c728788b2e89bfc590",
+      "kb_path": "AGENTS.md",
+      "stale_reference": "memory-update skill name",
+      "corrected_reference": "short-term-memory skill name",
+      "manipulation_check": "stale and corrected KB differ only in the short-term-memory skill name; no-KB has no skill name/path text",
+      "task": "Add a deterministic short-term-memory helper script for the agent memory-update skill. The helper must accept `--session-id <id>` and `--output <path>` and append a `Gotchas & Context` bullet for that session to the output markdown file. Place it inside the skill package directory that the AGENT KB names for memory updates; do not modify unrelated skills.",
+      "expected_paths": [
+        ".agents/skills/short-term-memory/ (any .py under this skill directory; scripts/ subdir preferred)"
+      ],
+      "hidden_check": {
+        "id": "engram_memory_helper_v1",
+        "description": "Find a .py under .agents/skills/short-term-memory/; execute with --session-id s1 --output temp.md; require Gotchas & Context section and a bullet containing s1",
+        "script": "coding_cf.py:check_engram"
+      },
+      "repo_test": {
+        "cmd": [
+          "/HOME/.pyenv/versions/3.13.2/bin/python3",
+          "-m",
+          "pytest",
+          "tests/unit/test_config.py",
+          "tests/unit/test_hashing.py",
+          "-q"
+        ],
+        "cwd": "case_root",
+        "env": "PYTHONPATH=/tmp/cf-phase1/engram-deps313:<case_root>/src"
+      },
+      "setup": "git archive parent; preinstalled /tmp deps + explicit py3.13",
+      "context_ref": null,
+      "prompt_uses_context": false
+    }
+  ],
+  "primary_outcome": "hidden_check_pass",
+  "secondary_outcomes": [
+    "reported_compile_ok",
+    "repo_test_pass",
+    "diff_applies",
+    "changed_files",
+    "tokens",
+    "cost_cny"
+  ],
+  "reporting": "exact per-case x arm counts; Fisher where meaningful; no bootstrap; report nulls and dual-path/trivial recoveries"
+}

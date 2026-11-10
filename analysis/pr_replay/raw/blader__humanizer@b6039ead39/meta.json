@@ -1,0 +1,78 @@
+{
+ "event_id": "blader__humanizer@b6039ead39",
+ "repo": "blader/humanizer",
+ "base": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+ "head": "b6039ead39f824baf5527471dc3f71fd4774505a",
+ "date": "",
+ "message": "",
+ "kind": "code_path_change",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".claude-plugin/plugin.json",
+   "previous": ".claude-plugin/plugin.json",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/blader__humanizer.kblint.json",
+ "docs": [
+  "AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 1,
+   "claims": 37,
+   "findings": 0,
+   "queue": 22
+  },
+  "runtime_s": 0.072,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 1,
+   "claims": 37,
+   "findings": 0,
+   "queue": 22
+  },
+  "runtime_s": 0.059,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 0,
+   "after": 0,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 0,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.07,
+  "new": [],
+  "persisting": [],
+  "fixed": []
+ },
+ "total_runtime_s": 0.201
+}

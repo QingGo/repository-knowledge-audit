@@ -1,0 +1,13 @@
+{
+ "mode": "dry-run",
+ "n_prompts": 432,
+ "n_tasks": 54,
+ "n_arms": 4,
+ "n_seeds": 2,
+ "expected_cells": 432,
+ "header_only_checks": 216,
+ "body_checks": 432,
+ "grading_empty_code_fails": 54,
+ "errors": [],
+ "prereg_sha256": "e59c6fba22f8cf34aed52dbe494c7a466641a55bd588ac4381d8656e408d57cc"
+}

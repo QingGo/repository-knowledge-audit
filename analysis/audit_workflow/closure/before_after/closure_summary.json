@@ -1,0 +1,298 @@
+{
+ "task": "task-81 R2 closure 4 → 3 → 0",
+ "kblint_version": "0.2.1",
+ "repo": "/HOME/code/R2",
+ "commits": {
+  "parent": "2bc2feba97ca5ca1e920bab57413b99779402e0a",
+  "fix": "29a0bc7e06aefb615eb5c07a46f56480a9bef0af"
+ },
+ "kb_file": "AGENTS.md",
+ "repair": {
+  "seed_tree": "fix",
+  "edited": [
+   "AGENTS.md"
+  ],
+  "changed_lines": 6,
+  "diff_file": "KB_REPAIR.diff",
+  "target": "README.md (real in-repo documentation artifact)"
+ },
+ "states": {
+  "parent": {
+   "state": "parent",
+   "tree": "/tmp/kb-audit-closure/parent",
+   "config": "/REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json",
+   "command": "/HOME/.pyenv/versions/3.13.2/bin/python3 -m kblint scan --repo /tmp/kb-audit-closure/parent --config /REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json --out /REPOS_ROOT/kb-health/analysis/audit_workflow/closure/raw/parent --format json,md,sarif --fail-on medium --now 2026-11-05",
+   "exit_code": 1,
+   "runtime_s": 0.0901,
+   "counts": {
+    "docs": 1,
+    "claims": 77,
+    "findings": 4,
+    "queue": 31
+   },
+   "findings_total": 4,
+   "findings_by_rule": {
+    "R9": 4
+   },
+   "r9_findings": [
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L124",
+      "checked: docs/paper.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-961599b35c31a6fb",
+     "locator": "AGENTS.md#L124",
+     "observed": "AGENTS.md#L124: file path `docs/paper.md` not found (checked: docs/paper.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/paper.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L125",
+      "checked: docs/arch_design.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-4c41584c1c700682",
+     "locator": "AGENTS.md#L125",
+     "observed": "AGENTS.md#L125: file path `docs/arch_design.md` not found (checked: docs/arch_design.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/arch_design.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L126",
+      "checked: docs/implementation_notes.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-7bf8b50cc514e4b4",
+     "locator": "AGENTS.md#L126",
+     "observed": "AGENTS.md#L126: file path `docs/implementation_notes.md` not found (checked: docs/implementation_notes.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/implementation_notes.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L23",
+      "root Makefile entries parsed: 15",
+      "known entries: clean, cli, install, lint, profile, profile-chrome, profile-compare, profile-light, profile-ncu, profile-ncu-list, profile-nsys, server, smoke, test-integration, test-unit",
+      "looked up: profile-deep"
+     ],
+     "expected": "run targets/scripts referenced by a knowledge artifact must exist in the repository manifest they belong to",
+     "finding_id": "F-8fe05d71712db031",
+     "locator": "AGENTS.md#L23",
+     "observed": "AGENTS.md#L23: `make profile-deep` was not found in the root Makefile (15 entries parsed)",
+     "rule": "R9",
+     "severity": "low",
+     "subject": "make target does not exist: profile-deep",
+     "suggested_action": "fix the target name, add the target to the root Makefile, or allow_missing it",
+     "tags": [
+      "references",
+      "make"
+     ],
+     "verification_method": "deterministic root-Makefile target parse"
+    }
+   ],
+   "r9_count": 4,
+   "audit_queue_rows": 31,
+   "output_sha256": {
+    "findings.jsonl": "b45cda74a5d704463c5392e3a840ceb71a770c93ff5823eb90cdafd924683837",
+    "audit_queue.jsonl": "200e075369d5afc97148d456a10a7b284c83f29815b2085745809261977db266",
+    "summary.md": "dd0d3f2a4f97fb430901220c6ce62181f5c5dcae97498b97a1d2e69af65f0b04",
+    "report.sarif": "6f8e3628cd2eeb23b3bfea7c0a8da7dd49f07d77da3bc14f467b3b5bba8b9fc0"
+   },
+   "deterministic_rerun_byte_identical": true
+  },
+  "fix": {
+   "state": "fix",
+   "tree": "/tmp/kb-audit-closure/fix",
+   "config": "/REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json",
+   "command": "/HOME/.pyenv/versions/3.13.2/bin/python3 -m kblint scan --repo /tmp/kb-audit-closure/fix --config /REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json --out /REPOS_ROOT/kb-health/analysis/audit_workflow/closure/raw/fix --format json,md,sarif --fail-on medium --now 2026-11-05",
+   "exit_code": 1,
+   "runtime_s": 0.0723,
+   "counts": {
+    "docs": 1,
+    "claims": 77,
+    "findings": 3,
+    "queue": 31
+   },
+   "findings_total": 3,
+   "findings_by_rule": {
+    "R9": 3
+   },
+   "r9_findings": [
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L124",
+      "checked: docs/paper.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-961599b35c31a6fb",
+     "locator": "AGENTS.md#L124",
+     "observed": "AGENTS.md#L124: file path `docs/paper.md` not found (checked: docs/paper.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/paper.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L125",
+      "checked: docs/arch_design.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-4c41584c1c700682",
+     "locator": "AGENTS.md#L125",
+     "observed": "AGENTS.md#L125: file path `docs/arch_design.md` not found (checked: docs/arch_design.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/arch_design.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L126",
+      "checked: docs/implementation_notes.md"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-7bf8b50cc514e4b4",
+     "locator": "AGENTS.md#L126",
+     "observed": "AGENTS.md#L126: file path `docs/implementation_notes.md` not found (checked: docs/implementation_notes.md)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: docs/implementation_notes.md",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    }
+   ],
+   "r9_count": 3,
+   "audit_queue_rows": 31,
+   "output_sha256": {
+    "findings.jsonl": "63ccf430de16923e5f37bfc94f48ee45727ba949a39b282057609f49ca283446",
+    "audit_queue.jsonl": "3e8d75f70c5c8fe4d4bc1c81094349815c50965f22401da61f3dfabeccac46a1",
+    "summary.md": "3ee892d29038f8e6fbfb78d7d64907c548262483bbfea4a81e3c6c37bcb97638",
+    "report.sarif": "c0b9363e9c310d502062447cc38556f4d3d1066753d9a581c99ea0a0a101f222"
+   },
+   "deterministic_rerun_byte_identical": true
+  },
+  "repaired": {
+   "state": "repaired",
+   "tree": "/tmp/kb-audit-closure/repaired",
+   "config": "/REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json",
+   "command": "/HOME/.pyenv/versions/3.13.2/bin/python3 -m kblint scan --repo /tmp/kb-audit-closure/repaired --config /REPOS_ROOT/kb-health/analysis/audit_workflow/configs/R2.kblint.json --out /REPOS_ROOT/kb-health/analysis/audit_workflow/closure/raw/repaired --format json,md,sarif --fail-on medium --now 2026-11-05",
+   "exit_code": 0,
+   "runtime_s": 0.0714,
+   "counts": {
+    "docs": 1,
+    "claims": 77,
+    "findings": 0,
+    "queue": 31
+   },
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": [],
+   "r9_count": 0,
+   "audit_queue_rows": 31,
+   "output_sha256": {
+    "findings.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit_queue.jsonl": "3781926f6bf440f54fec38148b50de56a489e2bfd865c11752554beb42ce49f7",
+    "summary.md": "95a60d327b47eab7a8fb937275b30909a6dd98747f987f8f74a414440aaa16de",
+    "report.sarif": "c133cfcb8f62158007f2c5630c29ce35a4d802d3ee84d715e37764ae3fb0e991"
+   },
+   "deterministic_rerun_byte_identical": true
+  }
+ },
+ "table": [
+  {
+   "state": "parent",
+   "claims": 77,
+   "queue": 31,
+   "r9": 4,
+   "exit": 1,
+   "runtime_s": 0.0901,
+   "deterministic": true
+  },
+  {
+   "state": "fix",
+   "claims": 77,
+   "queue": 31,
+   "r9": 3,
+   "exit": 1,
+   "runtime_s": 0.0723,
+   "deterministic": true
+  },
+  {
+   "state": "repaired",
+   "claims": 77,
+   "queue": 31,
+   "r9": 0,
+   "exit": 0,
+   "runtime_s": 0.0714,
+   "deterministic": true
+  }
+ ],
+ "source_repo_unchanged": true
+}

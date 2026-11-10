@@ -1,0 +1,10 @@
+{
+ "prereg_sha256": "0600462d8e45464372ecf74098af4be16b846f0e32d277c9e46998ea006de793",
+ "prereg_mtime": "2026-11-09T19:21:20+0800",
+ "controls_snapshot_sha256": "69d87d131e0c952b70157b580ab96a945dfda9fd508c3bf790d69e743ffc3a3f",
+ "controls_source": "outcome_bench/results/bench_chat.jsonl",
+ "controls_source_sha256": "1edef615b82518033a297c1e15d69eec3d7c3caa5bd5e0c7ed533301ffcae5ee",
+ "frozen_at": "2026-11-09T19:21:23+0800",
+ "state": "FROZEN_BEFORE_ANY_API_CALL",
+ "design": "5 new arms x 54 tasks x 2 seeds = 540 deepseek-chat calls; controls reused frozen"
+}

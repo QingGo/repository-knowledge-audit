@@ -1,0 +1,34 @@
+{
+ "repo": ".",
+ "docs": [
+  "CLAUDE.md",
+  "AGENTS.md"
+ ],
+ "exclude": [
+  "**/node_modules/**",
+  "**/dist/**",
+  "**/build/**",
+  "**/.venv/**",
+  "**/__pycache__/**",
+  "**/vendor/**"
+ ],
+ "now": "2026-11-09",
+ "git": {
+  "enabled": false
+ },
+ "rules": {
+  "R4": false
+ },
+ "references": {
+  "enabled": true,
+  "check_paths": true,
+  "check_links": true,
+  "check_make": true,
+  "check_npm": true,
+  "allow_missing": [
+   "^(node_modules|dist|build|out|outputs|artifacts|weights|runs|data|checkpoints|cache|\\.cache|coverage|logs|profiles|target|vendor|venv|\\.venv|tmp|temp|\\.next|\\.turbo|\\.git|site-packages|__pycache__|\\.pytest_cache|\\.mypy_cache)/",
+   "\\.(lock|log|pid)$"
+  ],
+  "inventory": []
+ }
+}

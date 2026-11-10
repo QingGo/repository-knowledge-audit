@@ -1,0 +1,163 @@
+{
+ "event_id": "mattpocock__skills@b0618bc436",
+ "repo": "mattpocock/skills",
+ "base": "f3fc5632f401156837ee3872f14fe33ccf1024ea",
+ "head": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+ "date": "",
+ "message": "",
+ "kind": "kb_edit",
+ "negative_control": false,
+ "files": [
+  {
+   "filename": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+   "previous": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+   "status": "modified"
+  },
+  {
+   "filename": ".agents/install-block.md",
+   "previous": ".agents/install-block.md",
+   "status": "modified"
+  },
+  {
+   "filename": "CLAUDE.md",
+   "previous": "CLAUDE.md",
+   "status": "modified"
+  },
+  {
+   "filename": "README.md",
+   "previous": "README.md",
+   "status": "modified"
+  }
+ ],
+ "config": "/REPOS_ROOT/kb-health/analysis/pr_replay/configs/mattpocock__skills.kblint.json",
+ "docs": [
+  "CLAUDE.md",
+  "AGENTS.md"
+ ],
+ "baseline": {
+  "counts": {
+   "docs": 2,
+   "claims": 66,
+   "findings": 2,
+   "queue": 18
+  },
+  "runtime_s": 0.072,
+  "exit_code": 0
+ },
+ "current": {
+  "counts": {
+   "docs": 2,
+   "claims": 68,
+   "findings": 2,
+   "queue": 18
+  },
+  "runtime_s": 0.072,
+  "exit_code": 0
+ },
+ "diff": {
+  "counts": {
+   "before": 2,
+   "after": 2,
+   "new": 0,
+   "new_blocking": 0,
+   "new_unknown_non_blocking": 0,
+   "persisting": 2,
+   "fixed": 0
+  },
+  "dispositions": {
+   "new": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "persisting": {
+    "confirmed": 2,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   },
+   "fixed": {
+    "confirmed": 0,
+    "unresolved": 0,
+    "provenance_gap": 0,
+    "revalidation_due": 0
+   }
+  },
+  "exit_code": 0,
+  "runtime_s": 0.05,
+  "new": [],
+  "persisting": [
+   {
+    "key": [
+     "R9",
+     "AGENTS.md",
+     "AGENTS.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: agents/openai.yaml",
+     "AGENTS.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "AGENTS.md",
+     "evidence": [
+      "AGENTS.md#L19",
+      "checked: agents/openai.yaml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-2e9e35fef4127d01",
+     "locator": "AGENTS.md#L19",
+     "observed": "AGENTS.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: agents/openai.yaml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   },
+   {
+    "key": [
+     "R9",
+     "CLAUDE.md",
+     "CLAUDE.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "file path does not exist: agents/openai.yaml",
+     "CLAUDE.md"
+    ],
+    "finding": {
+     "claim_id": null,
+     "confidence": "high",
+     "disposition": "confirmed",
+     "doc": "CLAUDE.md",
+     "evidence": [
+      "CLAUDE.md#L19",
+      "checked: agents/openai.yaml"
+     ],
+     "expected": "references in a knowledge artifact must resolve to repository artifacts that exist in the scanned repository state",
+     "finding_id": "F-a1de71b0cd5820cc",
+     "locator": "CLAUDE.md#L19",
+     "observed": "CLAUDE.md#L19: file path `agents/openai.yaml` not found (checked: agents/openai.yaml)",
+     "rule": "R9",
+     "severity": "medium",
+     "subject": "file path does not exist: agents/openai.yaml",
+     "suggested_action": "fix the path or add the referenced artifact (or allow_missing it if external)",
+     "tags": [
+      "references",
+      "path"
+     ],
+     "verification_method": "deterministic filesystem existence check (doc-relative then repo-root-relative dispatch)"
+    },
+    "blocking": false
+   }
+  ],
+  "fixed": []
+ },
+ "total_runtime_s": 0.194
+}

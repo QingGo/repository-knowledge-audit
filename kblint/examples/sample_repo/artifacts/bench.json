@@ -1,0 +1,15 @@
+{
+ "dw13_tile_tflops": 358.093,
+ "rows": [
+  {
+   "name": "dW13 tile",
+   "tflops": 358.093
+  },
+  {
+   "name": "base",
+   "tflops": 210.6
+  }
+ ],
+ "step_ms": 60.94,
+ "variants": 4
+}

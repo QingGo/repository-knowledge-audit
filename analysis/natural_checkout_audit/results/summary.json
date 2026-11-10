@@ -1,0 +1,801 @@
+{
+ "task": "task-85 natural-checkout audit",
+ "kblint_version": "0.2.1",
+ "now": "2026-11-09",
+ "source_repos": "analysis/real_scan/scan_rows.json (76 public repos)",
+ "fetched_at": "2026-11-09T22:13:22+0800",
+ "n_repos": 16,
+ "selection": "stratified: manifest class x claim band x KB file type; star-spread within cell",
+ "skipped": [
+  {
+   "repo": "DietrichGebert/ponytail",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "headroomlabs-ai/headroom",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "shanraisshan/claude-code-best-practice",
+   "reason": "no extracted tree"
+  }
+ ],
+ "repo_meta": {
+  "JuliusBrussee/caveman": {
+   "sha": "3dc497a7f858c774d6e15b25e8c6120ef3a0eda8",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 7820023,
+   "files": 1829,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md"
+   ],
+   "claims": 286,
+   "audit_queue": 129,
+   "findings_total": 8,
+   "findings_by_rule": {
+    "R9": 8
+   },
+   "r9_findings": 8,
+   "r9_true_stale": 0,
+   "r9_false_positive": 3,
+   "r9_runtime_unavailable": 5,
+   "r9_unknown": 0,
+   "runtime_s": 0.463,
+   "exit_code": 0
+  },
+  "abi/screenshot-to-code": {
+   "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1142258,
+   "files": 316,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "claims": 54,
+   "audit_queue": 22,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.095,
+   "exit_code": 0
+  },
+  "addyosmani/agent-skills": {
+   "sha": "301b02b12bff98e4688e6984af6556802322bbde",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 380457,
+   "files": 239,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/AGENTS.md"
+   ],
+   "claims": 79,
+   "audit_queue": 26,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.245,
+   "exit_code": 0
+  },
+  "ai-job-search-dev/ai-job-search": {
+   "sha": "2b3f613fdaacee90373131652e38454400a0b1c4",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1646367,
+   "files": 315,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "claims": 99,
+   "audit_queue": 49,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.085,
+   "exit_code": 0
+  },
+  "avelino/awesome-go": {
+   "sha": "499762cd36b35c31c2ae860f3d17d2086464411a",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1667610,
+   "files": 108,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md"
+   ],
+   "claims": 23,
+   "audit_queue": 15,
+   "findings_total": 1,
+   "findings_by_rule": {
+    "R9": 1
+   },
+   "r9_findings": 1,
+   "r9_true_stale": 1,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.076,
+   "exit_code": 0
+  },
+  "ayghri/i-have-adhd": {
+   "sha": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 230466,
+   "files": 74,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "GEMINI.md"
+   ],
+   "claims": 48,
+   "audit_queue": 16,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.105,
+   "exit_code": 0
+  },
+  "blader/humanizer": {
+   "sha": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 24640,
+   "files": 14,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md"
+   ],
+   "claims": 37,
+   "audit_queue": 22,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.28,
+   "exit_code": 0
+  },
+  "eternity4719/HowToLiveBetter": {
+   "sha": "dff814dcbb0a2e968acc0af48e418814655ba1df",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 2985933,
+   "files": 337,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "claims": 107,
+   "audit_queue": 77,
+   "findings_total": 1,
+   "findings_by_rule": {
+    "R9": 1
+   },
+   "r9_findings": 1,
+   "r9_true_stale": 0,
+   "r9_false_positive": 1,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.246,
+   "exit_code": 0
+  },
+  "github/spec-kit": {
+   "sha": "a60bd9bad5af2d25df42188330e8281f2dd1c8bb",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 5335889,
+   "files": 1024,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md"
+   ],
+   "claims": 23,
+   "audit_queue": 6,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.1,
+   "exit_code": 0
+  },
+  "modelcontextprotocol/servers": {
+   "sha": "36380287ed3b15d115b55f546617d723072b1296",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1324130,
+   "files": 390,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md"
+   ],
+   "claims": 186,
+   "audit_queue": 105,
+   "findings_total": 1,
+   "findings_by_rule": {
+    "R9": 1
+   },
+   "r9_findings": 1,
+   "r9_true_stale": 0,
+   "r9_false_positive": 1,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.138,
+   "exit_code": 0
+  },
+  "multica-ai/andrej-karpathy-skills": {
+   "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+   "committed": null,
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 12867,
+   "files": 9,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "CLAUDE.md"
+   ],
+   "claims": 45,
+   "audit_queue": 10,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.085,
+   "exit_code": 0
+  },
+  "mvanhorn/last30days-skill": {
+   "sha": "de9bf7232b37a18df034b1165a45a41daadef7e2",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 12388093,
+   "files": 212,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "claims": 66,
+   "audit_queue": 31,
+   "findings_total": 13,
+   "findings_by_rule": {
+    "R9": 13
+   },
+   "r9_findings": 13,
+   "r9_true_stale": 13,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.092,
+   "exit_code": 0
+  },
+  "rtk-ai/rtk": {
+   "sha": "08a261a0d081ffe11a32986e2f4d76f3fdc33abb",
+   "committed": null,
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 2471710,
+   "files": 902,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "CLAUDE.md",
+    ".github/copilot-instructions.md"
+   ],
+   "claims": 70,
+   "audit_queue": 27,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.076,
+   "exit_code": 0
+  },
+  "ultraworkers/claw-code": {
+   "sha": "f51a33a8960d167288db295d1d02ff9cc0586abf",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 6896666,
+   "files": 430,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ],
+   "claims": 60,
+   "audit_queue": 38,
+   "findings_total": 2,
+   "findings_by_rule": {
+    "R9": 2
+   },
+   "r9_findings": 2,
+   "r9_true_stale": 0,
+   "r9_false_positive": 1,
+   "r9_runtime_unavailable": 1,
+   "r9_unknown": 0,
+   "runtime_s": 0.076,
+   "exit_code": 0
+  },
+  "usestrix/strix": {
+   "sha": "215482eb2204cd30ac6b87520e3f5c6511e2e2e8",
+   "committed": null,
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 5230312,
+   "files": 547,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "AGENTS.md"
+   ],
+   "claims": 35,
+   "audit_queue": 17,
+   "findings_total": 0,
+   "findings_by_rule": {},
+   "r9_findings": 0,
+   "r9_true_stale": 0,
+   "r9_false_positive": 0,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.073,
+   "exit_code": 0
+  },
+  "mattpocock/skills": {
+   "sha": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+   "committed": null,
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 278609,
+   "files": 184,
+   "manifest_class": null,
+   "claim_band": null,
+   "kb_type": null,
+   "docs": [
+    "CLAUDE.md",
+    "AGENTS.md"
+   ],
+   "claims": 72,
+   "audit_queue": 18,
+   "findings_total": 2,
+   "findings_by_rule": {
+    "R9": 2
+   },
+   "r9_findings": 2,
+   "r9_true_stale": 0,
+   "r9_false_positive": 2,
+   "r9_runtime_unavailable": 0,
+   "r9_unknown": 0,
+   "runtime_s": 0.069,
+   "exit_code": 0
+  }
+ },
+ "aggregate": {
+  "claims_extracted": 1290,
+  "audit_queue": 608,
+  "findings_total": 28,
+  "r9_findings": 28,
+  "r9_true_stale": 14,
+  "r9_false_positive": 8,
+  "r9_runtime_unavailable": 6,
+  "r9_unknown": 0,
+  "precision_tp_over_tp_plus_fp": 0.6364,
+  "precision_clopper_pearson_95ci": [
+   0.4066,
+   0.828
+  ],
+  "confirmed_stale_rate_among_r9": 0.5,
+  "confirmed_stale_rate_ci": [
+   0.3065,
+   0.6935
+  ],
+  "repos_with_ge1_true_stale": 2,
+  "repo_distribution_r9": {
+   "min": 0,
+   "median": 0.0,
+   "max": 13
+  },
+  "audit_queue_sample": {
+   "n": 150,
+   "verified": 14,
+   "stale": 3,
+   "unknown": 133,
+   "stale_rate": 0.02,
+   "stale_rate_clopper_pearson_95ci": [
+    0.0041,
+    0.0573
+   ],
+   "unknown_rate": 0.8867
+  },
+  "scan_runtime_s": {
+   "min": 0.069,
+   "median": 0.0935,
+   "max": 0.463,
+   "total": 2.3
+  },
+  "r9_by_kind": {
+   "path": 27,
+   "link": 1
+  },
+  "r9_by_repo": {
+   "JuliusBrussee/caveman": 8,
+   "abi/screenshot-to-code": 0,
+   "addyosmani/agent-skills": 0,
+   "ai-job-search-dev/ai-job-search": 0,
+   "avelino/awesome-go": 1,
+   "ayghri/i-have-adhd": 0,
+   "blader/humanizer": 0,
+   "eternity4719/HowToLiveBetter": 1,
+   "github/spec-kit": 0,
+   "modelcontextprotocol/servers": 1,
+   "multica-ai/andrej-karpathy-skills": 0,
+   "mvanhorn/last30days-skill": 13,
+   "rtk-ai/rtk": 0,
+   "ultraworkers/claw-code": 2,
+   "usestrix/strix": 0,
+   "mattpocock/skills": 2
+  },
+  "true_stale_by_repo": {
+   "avelino/awesome-go": 1,
+   "mvanhorn/last30days-skill": 13
+  },
+  "surface_flagged_rate": 0.4713
+ },
+ "annotator": "single annotator (rule-assisted deterministic adjudication + manual review of every R9 finding class and a calibration sample of queue claims)",
+ "limitations": [
+  "convenience 20-repo sample from a previously scanned 76-repo popular list, not a population sample",
+  "tarballs have no .git: R7 git-provenance self-skips for every repo",
+  "R9 scope depends on the generated config (KB docs only; allow_missing list)",
+  "single annotator; no inter-annotator agreement",
+  "R9 findings are broken evidence pointers, not correctness defects of KB content"
+ ],
+ "determinism_check": {
+  "repos": [
+   "mattpocock/skills",
+   "mvanhorn/last30days-skill",
+   "modelcontextprotocol/servers"
+  ],
+  "byte_identical": true,
+  "per_repo": {
+   "mattpocock/skills": true,
+   "mvanhorn/last30days-skill": true,
+   "modelcontextprotocol/servers": true
+  }
+ },
+ "sample_composition": {
+  "other|AGENTS|low": 5,
+  "node|AGENTS|low": 1,
+  "other|AGENTS|mid": 2,
+  "node|AGENTS|mid": 2,
+  "python|AGENTS|low": 2,
+  "other|other|mid": 2,
+  "python|AGENTS|mid": 1,
+  "node|other|low": 1
+ },
+ "fetch_skips": [
+  {
+   "repo": "DietrichGebert/ponytail",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "headroomlabs-ai/headroom",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "reason": "no extracted tree"
+  },
+  {
+   "repo": "shanraisshan/claude-code-best-practice",
+   "reason": "no extracted tree"
+  }
+ ],
+ "repos": [
+  {
+   "repo": "JuliusBrussee/caveman",
+   "sha": "3dc497a7f858c774d6e15b25e8c6120ef3a0eda8",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 7820023,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 286,
+   "queue": 129,
+   "r9": 8,
+   "tp": 0,
+   "fp": 3,
+   "runtime_unavailable": 5,
+   "runtime_s": 0.463
+  },
+  {
+   "repo": "abi/screenshot-to-code",
+   "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1142258,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 54,
+   "queue": 22,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.095
+  },
+  {
+   "repo": "addyosmani/agent-skills",
+   "sha": "301b02b12bff98e4688e6984af6556802322bbde",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 380457,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 79,
+   "queue": 26,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.245
+  },
+  {
+   "repo": "ai-job-search-dev/ai-job-search",
+   "sha": "2b3f613fdaacee90373131652e38454400a0b1c4",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1646367,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 99,
+   "queue": 49,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.085
+  },
+  {
+   "repo": "avelino/awesome-go",
+   "sha": "499762cd36b35c31c2ae860f3d17d2086464411a",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1667610,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 23,
+   "queue": 15,
+   "r9": 1,
+   "tp": 1,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.076
+  },
+  {
+   "repo": "ayghri/i-have-adhd",
+   "sha": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 230466,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 48,
+   "queue": 16,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.105
+  },
+  {
+   "repo": "blader/humanizer",
+   "sha": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 24640,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 37,
+   "queue": 22,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.28
+  },
+  {
+   "repo": "eternity4719/HowToLiveBetter",
+   "sha": "dff814dcbb0a2e968acc0af48e418814655ba1df",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 2985933,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 107,
+   "queue": 77,
+   "r9": 1,
+   "tp": 0,
+   "fp": 1,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.246
+  },
+  {
+   "repo": "github/spec-kit",
+   "sha": "a60bd9bad5af2d25df42188330e8281f2dd1c8bb",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 5335889,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 23,
+   "queue": 6,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.1
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "sha": "36380287ed3b15d115b55f546617d723072b1296",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 1324130,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 186,
+   "queue": 105,
+   "r9": 1,
+   "tp": 0,
+   "fp": 1,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.138
+  },
+  {
+   "repo": "multica-ai/andrej-karpathy-skills",
+   "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 12867,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 45,
+   "queue": 10,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.085
+  },
+  {
+   "repo": "mvanhorn/last30days-skill",
+   "sha": "de9bf7232b37a18df034b1165a45a41daadef7e2",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 12388093,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 66,
+   "queue": 31,
+   "r9": 13,
+   "tp": 13,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.092
+  },
+  {
+   "repo": "rtk-ai/rtk",
+   "sha": "08a261a0d081ffe11a32986e2f4d76f3fdc33abb",
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 2471710,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 70,
+   "queue": 27,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.076
+  },
+  {
+   "repo": "ultraworkers/claw-code",
+   "sha": "f51a33a8960d167288db295d1d02ff9cc0586abf",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 6896666,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 60,
+   "queue": 38,
+   "r9": 2,
+   "tp": 0,
+   "fp": 1,
+   "runtime_unavailable": 1,
+   "runtime_s": 0.076
+  },
+  {
+   "repo": "usestrix/strix",
+   "sha": "215482eb2204cd30ac6b87520e3f5c6511e2e2e8",
+   "kb_file": "AGENTS.md",
+   "tarball_bytes": 5230312,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 35,
+   "queue": 17,
+   "r9": 0,
+   "tp": 0,
+   "fp": 0,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.073
+  },
+  {
+   "repo": "mattpocock/skills",
+   "sha": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+   "kb_file": "CLAUDE.md",
+   "tarball_bytes": 278609,
+   "manifest_class": null,
+   "claim_band": null,
+   "claims": 72,
+   "queue": 18,
+   "r9": 2,
+   "tp": 0,
+   "fp": 2,
+   "runtime_unavailable": 0,
+   "runtime_s": 0.069
+  }
+ ]
+}

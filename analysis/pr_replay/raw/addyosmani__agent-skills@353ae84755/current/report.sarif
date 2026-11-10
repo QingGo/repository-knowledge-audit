@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "kblint",
+          "rules": [
+            {
+              "id": "R1",
+              "name": "pin/version consistency",
+              "shortDescription": {
+                "text": "doc-declared env pin vs configured artifact field"
+              }
+            },
+            {
+              "id": "R2",
+              "name": "number provenance",
+              "shortDescription": {
+                "text": "claim number resolved against the artifact index"
+              }
+            },
+            {
+              "id": "R3",
+              "name": "cross-doc conflict",
+              "shortDescription": {
+                "text": "same subject, conflicting values across docs"
+              }
+            },
+            {
+              "id": "R4",
+              "name": "missing supersedes/deprecation",
+              "shortDescription": {
+                "text": "newer artifact contradicts an unmarked claim"
+              }
+            },
+            {
+              "id": "R5",
+              "name": "negative-result/flag expiry",
+              "shortDescription": {
+                "text": "stale or undated negative results and flags"
+              }
+            },
+            {
+              "id": "R6",
+              "name": "source-of-truth declaration",
+              "shortDescription": {
+                "text": "topic claim without a canonical declaration"
+              }
+            },
+            {
+              "id": "R7",
+              "name": "untracked/no-owner knowledge file",
+              "shortDescription": {
+                "text": "git tracking and owner metadata"
+              }
+            },
+            {
+              "id": "R8",
+              "name": "audit queue",
+              "shortDescription": {
+                "text": "claims that are not deterministically checkable (not defects)"
+              }
+            },
+            {
+              "id": "R9",
+              "name": "reference check",
+              "shortDescription": {
+                "text": "links/paths/make targets/npm scripts that do not exist in the repo"
+              }
+            }
+          ],
+          "version": "0.3.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

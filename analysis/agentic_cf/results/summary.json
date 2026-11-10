@@ -1,0 +1,186 @@
+{
+ "n_runs": 18,
+ "prereg_sha256": "e71e1d2f6b94e700ab4140306e76c98de0f4926321be9132eb26ad1b22d4e3b7",
+ "model": "deepseek-chat",
+ "max_steps": 25,
+ "by_cell": {
+  "R3/corrected_kb": {
+   "n": 2,
+   "hidden_pass": 2,
+   "repo_test_pass": 2,
+   "submitted": 2,
+   "med_steps": 24,
+   "cost_cny": 0.064573
+  },
+  "R3/no_kb": {
+   "n": 2,
+   "hidden_pass": 1,
+   "repo_test_pass": 2,
+   "submitted": 0,
+   "med_steps": 25,
+   "cost_cny": 0.081738
+  },
+  "R3/stale_kb": {
+   "n": 2,
+   "hidden_pass": 2,
+   "repo_test_pass": 2,
+   "submitted": 1,
+   "med_steps": 25,
+   "cost_cny": 0.065405
+  },
+  "R4/corrected_kb": {
+   "n": 2,
+   "hidden_pass": 2,
+   "repo_test_pass": 2,
+   "submitted": 2,
+   "med_steps": 6,
+   "cost_cny": 0.008428
+  },
+  "R4/no_kb": {
+   "n": 2,
+   "hidden_pass": 2,
+   "repo_test_pass": 2,
+   "submitted": 2,
+   "med_steps": 7,
+   "cost_cny": 0.010286
+  },
+  "R4/stale_kb": {
+   "n": 2,
+   "hidden_pass": 2,
+   "repo_test_pass": 2,
+   "submitted": 2,
+   "med_steps": 11,
+   "cost_cny": 0.023125
+  },
+  "R5/corrected_kb": {
+   "n": 2,
+   "hidden_pass": 0,
+   "repo_test_pass": 2,
+   "submitted": 1,
+   "med_steps": 25,
+   "cost_cny": 0.039862
+  },
+  "R5/no_kb": {
+   "n": 2,
+   "hidden_pass": 0,
+   "repo_test_pass": 2,
+   "submitted": 1,
+   "med_steps": 25,
+   "cost_cny": 0.034446
+  },
+  "R5/stale_kb": {
+   "n": 2,
+   "hidden_pass": 1,
+   "repo_test_pass": 2,
+   "submitted": 2,
+   "med_steps": 25,
+   "cost_cny": 0.030805
+  }
+ },
+ "by_condition": {
+  "no_kb": {
+   "n": 6,
+   "hidden_pass": 3,
+   "repo_test_pass": 6,
+   "cp95": [
+    0.1181,
+    0.8819
+   ],
+   "total_steps": 103,
+   "total_tool_calls": 103,
+   "stale_inspections": 3,
+   "wrong_path_final_edits": 0,
+   "kb_read": 0
+  },
+  "stale_kb": {
+   "n": 6,
+   "hidden_pass": 5,
+   "repo_test_pass": 6,
+   "cp95": [
+    0.3588,
+    0.9958
+   ],
+   "total_steps": 95,
+   "total_tool_calls": 95,
+   "stale_inspections": 9,
+   "wrong_path_final_edits": 0,
+   "kb_read": 4
+  },
+  "corrected_kb": {
+   "n": 6,
+   "hidden_pass": 4,
+   "repo_test_pass": 6,
+   "cp95": [
+    0.2228,
+    0.9567
+   ],
+   "total_steps": 103,
+   "total_tool_calls": 103,
+   "stale_inspections": 6,
+   "wrong_path_final_edits": 0,
+   "kb_read": 4
+  }
+ },
+ "by_repo": {
+  "R4": {
+   "no_kb": {
+    "n": 2,
+    "hidden_pass": 2
+   },
+   "stale_kb": {
+    "n": 2,
+    "hidden_pass": 2
+   },
+   "corrected_kb": {
+    "n": 2,
+    "hidden_pass": 2
+   }
+  },
+  "R5": {
+   "no_kb": {
+    "n": 2,
+    "hidden_pass": 0
+   },
+   "stale_kb": {
+    "n": 2,
+    "hidden_pass": 1
+   },
+   "corrected_kb": {
+    "n": 2,
+    "hidden_pass": 0
+   }
+  },
+  "R3": {
+   "no_kb": {
+    "n": 2,
+    "hidden_pass": 1
+   },
+   "stale_kb": {
+    "n": 2,
+    "hidden_pass": 2
+   },
+   "corrected_kb": {
+    "n": 2,
+    "hidden_pass": 2
+   }
+  }
+ },
+ "total_cost_cny": 0.358668,
+ "fisher": {
+  "corrected_vs_stale_one_sided_p": 0.909091,
+  "corrected_vs_no_kb_one_sided_p": 0.5
+ },
+ "prereg_addendum_sha256": "ce7d047774f6e0bfe1b10294efd1f018a67babdee0a39743a6a9c47cdaa8fdb2",
+ "v1_sensitivity_instrument_bug": {
+  "note": "parser-defect run; not used for condition comparison (see PREREG_ADDENDUM.md)",
+  "n_runs": 18,
+  "by_condition_hidden_pass": {
+   "no_kb": 3,
+   "stale_kb": 4,
+   "corrected_kb": 6
+  },
+  "cost_cny": 0.39819
+ },
+ "total_prompt_tokens": 1154825,
+ "total_completion_tokens": 58011
+}

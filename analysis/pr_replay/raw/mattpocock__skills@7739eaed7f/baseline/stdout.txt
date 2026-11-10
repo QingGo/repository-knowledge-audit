@@ -1,0 +1,5 @@
+kblint 0.3.0: 2 findings (confirmed 2, unresolved 0, provenance_gap 0, revalidation_due 0), 18 audit items; out=/REPOS_ROOT/kb-health/analysis/pr_replay/raw/mattpocock__skills@7739eaed7f/baseline
+  wrote audit_queue: ../analysis/pr_replay/raw/mattpocock__skills@7739eaed7f/baseline/audit_queue.jsonl
+  wrote findings: ../analysis/pr_replay/raw/mattpocock__skills@7739eaed7f/baseline/findings.jsonl
+  wrote sarif: ../analysis/pr_replay/raw/mattpocock__skills@7739eaed7f/baseline/report.sarif
+  wrote summary: ../analysis/pr_replay/raw/mattpocock__skills@7739eaed7f/baseline/summary.md

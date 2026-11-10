@@ -1,0 +1,337 @@
+{
+ "task": "task-87 historical replay of the kblint incremental PR gate",
+ "kblint_version": "0.3.0",
+ "now": "2026-11-09",
+ "fail_on_new": "medium",
+ "sampling_rule": "recent default-branch commit events on 4 small natural-audit repos (consecutive commit pairs from public atom feeds; 2-3 reference-relevant changes + 1 docs-only negative control per repo) plus 4 historical-range replays (oldest fetched commit -> natural-audit HEAD, i.e. multi-commit drift windows) = 20 events; SHAs pinned, file lists from public compare .diff endpoints because the unauthenticated REST API quota was exhausted in reconnaissance",
+ "ordinary_events": {
+  "events": 18,
+  "event_ids": [
+   "blader__humanizer@b6039ead39",
+   "blader__humanizer@8c307f367c",
+   "blader__humanizer@4f4035505d",
+   "mattpocock__skills@7739eaed7f",
+   "mattpocock__skills@b0618bc436",
+   "mattpocock__skills@d1478fcb14",
+   "addyosmani__agent-skills@353ae84755",
+   "addyosmani__agent-skills@8bfcc1f991",
+   "addyosmani__agent-skills@afcafdf58f",
+   "addyosmani__agent-skills@d051d88976",
+   "modelcontextprotocol__servers@4c28a7ec97",
+   "modelcontextprotocol__servers@cc6027865f",
+   "modelcontextprotocol__servers@991a02acbc",
+   "modelcontextprotocol__servers@3fd94199bc",
+   "blader__humanizer@0ef9fe5bc3",
+   "mattpocock__skills@4ae2317ddb",
+   "addyosmani__agent-skills@301b02b12b",
+   "modelcontextprotocol__servers@36380287ed"
+  ],
+  "events_with_any_new": 0,
+  "signal_rate": 0.0,
+  "new_total": 0,
+  "new_true_stale": 0,
+  "new_false_positive": 0,
+  "new_runtime_unavailable": 0,
+  "new_unknown": 0,
+  "new_precision": null,
+  "new_precision_clopper_pearson_95ci": [
+   null,
+   null
+  ],
+  "blocking_new_total": 0,
+  "events_blocked": 0,
+  "false_block_events": 0,
+  "false_block_rate": null,
+  "fixed_rows": 0,
+  "fixed_real_repairs": 0,
+  "fixed_not_a_repair": 0,
+  "negative_control_events": 3,
+  "negative_control_quiet": 3,
+  "negative_control_quiet_rate": 1.0,
+  "latency_s": {
+   "min": 0.163,
+   "median": 0.197,
+   "max": 0.304,
+   "total": 3.89
+  },
+  "events_detail": [
+   {
+    "event_id": "blader__humanizer@b6039ead39",
+    "repo": "blader/humanizer",
+    "kind": "code_path_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.201
+   },
+   {
+    "event_id": "blader__humanizer@8c307f367c",
+    "repo": "blader/humanizer",
+    "kind": "docs_only",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.173
+   },
+   {
+    "event_id": "blader__humanizer@4f4035505d",
+    "repo": "blader/humanizer",
+    "kind": "docs_only",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.183
+   },
+   {
+    "event_id": "mattpocock__skills@7739eaed7f",
+    "repo": "mattpocock/skills",
+    "kind": "kb_edit",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 2,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.215
+   },
+   {
+    "event_id": "mattpocock__skills@b0618bc436",
+    "repo": "mattpocock/skills",
+    "kind": "kb_edit",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 2,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.194
+   },
+   {
+    "event_id": "mattpocock__skills@d1478fcb14",
+    "repo": "mattpocock/skills",
+    "kind": "build_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 2,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.186
+   },
+   {
+    "event_id": "addyosmani__agent-skills@353ae84755",
+    "repo": "addyosmani/agent-skills",
+    "kind": "code_path_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.253
+   },
+   {
+    "event_id": "addyosmani__agent-skills@8bfcc1f991",
+    "repo": "addyosmani/agent-skills",
+    "kind": "code_path_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.19
+   },
+   {
+    "event_id": "addyosmani__agent-skills@afcafdf58f",
+    "repo": "addyosmani/agent-skills",
+    "kind": "code_path_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.198
+   },
+   {
+    "event_id": "addyosmani__agent-skills@d051d88976",
+    "repo": "addyosmani/agent-skills",
+    "kind": "docs_only",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.196
+   },
+   {
+    "event_id": "modelcontextprotocol__servers@4c28a7ec97",
+    "repo": "modelcontextprotocol/servers",
+    "kind": "build_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 1,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.304
+   },
+   {
+    "event_id": "modelcontextprotocol__servers@cc6027865f",
+    "repo": "modelcontextprotocol/servers",
+    "kind": "build_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 1,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.265
+   },
+   {
+    "event_id": "modelcontextprotocol__servers@991a02acbc",
+    "repo": "modelcontextprotocol/servers",
+    "kind": "build_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 1,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.261
+   },
+   {
+    "event_id": "modelcontextprotocol__servers@3fd94199bc",
+    "repo": "modelcontextprotocol/servers",
+    "kind": "code_path_change",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 1,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.257
+   },
+   {
+    "event_id": "blader__humanizer@0ef9fe5bc3",
+    "repo": "blader/humanizer",
+    "kind": "historical_range",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.163
+   },
+   {
+    "event_id": "mattpocock__skills@4ae2317ddb",
+    "repo": "mattpocock/skills",
+    "kind": "historical_range",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 2,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.193
+   },
+   {
+    "event_id": "addyosmani__agent-skills@301b02b12b",
+    "repo": "addyosmani/agent-skills",
+    "kind": "historical_range",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.188
+   },
+   {
+    "event_id": "modelcontextprotocol__servers@36380287ed",
+    "repo": "modelcontextprotocol/servers",
+    "kind": "historical_range",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 1,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.267
+   }
+  ]
+ },
+ "targeted_events": {
+  "events": 3,
+  "event_ids": [
+   "mvanhorn__last30days-skill@74fb246357",
+   "avelino__awesome-go@f74f180683",
+   "mvanhorn__last30days-skill@restructure"
+  ],
+  "events_with_any_new": 2,
+  "signal_rate": 0.6667,
+  "new_total": 14,
+  "new_true_stale": 14,
+  "new_false_positive": 0,
+  "new_runtime_unavailable": 0,
+  "new_unknown": 0,
+  "new_precision": 1.0,
+  "new_precision_clopper_pearson_95ci": [
+   0.7684,
+   1.0
+  ],
+  "blocking_new_total": 14,
+  "events_blocked": 2,
+  "false_block_events": 0,
+  "false_block_rate": 0.0,
+  "fixed_rows": 2,
+  "fixed_real_repairs": 0,
+  "fixed_not_a_repair": 2,
+  "negative_control_events": 0,
+  "negative_control_quiet": 0,
+  "negative_control_quiet_rate": null,
+  "latency_s": {
+   "min": 0.175,
+   "median": 0.196,
+   "max": 0.263,
+   "total": 0.63
+  },
+  "events_detail": [
+   {
+    "event_id": "mvanhorn__last30days-skill@74fb246357",
+    "repo": "mvanhorn/last30days-skill",
+    "kind": "targeted_drift",
+    "new": 0,
+    "new_blocking": 0,
+    "persisting": 10,
+    "fixed": 0,
+    "exit_code": 0,
+    "runtime_s": 0.196
+   },
+   {
+    "event_id": "avelino__awesome-go@f74f180683",
+    "repo": "avelino/awesome-go",
+    "kind": "targeted_drift",
+    "new": 1,
+    "new_blocking": 1,
+    "persisting": 0,
+    "fixed": 0,
+    "exit_code": 1,
+    "runtime_s": 0.175
+   },
+   {
+    "event_id": "mvanhorn__last30days-skill@restructure",
+    "repo": "mvanhorn/last30days-skill",
+    "kind": "targeted_drift",
+    "new": 13,
+    "new_blocking": 13,
+    "persisting": 0,
+    "fixed": 2,
+    "exit_code": 1,
+    "runtime_s": 0.263
+   }
+  ]
+ },
+ "annotator": "single annotator (rule-assisted pass + manual review of every NEW and FIXED row)",
+ "limitations": [
+  "small convenience sample: 18 ordinary events + 3 targeted drift-introduction events; not a false-alarm rate over all PRs",
+  "targeted events were selected for known/potential drift, so their signal rate and precision are not comparable to unselected PRs",
+  "tarballs have no .git: R7 unavailable; events are commit-parent pairs/historical windows, not PR merge bases",
+  "single annotator; no inter-annotator agreement",
+  "FIXED: 2 rows in the restructure window, both reference removals/doc moves, not real repairs of the named target"
+ ]
+}

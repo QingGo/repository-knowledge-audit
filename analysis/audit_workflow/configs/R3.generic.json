@@ -1,0 +1,15 @@
+{
+  "repo": ".",
+  "docs": ["AGENTS.md", "CLAUDE.md", "docs/AGENTS.md", "SKILL.md", "**/SKILL.md"],
+  "exclude": ["**/node_modules/**", "**/.venv/**", "**/dist/**", "**/build/**", "**/__pycache__/**"],
+  "now": "2026-11-05",
+  "git": {"enabled": false},
+  "references": {
+    "enabled": true,
+    "check_paths": true,
+    "check_links": true,
+    "check_make": true,
+    "check_npm": true,
+    "inventory": []
+  }
+}

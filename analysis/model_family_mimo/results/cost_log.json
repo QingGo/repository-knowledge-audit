@@ -1,0 +1,38 @@
+{
+ "model": "mimo-v2.6-flash",
+ "cells_written": 270,
+ "expected_core": 162,
+ "expected_optional": 108,
+ "per_cond": {
+  "c0": {
+   "n": 54,
+   "cost": 0.048544
+  },
+  "c1": {
+   "n": 54,
+   "cost": 0.050859
+  },
+  "c2": {
+   "n": 54,
+   "cost": 0.051321
+  },
+  "c0f": {
+   "n": 54,
+   "cost": 0.058054
+  },
+  "c2f": {
+   "n": 54,
+   "cost": 0.062789
+  }
+ },
+ "cost_cny_total": 0.271567,
+ "hard_cap_cny": 10.0,
+ "stop_cny": 8.0,
+ "cap_respected": true,
+ "optional_ran": true,
+ "prereg_sha256": "2776385b2c86a458515cd855feafd5e267c7d084355a76b3bebd4aa313b0b498",
+ "prereg_mtime": "2026-11-09T20:47:31+0800",
+ "frozen_at": "2026-11-09T20:47:34+0800",
+ "first_row_ts": "2026-11-09T20:49:17+0800",
+ "last_row_ts": "2026-11-09T20:56:54+0800"
+}

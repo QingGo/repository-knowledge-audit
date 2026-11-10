@@ -1,0 +1,304 @@
+{
+ "cases": [
+  {
+   "case": "R1-POS-single",
+   "rule": "R1",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R1-POS-mixed",
+   "rule": "R1",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R2-POS-mismatch",
+   "rule": "R2",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R2-POS-missing",
+   "rule": "R2",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R2b-POS-mismatch",
+   "rule": "R2",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R3-POS-conflict",
+   "rule": "R3",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R5-POS-old",
+   "rule": "R5",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R5-POS-undated",
+   "rule": "R5",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R5b-POS-old",
+   "rule": "R5",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R6-POS-missing",
+   "rule": "R6",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7-POS-untracked",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7-POS-uncommitted",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7-POS-owner",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R9R-home-POS-path",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 1,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 6
+  },
+  {
+   "case": "R9R-home-POS-make",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 6
+  },
+  {
+   "case": "R9R-engram-POS-path",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 1,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 2
+  },
+  {
+   "case": "R9R-wechat-POS-path",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 1,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 3
+  },
+  {
+   "case": "R9R-wechat-POS-npm",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 3
+  },
+  {
+   "case": "R9R-R4-POS-link",
+   "rule": "R9",
+   "detected": {
+    "link": 1,
+    "path": 1,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 1
+  },
+  {
+   "case": "R9R-llm-POS-path",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 1,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 15
+  },
+  {
+   "case": "R9R-llm-POS-make",
+   "rule": "R9",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 1
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 15
+  },
+  {
+   "case": "R7R-home-POS-untracked",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7R-home-POS-uncommitted",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7R-home-POS-staged",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  },
+  {
+   "case": "R7R-llm-POS-uncommitted",
+   "rule": "R7",
+   "detected": {
+    "link": 0,
+    "path": 0,
+    "ext": 0
+   },
+   "kblint": 1,
+   "n_new_kblint_targets": 0
+  }
+ ],
+ "aggregate": {
+  "n_positive": 25,
+  "kblint_detected": 25,
+  "by_method": {
+   "link": 1,
+   "path": 5,
+   "ext": 8
+  },
+  "by_rule_group": {
+   "other rules (R1-R7)": {
+    "n": 17,
+    "link": 0,
+    "path": 0,
+    "ext": 0,
+    "kblint": 17
+   },
+   "R9": {
+    "n": 8,
+    "link": 1,
+    "path": 5,
+    "ext": 8,
+    "kblint": 8
+   }
+  }
+ }
+}

@@ -1,0 +1,340 @@
+{
+ "schema": "kb-replay-controls/1",
+ "generated_at": "2026-11-08T23:19:18+0800",
+ "all_ok": true,
+ "cases": {
+  "R1": {
+   "parent_stale_kb": {
+    "stale_present": [
+     ".opencode/CONTEXT.md",
+     ".opencode/TRAPS.md",
+     ".omo/evidence",
+     ".opencode/skills/grill-me/SKILL.md",
+     ".opencode/skills/tdd/SKILL.md",
+     ".opencode/skills/debug-rust-forward/SKILL.md",
+     ".opencode/skills/pipeline-hang-debug/SKILL.md",
+     ".opencode/skills/pipeline-debug/SKILL.md",
+     ".opencode/skills/fix-unrealized-casts/SKILL.md",
+     ".opencode/skills/debug-vectorization/SKILL.md",
+     ".opencode/skills/debug-correctness/SKILL.md",
+     ".opencode/skills/debug-model-export/SKILL.md",
+     ".opencode/skills/trace-weight-mapping/SKILL.md",
+     ".opencode/skills/debug-tools/SKILL.md",
+     ".opencode/skills/add-mlir-pass/SKILL.md",
+     ".opencode/skills/add-hal-op/SKILL.md",
+     ".opencode/skills/improve-codebase-architecture/SKILL.md",
+     ".opencode/skills/grill-with-docs/SKILL.md",
+     ".opencode/skills/diagnose/SKILL.md",
+     ".opencode/skills/handoff/SKILL.md",
+     ".opencode/skills/caveman/SKILL.md",
+     ".opencode/skills/feedback-optimization/SKILL.md"
+    ],
+    "stale_total": 22,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 6338,
+    "parent_kb_chars": 6338,
+    "fix_kb_chars": 5323,
+    "chars_frac_parent": 1.0,
+    "chars_frac_fix": 1.1907,
+    "success_ab": false,
+    "success_c": false
+   },
+   "fix_kb": {
+    "stale_present": [],
+    "stale_total": 22,
+    "refs_fixed": 22,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 5323,
+    "parent_kb_chars": 6338,
+    "fix_kb_chars": 5323,
+    "chars_frac_parent": 0.8399,
+    "chars_frac_fix": 1.0,
+    "success_ab": true,
+    "success_c": true
+   },
+   "truncated_kb": {
+    "stale_present": [
+     ".opencode/CONTEXT.md",
+     ".opencode/TRAPS.md",
+     ".omo/evidence"
+    ],
+    "stale_total": 22,
+    "refs_fixed": 19,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 2535,
+    "parent_kb_chars": 6338,
+    "fix_kb_chars": 5323,
+    "chars_frac_parent": 0.4,
+    "chars_frac_fix": 0.4762,
+    "success_ab": false,
+    "success_c": false
+   },
+   "expect": {
+    "parent_fail": true,
+    "fix_pass": true,
+    "truncated_fail": true
+   },
+   "controls_ok": true
+  },
+  "R2": {
+   "parent_stale_kb": {
+    "stale_present": [
+     "profile-deep"
+    ],
+    "stale_total": 1,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [
+     "profile-deep"
+    ],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 11808,
+    "parent_kb_chars": 11808,
+    "fix_kb_chars": 11809,
+    "chars_frac_parent": 1.0,
+    "chars_frac_fix": 0.9999,
+    "success_ab": false,
+    "success_c": false
+   },
+   "fix_kb": {
+    "stale_present": [],
+    "stale_total": 1,
+    "refs_fixed": 1,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 11809,
+    "parent_kb_chars": 11808,
+    "fix_kb_chars": 11809,
+    "chars_frac_parent": 1.0001,
+    "chars_frac_fix": 1.0,
+    "success_ab": true,
+    "success_c": true
+   },
+   "truncated_kb": {
+    "stale_present": [
+     "profile-deep"
+    ],
+    "stale_total": 1,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [
+     "profile-deep"
+    ],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 4723,
+    "parent_kb_chars": 11808,
+    "fix_kb_chars": 11809,
+    "chars_frac_parent": 0.4,
+    "chars_frac_fix": 0.3999,
+    "success_ab": false,
+    "success_c": false
+   },
+   "expect": {
+    "parent_fail": true,
+    "fix_pass": true,
+    "truncated_fail": true
+   },
+   "controls_ok": true
+  },
+  "R3": {
+   "parent_stale_kb": {
+    "stale_present": [
+     "memory-update",
+     "docs/performance.md"
+    ],
+    "stale_total": 2,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 7521,
+    "parent_kb_chars": 7521,
+    "fix_kb_chars": 7522,
+    "chars_frac_parent": 1.0,
+    "chars_frac_fix": 0.9999,
+    "success_ab": false,
+    "success_c": false
+   },
+   "fix_kb": {
+    "stale_present": [],
+    "stale_total": 2,
+    "refs_fixed": 2,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 7522,
+    "parent_kb_chars": 7521,
+    "fix_kb_chars": 7522,
+    "chars_frac_parent": 1.0001,
+    "chars_frac_fix": 1.0,
+    "success_ab": true,
+    "success_c": true
+   },
+   "truncated_kb": {
+    "stale_present": [
+     "memory-update"
+    ],
+    "stale_total": 2,
+    "refs_fixed": 1,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [
+     "3 <private KB text removed>"
+    ],
+    "anchors_missing_in_gold": [],
+    "chars": 3008,
+    "parent_kb_chars": 7521,
+    "fix_kb_chars": 7522,
+    "chars_frac_parent": 0.3999,
+    "chars_frac_fix": 0.3999,
+    "success_ab": false,
+    "success_c": false
+   },
+   "expect": {
+    "parent_fail": true,
+    "fix_pass": true,
+    "truncated_fail": true
+   },
+   "controls_ok": true
+  },
+  "R4": {
+   "parent_stale_kb": {
+    "stale_present": [
+     "layouts/_partials/icons.html"
+    ],
+    "stale_total": 1,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 1043,
+    "parent_kb_chars": 1043,
+    "fix_kb_chars": 1051,
+    "chars_frac_parent": 1.0,
+    "chars_frac_fix": 0.9924,
+    "success_ab": false,
+    "success_c": false
+   },
+   "fix_kb": {
+    "stale_present": [],
+    "stale_total": 1,
+    "refs_fixed": 1,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 1051,
+    "parent_kb_chars": 1043,
+    "fix_kb_chars": 1051,
+    "chars_frac_parent": 1.0077,
+    "chars_frac_fix": 1.0,
+    "success_ab": true,
+    "success_c": true
+   },
+   "truncated_kb": {
+    "stale_present": [],
+    "stale_total": 1,
+    "refs_fixed": 1,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [
+     "R4.toml",
+     "assets/css/styles.css",
+     "assets/js/main.js",
+     "package.json"
+    ],
+    "anchors_missing_in_gold": [],
+    "chars": 417,
+    "parent_kb_chars": 1043,
+    "fix_kb_chars": 1051,
+    "chars_frac_parent": 0.3998,
+    "chars_frac_fix": 0.3968,
+    "success_ab": false,
+    "success_c": false
+   },
+   "expect": {
+    "parent_fail": true,
+    "fix_pass": true,
+    "truncated_fail": true
+   },
+   "controls_ok": true
+  },
+  "R5": {
+   "parent_stale_kb": {
+    "stale_present": [
+     "user/",
+     "pay/",
+     "static/"
+    ],
+    "stale_total": 3,
+    "refs_fixed": 0,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 3623,
+    "parent_kb_chars": 3623,
+    "fix_kb_chars": 4030,
+    "chars_frac_parent": 1.0,
+    "chars_frac_fix": 0.899,
+    "success_ab": false,
+    "success_c": false
+   },
+   "fix_kb": {
+    "stale_present": [],
+    "stale_total": 3,
+    "refs_fixed": 3,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 4030,
+    "parent_kb_chars": 3623,
+    "fix_kb_chars": 4030,
+    "chars_frac_parent": 1.1123,
+    "chars_frac_fix": 1.0,
+    "success_ab": true,
+    "success_c": true
+   },
+   "truncated_kb": {
+    "stale_present": [],
+    "stale_total": 3,
+    "refs_fixed": 3,
+    "new_unresolved": [],
+    "bad_make": [],
+    "anchors_missing": [],
+    "anchors_missing_in_gold": [],
+    "chars": 1449,
+    "parent_kb_chars": 3623,
+    "fix_kb_chars": 4030,
+    "chars_frac_parent": 0.3999,
+    "chars_frac_fix": 0.3596,
+    "success_ab": false,
+    "success_c": false
+   },
+   "expect": {
+    "parent_fail": true,
+    "fix_pass": true,
+    "truncated_fail": true
+   },
+   "controls_ok": true
+  }
+ }
+}

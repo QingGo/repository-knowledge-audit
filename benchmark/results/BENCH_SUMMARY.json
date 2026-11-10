@@ -1,0 +1,326 @@
+{
+ "n_tasks": 28,
+ "valid_tasks": [
+  "A1_inf_zeros_f32",
+  "A2_1e4_zeros_f32",
+  "A3_inf_uniform_f32",
+  "A4_inf_zeros_f64",
+  "G1_next_valid_zero",
+  "G2_prev_valid_zero",
+  "G3_next_BS_zero",
+  "K1_high_desc_np",
+  "K2_low_desc_np",
+  "K4_high_desc_list",
+  "M1_valid_zeros_f32",
+  "M2_S_zeros_f32",
+  "M3_valid_nan_f32",
+  "M4_valid_zeros_f64",
+  "Q1_tensor_448_rne",
+  "Q2_channel_448_rne",
+  "Q3_tensor_127_rne",
+  "Q4_tensor_448_trunc",
+  "S1_next_valid_f32",
+  "S2_prev_valid_f32",
+  "S4_next_valid_f64",
+  "Z1_zeros_f32",
+  "Z2_nan_f32",
+  "Z3_uniform_f32",
+  "Z4_zeros_f64"
+ ],
+ "invalid_tasks": [
+  "G4_next_valid_keep",
+  "K3_high_asc_np",
+  "S3_next_BS_f32"
+ ],
+ "conditions": {
+  "c0": {
+   "label": "no KB"
+  },
+  "c1": {
+   "label": "useful KB"
+  },
+  "c2": {
+   "label": "stale KB"
+  },
+  "c2v": {
+   "label": "stale + 1 visible test"
+  },
+  "c2f": {
+   "label": "stale + full visible tests"
+  },
+  "c3": {
+   "label": "neutral note"
+  }
+ },
+ "overall": {
+  "all": {
+   "c0": {
+    "n_tasks": 28,
+    "rate": 0.274
+   },
+   "c1": {
+    "n_tasks": 28,
+    "rate": 0.893
+   },
+   "c2": {
+    "n_tasks": 28,
+    "rate": 0.107
+   },
+   "c2v": {
+    "n_tasks": 28,
+    "rate": 0.452
+   },
+   "c2f": {
+    "n_tasks": 28,
+    "rate": 0.548
+   },
+   "c3": {
+    "n_tasks": 28,
+    "rate": 0.274
+   }
+  },
+  "valid": {
+   "c0": {
+    "n_tasks": 25,
+    "rate": 0.307
+   },
+   "c1": {
+    "n_tasks": 25,
+    "rate": 0.973
+   },
+   "c2": {
+    "n_tasks": 25,
+    "rate": 0.12
+   },
+   "c2v": {
+    "n_tasks": 25,
+    "rate": 0.507
+   },
+   "c2f": {
+    "n_tasks": 25,
+    "rate": 0.613
+   },
+   "c3": {
+    "n_tasks": 25,
+    "rate": 0.307
+   }
+  }
+ },
+ "effects": {
+  "all": {
+   "useful_gain (c1-c0)": {
+    "mean": 0.619,
+    "ci95": [
+     0.429,
+     0.786
+    ],
+    "improved": 20,
+    "worsened": 1,
+    "unchanged": 7
+   },
+   "stale_harm (c2-c0)": {
+    "mean": -0.167,
+    "ci95": [
+     -0.31,
+     -0.06
+    ],
+    "improved": 0,
+    "worsened": 7,
+    "unchanged": 21
+   },
+   "neutral_note (c3-c0)": {
+    "mean": 0.0,
+    "ci95": [
+     -0.036,
+     0.036
+    ],
+    "improved": 1,
+    "worsened": 1,
+    "unchanged": 26
+   },
+   "partial_verification (c2v-c2)": {
+    "mean": 0.345,
+    "ci95": [
+     0.19,
+     0.5
+    ],
+    "improved": 13,
+    "worsened": 1,
+    "unchanged": 14
+   },
+   "full_verification (c2f-c2)": {
+    "mean": 0.44,
+    "ci95": [
+     0.25,
+     0.619
+    ],
+    "improved": 17,
+    "worsened": 1,
+    "unchanged": 10
+   },
+   "residual_harm_with_full_tests (c2f-c0)": {
+    "mean": 0.274,
+    "ci95": [
+     0.071,
+     0.476
+    ],
+    "improved": 12,
+    "worsened": 2,
+    "unchanged": 14
+   },
+   "useful_vs_stale (c1-c2)": {
+    "mean": 0.786,
+    "ci95": [
+     0.655,
+     0.905
+    ],
+    "improved": 25,
+    "worsened": 0,
+    "unchanged": 3
+   }
+  },
+  "valid": {
+   "useful_gain (c1-c0)": {
+    "mean": 0.667,
+    "ci95": [
+     0.48,
+     0.84
+    ],
+    "improved": 18,
+    "worsened": 1,
+    "unchanged": 6
+   },
+   "stale_harm (c2-c0)": {
+    "mean": -0.187,
+    "ci95": [
+     -0.333,
+     -0.067
+    ],
+    "improved": 0,
+    "worsened": 7,
+    "unchanged": 18
+   },
+   "neutral_note (c3-c0)": {
+    "mean": 0.0,
+    "ci95": [
+     -0.04,
+     0.04
+    ],
+    "improved": 1,
+    "worsened": 1,
+    "unchanged": 23
+   },
+   "partial_verification (c2v-c2)": {
+    "mean": 0.387,
+    "ci95": [
+     0.226,
+     0.56
+    ],
+    "improved": 13,
+    "worsened": 1,
+    "unchanged": 11
+   },
+   "full_verification (c2f-c2)": {
+    "mean": 0.493,
+    "ci95": [
+     0.293,
+     0.693
+    ],
+    "improved": 17,
+    "worsened": 1,
+    "unchanged": 7
+   },
+   "residual_harm_with_full_tests (c2f-c0)": {
+    "mean": 0.307,
+    "ci95": [
+     0.08,
+     0.52
+    ],
+    "improved": 12,
+    "worsened": 2,
+    "unchanged": 11
+   },
+   "useful_vs_stale (c1-c2)": {
+    "mean": 0.853,
+    "ci95": [
+     0.72,
+     0.96
+    ],
+    "improved": 23,
+    "worsened": 0,
+    "unchanged": 2
+   }
+  }
+ },
+ "family": {
+  "masked_softmax": {
+   "c0": 0.417,
+   "c1": 1,
+   "c2": 0.25,
+   "c2v": 0.75,
+   "c2f": 0.75,
+   "c3": 0.5
+  },
+  "ce_grad": {
+   "c0": 0,
+   "c1": 0.833,
+   "c2": 0,
+   "c2v": 0.417,
+   "c2f": 0.417,
+   "c3": 0
+  },
+  "topk": {
+   "c0": 0.25,
+   "c1": 0.833,
+   "c2": 0,
+   "c2v": 0.167,
+   "c2f": 0.333,
+   "c3": 0.25
+  },
+  "masked_mean": {
+   "c0": 0.25,
+   "c1": 1,
+   "c2": 0,
+   "c2v": 0.167,
+   "c2f": 0.5,
+   "c3": 0.25
+  },
+  "quantize": {
+   "c0": 0.25,
+   "c1": 0.917,
+   "c2": 0,
+   "c2v": 0.583,
+   "c2f": 0.75,
+   "c3": 0.167
+  },
+  "shift_ce": {
+   "c0": 0.5,
+   "c1": 0.667,
+   "c2": 0.25,
+   "c2v": 0.417,
+   "c2f": 0.583,
+   "c3": 0.5
+  },
+  "stable_softmax": {
+   "c0": 0.25,
+   "c1": 1,
+   "c2": 0.25,
+   "c2v": 0.667,
+   "c2f": 0.5,
+   "c3": 0.25
+  }
+ },
+ "prior_correlation": {
+  "c0_vs_useful_gain": -0.982,
+  "c0_vs_stale_harm": -0.812
+ },
+ "tokens": {
+  "c0": 267.0,
+  "c1": 244.0,
+  "c2": 286.0,
+  "c2v": 175.0,
+  "c2f": 160.0,
+  "c3": 341.0
+ },
+ "spent_cny": 0.616
+}

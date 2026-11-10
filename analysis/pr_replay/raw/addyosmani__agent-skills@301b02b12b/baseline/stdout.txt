@@ -1,0 +1,5 @@
+kblint 0.3.0: 0 findings (confirmed 0, unresolved 0, provenance_gap 0, revalidation_due 0), 26 audit items; out=/REPOS_ROOT/kb-health/analysis/pr_replay/raw/addyosmani__agent-skills@301b02b12b/baseline
+  wrote audit_queue: ../analysis/pr_replay/raw/addyosmani__agent-skills@301b02b12b/baseline/audit_queue.jsonl
+  wrote findings: ../analysis/pr_replay/raw/addyosmani__agent-skills@301b02b12b/baseline/findings.jsonl
+  wrote sarif: ../analysis/pr_replay/raw/addyosmani__agent-skills@301b02b12b/baseline/report.sarif
+  wrote summary: ../analysis/pr_replay/raw/addyosmani__agent-skills@301b02b12b/baseline/summary.md

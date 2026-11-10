@@ -1,0 +1,146 @@
+{
+  "n_runs": 24,
+  "by_cell": {
+    "R3/corrected_kb": {
+      "n": 2,
+      "hidden_pass": 2,
+      "diff_applies": 2,
+      "repo_test_pass": 2,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R3/no_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 2,
+      "repo_test_pass": 2,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R3/stale_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 0,
+      "changed_files_ok": 2
+    },
+    "R3/stale_plus_report": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 2,
+      "repo_test_pass": 2,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R4/corrected_kb": {
+      "n": 2,
+      "hidden_pass": 2,
+      "diff_applies": 2,
+      "repo_test_pass": 2,
+      "strict_apply": 2,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R4/no_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R4/stale_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R4/stale_plus_report": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R5/corrected_kb": {
+      "n": 2,
+      "hidden_pass": 2,
+      "diff_applies": 2,
+      "repo_test_pass": 2,
+      "strict_apply": 0,
+      "repaired_apply": 2,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R5/no_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R5/stale_kb": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    },
+    "R5/stale_plus_report": {
+      "n": 2,
+      "hidden_pass": 0,
+      "diff_applies": 0,
+      "repo_test_pass": 0,
+      "strict_apply": 0,
+      "repaired_apply": 0,
+      "parse_json": 2,
+      "changed_files_ok": 2
+    }
+  },
+  "by_arm": {
+    "no_kb": {
+      "n": 6,
+      "hidden_pass": 0
+    },
+    "stale_kb": {
+      "n": 6,
+      "hidden_pass": 0
+    },
+    "corrected_kb": {
+      "n": 6,
+      "hidden_pass": 6
+    },
+    "stale_plus_report": {
+      "n": 6,
+      "hidden_pass": 0
+    }
+  },
+  "total_cost_cny": 0.122517,
+  "total_prompt_tokens": 65200,
+  "total_completion_tokens": 25901
+}
