@@ -260,6 +260,23 @@ def build_artifact_index(repo: str, cfg: Config, run_index_rows: Optional[List[D
                     by_ref[key].entries.append(e)
         else:
             by_ref[key] = art
+    # Prefer the run-index chronology over filesystem mtimes. A git checkout resets file
+    # mtimes (so all artifacts look equally new and R4's supersedes check goes silent),
+    # while the run index carries the recorded generation time.
+    if cfg.run_index and run_index_rows:
+        file_field = cfg.run_index.get("file_field", "file")
+        row_mtime: Dict[str, str] = {}
+        for row in run_index_rows:
+            rel = row.get(file_field)
+            mt = row.get("mtime") or row.get("date")
+            if isinstance(rel, str) and mt:
+                row_mtime[os.path.normpath(rel)] = str(mt)
+        for key, art in by_ref.items():
+            mt = row_mtime.get(os.path.normpath(key)) if key else None
+            if mt:
+                art.mtime = mt
+                for e in art.entries:
+                    e.mtime = mt
     artifacts = [by_ref[k] for k in sorted(by_ref)]
     return ArtifactIndex(artifacts=artifacts, unit_index=unit_index)
 

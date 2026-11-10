@@ -1,9 +1,9 @@
 {
  "schema": "repository-knowledge-audit/manifest-v1",
- "version": "2026.11.10-r14",
+ "version": "2026.11.10-r15",
  "date": "2026-11-10",
  "file_count": 617,
- "total_bytes": 10636276,
+ "total_bytes": 10642547,
  "files": [
   {
    "path": ".github/workflows/kblint.yml",
@@ -42,7 +42,7 @@
   },
   {
    "path": "VERSION",
-   "sha256": "843201b07e6f34d2ab6d974db0dcaa23fee4322fb07fd2cfb5321699e87042d9",
+   "sha256": "a2b359cc942ec7bc685894aa073c593eebc6ff2847f52afee1f37c530a1a6dde",
    "bytes": 324
   },
   {
@@ -2712,33 +2712,33 @@
   },
   {
    "path": "examples/example-report-after.json",
-   "sha256": "30b3829fc01035930de96e93e100a1342fa1f3cdf7ae51441050e6aae9189e59",
-   "bytes": 6900
+   "sha256": "200cd7abb01f01dfa71236ec8865b9a549ff4988a65316e1145109c1da0976b3",
+   "bytes": 7986
   },
   {
    "path": "examples/example-report-after.md",
-   "sha256": "0e11b4e29d3052b2a7012a201a28bac4fc5e66bdc011d5d60ac9a74238053fd7",
-   "bytes": 3909
+   "sha256": "ce79504be8a2968ca4307f1610935d4c5640d2dd3ed038f159e7059343ae399c",
+   "bytes": 4378
   },
   {
    "path": "examples/example-report-after.sarif",
-   "sha256": "85fbbd9ae21d6dcd67731f8f1cc6843011d61eb7b052e87427a3da562ab56008",
-   "bytes": 10609
+   "sha256": "940d0f5fd150d839c0142d45a7bb9aee4fb41de0792d1332c1a646f37d5d2a62",
+   "bytes": 11768
   },
   {
    "path": "examples/example-report.json",
-   "sha256": "c3864b817d6b7ce7f0efa3f4e9d11b56b729260467868d6f796fece55d9b26c5",
-   "bytes": 8818
+   "sha256": "a1f79528d3304e6a9e0c6a7cb41d0f50d08e2e3290dab9c6174640db4a6a589d",
+   "bytes": 9904
   },
   {
    "path": "examples/example-report.md",
-   "sha256": "acf441e7137bb6560341798f8eeb6a1dc40c48c923e51206b6f3d468ba45e18c",
-   "bytes": 4758
+   "sha256": "0a37f012b0cc7ab461955cdfe445b83032747c729c259822162e0b7b3ad61f6b",
+   "bytes": 5227
   },
   {
    "path": "examples/example-report.sarif",
-   "sha256": "f2f71e45f8789c3e5b7d466ab6bae943a178d61ab32fa428cc101392d071a1d4",
-   "bytes": 12771
+   "sha256": "9e025413a15ab40b7b0c35ea0af9c0a429a5c81e1dccab00ca493b55dd846dfd",
+   "bytes": 13930
   },
   {
    "path": "examples/sample-repo/artifacts/bench.json",
@@ -2992,8 +2992,8 @@
   },
   {
    "path": "kblint/kblint/rules/base.py",
-   "sha256": "667c885692883c201a7fc639d8cdff23b64963443cacd63bc4081467b74fe9ca",
-   "bytes": 15505
+   "sha256": "358168ea3c7e847ed98cf3f01e6aa64c3d0b474283b5332b8e4d0660ab129021",
+   "bytes": 16348
   },
   {
    "path": "kblint/kblint/rules/r1_version.py",

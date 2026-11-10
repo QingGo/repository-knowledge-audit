@@ -165,6 +165,32 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "docs/supersede.md"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "[confirmed] missing supersedes: newer artifact artifacts/r50_v2.json contradicts artifacts/r50_v1.json (60.94ms vs 60.43ms). observed: claim cites artifacts/r50_v1.json (step_ms = 60.94) and states 60.94ms; newer artifact artifacts/r50_v2.json records 60.43 at step_ms (mtime 2026-11-01T00:00:00Z) expected: a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)"
+          },
+          "properties": {
+            "claim_id": "c_6dcc5f502a801003",
+            "confidence": "high",
+            "disposition": "confirmed",
+            "finding_id": "F-89ac5df71cf7cf36",
+            "verification_method": "artifact chronology (mtime) + value comparison + marker scan"
+          },
+          "ruleId": "R4"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "docs/negative.md"
                 },
                 "region": {

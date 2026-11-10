@@ -139,6 +139,31 @@
   "verification_method": "normalized (unit, key-context) anchor grouping + relative tolerance"
  },
  {
+  "claim_id": "c_6dcc5f502a801003",
+  "confidence": "high",
+  "disposition": "confirmed",
+  "doc": "docs/supersede.md",
+  "evidence": [
+   "docs/supersede.md#L3",
+   "artifacts/r50_v1.json :: step_ms (mtime 2026-09-21T00:00:00Z)",
+   "artifacts/r50_v2.json :: step_ms (mtime 2026-11-01T00:00:00Z)"
+  ],
+  "expected": "a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)",
+  "finding_id": "F-89ac5df71cf7cf36",
+  "locator": "docs/supersede.md#L3",
+  "observed": "claim cites artifacts/r50_v1.json (step_ms = 60.94) and states 60.94ms; newer artifact artifacts/r50_v2.json records 60.43 at step_ms (mtime 2026-11-01T00:00:00Z)",
+  "rule": "R4",
+  "severity": "medium",
+  "subject": "missing supersedes: newer artifact artifacts/r50_v2.json contradicts artifacts/r50_v1.json (60.94ms vs 60.43ms)",
+  "suggested_action": "add a supersedes/deprecation note or update the claim",
+  "tags": [
+   "supersedes",
+   "lineage",
+   "ms"
+  ],
+  "verification_method": "artifact chronology (mtime) + value comparison + marker scan"
+ },
+ {
   "claim_id": "c_11b3f388323268b3",
   "confidence": "high",
   "disposition": "confirmed",

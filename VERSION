@@ -1,6 +1,6 @@
 repository-knowledge-audit artifact
-version: 2026.11.10-r14
+version: 2026.11.10-r15
 bundle_date: 2026-11-10
 paper: Auditing Repository Knowledge for Coding Agents: Claim-Level Effects, Compositional Interference, and Evidence-Grounded Maintenance
-source_tree_sha256: 2cd65aec5b2c0314698f292fd04f469c66ccb24040102bb1cdbda3fa0f1cd430
+source_tree_sha256: 831b6e4aae27dbb9b19e7533f4cdaf4658bf6ea90112a5604facd36197b6b0ba
 file_count: 615

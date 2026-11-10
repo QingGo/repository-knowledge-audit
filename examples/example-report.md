@@ -3,7 +3,7 @@
 - tool: `kblint 0.3.0` (deterministic, stdlib only, zero network)
 - repo: `/REPOS_ROOT/kb-health/paper_workshop/agentverify2027/artifact/repository-knowledge-audit/examples/sample-repo`
 - docs scanned: 11; claims extracted: 21; artifacts indexed: 3
-- findings: **10** (confirmed 5, unresolved 2, provenance_gap 0, revalidation_due 3)
+- findings: **11** (confirmed 6, unresolved 2, provenance_gap 0, revalidation_due 3)
 - waivers applied: 0
 - audit queue (not defects): **3** claims
 - **R4 (missing supersedes) is ENABLED but still experimental**: artifact-chronology flags can be cross-shape false positives; treat R4 findings as review candidates (see README honest limits).
@@ -15,7 +15,7 @@
 | R1 | pin/version consistency | 1 |
 | R2 | number provenance | 4 |
 | R3 | cross-doc conflict | 1 |
-| R4 | missing supersedes/deprecation | 0 |
+| R4 | missing supersedes/deprecation | 1 |
 | R5 | negative-result/flag expiry | 1 |
 | R6 | source-of-truth declaration | 1 |
 | R7 | untracked/no-owner knowledge file | 0 |
@@ -25,7 +25,7 @@
 ## Severity
 
 - high: 1
-- medium: 4
+- medium: 5
 - low: 5
 
 ## Confirmed / unresolved findings (evidence, not usefulness)
@@ -39,6 +39,9 @@
 - **R3 medium confirmed** `docs/conflict_a.md#L3` — cross-doc conflict on 'r49 configuration best step' (ms): 60.94 vs 61.93
   - observed: docs/conflict_a.md states 60.94ms; other doc(s) state different values: docs/conflict_b.md:61.93
   - expected: the same subject must have one value across docs unless a claim/section is explicitly marked superseded/deprecated
+- **R4 medium confirmed** `docs/supersede.md#L3` — missing supersedes: newer artifact artifacts/r50_v2.json contradicts artifacts/r50_v1.json (60.94ms vs 60.43ms)
+  - observed: claim cites artifacts/r50_v1.json (step_ms = 60.94) and states 60.94ms; newer artifact artifacts/r50_v2.json records 60.43 at step_ms (mtime 2026-11-01T00:00:00Z)
+  - expected: a claim contradicted by a newer artifact must be marked superseded / deprecated (or scoped to its artifact date)
 - **R5 medium confirmed** `docs/negative.md#L3` — negative/flag claim predates environment change 2026-10-01
   - observed: claim dated 2026-09-01 (negative_marker) is older than environment-change date 2026-10-01
   - expected: negative results and flags must be revalidated after an environment change or carry a date/expiry
